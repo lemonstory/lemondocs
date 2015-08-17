@@ -1,0 +1,47 @@
+###################用户组件接口############################
+1.qq联合登陆
+uri:	/sso/qqlogin.php
+
+params:
+	accessToken
+	openId
+
+return:
+	{"code":10000}
+	{"code":100817, "desc"=>"此qq未注册"}	此时需要请求授权注册接口
+
+
+2.qq授权注册接口
+uri:	/sso/qqloginreg.php
+params:
+	accessToken
+	openId
+	nickName
+
+return：
+	{"code":10000}
+
+
+3.退出登录
+uri:	/sso/logout.php
+
+params:
+
+return:
+	{"code":10000}
+
+
+###################用户组件接口 END############################
+
+
+
+
+
+
+
+
+
+
+
+
+
