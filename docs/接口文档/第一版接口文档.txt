@@ -48,7 +48,31 @@ return:
 	{"code":10000}
 
 
-2.
+2.用户收藏列表
+uri:	/fav/getfavlist.php
+
+params:
+	
+return:
+	{
+	"code":10000,
+	"data":[{
+		"id":"1",				//收藏id
+		"uid":"10001",				
+		"albumid":"1",							
+		"addtime":"2015-08-17 17:28:03",	//收藏时间
+		"albuminfo":[],				//专辑信息
+	}]}
+
+
+3.用户取消收藏
+uri:	/fav/delfavalbum.php
+
+params:
+	albumid
+
+return:
+	{"code":10000}
 
 ###################收藏组件接口 END############################
 
@@ -60,13 +84,40 @@ return:
 uri:	/listen/addlistenstory.php
 
 params:
+	albumid		专辑id
 	storyid		故事id
 
 return:
 	{"code":10000}
 
 
-2.
+2.用户收听列表
+uri:	/listen/getlistenlist.php
+
+params:
+	
+return:
+	{
+	"code":10000,
+	"data":[{
+		"id":"1",				//收藏id
+		"uid":"10001",				
+		"albumid":"1",				
+		"storyid":"1",				
+		"addtime":"2015-08-17 17:28:03",	//收藏时间
+		"albuminfo":[],				//专辑信息
+		"storyinfo":[]				//收藏的故事信息
+	}]}
+
+3.用户取消收听
+uri:	/listen/dellistenstory.php
+
+params:
+	albumid
+	storyid
+
+return:
+	{"code":10000}
 
 ###################收听组件接口 END############################
 
