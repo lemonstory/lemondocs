@@ -9,6 +9,19 @@
 http://121.40.117.197/userinfo/defaultlogin.php?username=18701515649&password=11223344
 
 
+###################首页############################
+1.首页列表
+uri:	/default/index.php
+
+params:
+
+return:
+	{"code":10000}
+
+###################首页 EDN############################
+
+
+
 ###################用户组件接口############################
 1.qq联合登陆
 uri:	/sso/qqlogin.php
@@ -19,7 +32,7 @@ params:
 
 return:
 	{"code":10000}
-	{"code":100817, "desc"=>"此qq未注册"}	此时需要请求授权注册接口
+	{"code":100302, "desc"=>"此qq未注册"}	此时需要请求授权注册接口
 
 
 2.qq授权注册接口
@@ -39,6 +52,30 @@ uri:	/sso/logout.php
 params:
 
 return:
+	{"code":10000}
+
+
+
+4.微信联合登陆
+uri:	/sso/wechatlogin.php
+
+params:
+	accessToken
+	openId
+
+return:
+	{"code":10000}
+	{"code":100312, "desc"=>"此微信账户未注册"}	此时需要请求授权注册接口
+
+
+5.微信授权注册接口
+uri:	/sso/wechatreg.php
+params:
+	accessToken
+	openId
+	nickName
+
+return：
 	{"code":10000}
 
 
@@ -132,3 +169,19 @@ return:
 
 ###################收听组件接口 END############################
 
+
+
+
+###################排行榜############################
+1.收听次数的用户排行榜
+uri:	/userinfo/ranklistenuserlist.php
+	
+return:
+	{"code":10000, "data":""}
+
+
+
+
+
+
+###################排行榜 END############################
