@@ -100,7 +100,9 @@ return:
 uri:	/fav/getfavlist.php
 
 params:
-	
+	direction:	(up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+	startid		从哪个ID开始，第一页时值为0
+	len		长度
 return:
 	{
 	"code":10000,
@@ -143,7 +145,10 @@ return:
 uri:	/listen/getlistenlist.php
 
 params:
-	
+	direction:	(up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+	startid		从哪个ID开始，第一页时值为0
+	len		长度
+
 return:
 	{
 	"code":10000,
@@ -176,6 +181,9 @@ return:
 1.收听次数的用户排行榜
 uri:	/userinfo/ranklistenuserlist.php
 	
+params:
+	len		长度
+
 return:
 	{"code":10000, "data":""}
 
