@@ -195,6 +195,9 @@ uri:	/download/getdownlist.php
 
 params:
 	taskstatus:	状态，1代表下载中，2代表已下载
+	direction:	(up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+	startid		从哪个ID开始，第一页时值为0
+	len		长度
 
 return:
 	{"code":10000, "data":""}
