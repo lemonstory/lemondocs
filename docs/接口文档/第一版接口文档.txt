@@ -4,7 +4,7 @@
 1.返回的code码为10000，表示成功
 2.返回非10000，会返回错误描述内容
 3.返回值均为json格式
-
+ 
 登录临时使用接口：
 http://121.40.117.197/userinfo/defaultlogin.php?username=18701515649&password=11223344
 
