@@ -4,7 +4,7 @@
 1.返回的code码为10000，表示成功
 2.返回非10000，会返回错误描述内容
 3.返回值均为json格式
- 
+
 登录临时使用接口：
 http://121.40.117.197/userinfo/defaultlogin.php?username=18701515649&password=11223344
 
@@ -108,8 +108,8 @@ return:
 	"code":10000,
 	"data":[{
 		"id":"1",				//收藏id
-		"uid":"10001",				
-		"albumid":"1",							
+		"uid":"10001",
+		"albumid":"1",
 		"addtime":"2015-08-17 17:28:03",	//收藏时间
 		"albuminfo":[],				//专辑信息
 	}]}
@@ -154,9 +154,9 @@ return:
 	"code":10000,
 	"data":[{
 		"id":"1",				//收藏id
-		"uid":"10001",				
-		"albumid":"1",				
-		"storyid":"1",				
+		"uid":"10001",
+		"albumid":"1",
+		"storyid":"1",
 		"addtime":"2015-08-17 17:28:03",	//收藏时间
 		"albuminfo":[],				//专辑信息
 		"storyinfo":[]				//收藏的故事信息
@@ -180,7 +180,7 @@ return:
 ###################排行榜############################
 1.收听次数的用户排行榜
 uri:	/userinfo/ranklistenuserlist.php
-	
+
 params:
 	len		长度
 
@@ -213,3 +213,65 @@ return:
 
 ###################下载相关 END############################
 
+
+
+###################专辑故事相关 ############################
+1.获取专辑信息接口
+uri:	/album/info.php
+params:
+	albumid
+	uid
+
+return：
+	{
+	    "code": 10000,
+	    "data": {
+	        "albuminfo": {
+	            "title": "两只老虎",
+	            "intro": "",
+	            "star_level": "0",
+	            "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg"
+	        },
+	        "storylist": [
+	            {
+	                "id": "1",
+	                "title": "两只老虎 ",
+	                "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
+	                "times": "12",
+	                "file_size": "33",
+	                "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+	                "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3"
+	            }
+	        ],
+	        "commentlist": [
+	            {
+	                "id": 1,
+	                "uid": 0,
+	                "uname": "匿名用户",
+	                "start_level": 4,
+	                "comment": "123123"
+	            }
+	        ]
+	    }
+	}
+
+2、获取故事详情
+uri:	/album/info.php
+params:
+	storyid
+	uid
+
+return：
+	{
+	    "code": 10000,
+	    "data": {
+	        "id": "1",
+	        "title": "两只老虎 ",
+	        "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
+	        "times": "151",
+	        "file_size": "2470533",
+	        "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+	        "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3"
+	    }
+	}
+###################专辑故事相关 END############################
