@@ -227,6 +227,7 @@ return：
 	    "code": 10000,
 	    "data": {
 	        "albuminfo": {
+	            "id": 1,
 	            "title": "两只老虎",
 	            "intro": "",
 	            "star_level": "0",
