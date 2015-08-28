@@ -199,7 +199,7 @@ return:
 
 ###################下载相关############################
 1.获取相应状态的下载专辑列表
-uri:	/download/getdownlist.php
+uri:	/download/getuserdownlist.php
 
 params:
 	taskstatus:	状态，1代表下载中，2代表已下载
