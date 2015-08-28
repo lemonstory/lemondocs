@@ -11,12 +11,12 @@ http://121.40.117.197/userinfo/defaultlogin.php?username=18701515649&password=11
 
 ###################首页############################
 1.首页列表
-uri:	/default/index.php
+uri:    /default/index.php
 
 params:
 
 return:
-	{"code":10000}
+    {"code":10000}
 
 ###################首页 EDN############################
 
@@ -24,59 +24,59 @@ return:
 
 ###################用户组件接口############################
 1.qq联合登陆
-uri:	/sso/qqlogin.php
+uri:    /sso/qqlogin.php
 
 params:
-	accessToken
-	openId
+    accessToken
+    openId
 
 return:
-	{"code":10000}
-	{"code":100302, "desc"=>"此qq未注册"}	此时需要请求授权注册接口
+    {"code":10000}
+    {"code":100302, "desc"=>"此qq未注册"}   此时需要请求授权注册接口
 
 
 2.qq授权注册接口
-uri:	/sso/qqloginreg.php
+uri:    /sso/qqloginreg.php
 params:
-	accessToken
-	openId
-	nickName
+    accessToken
+    openId
+    nickName
 
 return：
-	{"code":10000}
+    {"code":10000}
 
 
 3.退出登录
-uri:	/sso/logout.php
+uri:    /sso/logout.php
 
 params:
 
 return:
-	{"code":10000}
+    {"code":10000}
 
 
 
 4.微信联合登陆
-uri:	/sso/wechatlogin.php
+uri:    /sso/wechatlogin.php
 
 params:
-	accessToken
-	openId
+    accessToken
+    openId
 
 return:
-	{"code":10000}
-	{"code":100312, "desc"=>"此微信账户未注册"}	此时需要请求授权注册接口
+    {"code":10000}
+    {"code":100312, "desc"=>"此微信账户未注册"} 此时需要请求授权注册接口
 
 
 5.微信授权注册接口
-uri:	/sso/wechatreg.php
+uri:    /sso/wechatreg.php
 params:
-	accessToken
-	openId
-	nickName
+    accessToken
+    openId
+    nickName
 
 return：
-	{"code":10000}
+    {"code":10000}
 
 
 ###################用户组件接口 END############################
@@ -87,42 +87,42 @@ return：
 
 ###################收藏组件接口############################
 1.用户收藏专辑接口
-uri:	/fav/addfavalbum.php
+uri:    /fav/addfavalbum.php
 
 params:
-	albumid		专辑id
+    albumid     专辑id
 
 return:
-	{"code":10000}
+    {"code":10000}
 
 
 2.用户收藏列表
-uri:	/fav/getfavlist.php
+uri:    /fav/getfavlist.php
 
 params:
-	direction:	(up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
-	startid		从哪个ID开始，第一页时值为0
-	len		长度
+    direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+    startid     从哪个ID开始，第一页时值为0
+    len     长度
 return:
-	{
-	"code":10000,
-	"data":[{
-		"id":"1",				//收藏id
-		"uid":"10001",
-		"albumid":"1",
-		"addtime":"2015-08-17 17:28:03",	//收藏时间
-		"albuminfo":[],				//专辑信息
-	}]}
+    {
+    "code":10000,
+    "data":[{
+        "id":"1",               //收藏id
+        "uid":"10001",
+        "albumid":"1",
+        "addtime":"2015-08-17 17:28:03",    //收藏时间
+        "albuminfo":[],             //专辑信息
+    }]}
 
 
 3.用户取消收藏
-uri:	/fav/delfavalbum.php
+uri:    /fav/delfavalbum.php
 
 params:
-	albumid
+    albumid
 
 return:
-	{"code":10000}
+    {"code":10000}
 
 ###################收藏组件接口 END############################
 
@@ -131,46 +131,46 @@ return:
 
 ###################收听组件接口############################
 1.用户收听故事
-uri:	/listen/addlistenstory.php
+uri:    /listen/addlistenstory.php
 
 params:
-	albumid		专辑id
-	storyid		故事id
+    albumid     专辑id
+    storyid     故事id
 
 return:
-	{"code":10000}
+    {"code":10000}
 
 
 2.用户收听列表
-uri:	/listen/getlistenlist.php
+uri:    /listen/getlistenlist.php
 
 params:
-	direction:	(up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
-	startid		从哪个ID开始，第一页时值为0
-	len		长度
+    direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+    startid     从哪个ID开始，第一页时值为0
+    len     长度
 
 return:
-	{
-	"code":10000,
-	"data":[{
-		"id":"1",				//收藏id
-		"uid":"10001",
-		"albumid":"1",
-		"storyid":"1",
-		"addtime":"2015-08-17 17:28:03",	//收藏时间
-		"albuminfo":[],				//专辑信息
-		"storyinfo":[]				//收藏的故事信息
-	}]}
+    {
+    "code":10000,
+    "data":[{
+        "id":"1",               //收藏id
+        "uid":"10001",
+        "albumid":"1",
+        "storyid":"1",
+        "addtime":"2015-08-17 17:28:03",    //收藏时间
+        "albuminfo":[],             //专辑信息
+        "storyinfo":[]              //收藏的故事信息
+    }]}
 
 3.用户取消收听
-uri:	/listen/dellistenstory.php
+uri:    /listen/dellistenstory.php
 
 params:
-	albumid
-	storyid
+    albumid
+    storyid
 
 return:
-	{"code":10000}
+    {"code":10000}
 
 ###################收听组件接口 END############################
 
@@ -179,13 +179,13 @@ return:
 
 ###################排行榜############################
 1.收听次数的用户排行榜
-uri:	/userinfo/ranklistenuserlist.php
+uri:    /userinfo/ranklistenuserlist.php
 
 params:
-	len		长度
+    len     长度
 
 return:
-	{"code":10000, "data":""}
+    {"code":10000, "data":""}
 
 
 
@@ -199,16 +199,16 @@ return:
 
 ###################下载相关############################
 1.获取相应状态的下载专辑列表
-uri:	/download/getuserdownlist.php
+uri:    /download/getuserdownlist.php
 
 params:
-	taskstatus:	状态，1代表下载中，2代表已下载
-	direction:	(up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
-	startid		从哪个ID开始，第一页时值为0
-	len		长度
+    taskstatus: 状态，1代表下载中，2代表已下载
+    direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+    startid     从哪个ID开始，第一页时值为0
+    len     长度
 
 return:
-	{"code":10000, "data":""}
+    {"code":10000, "data":""}
 
 
 ###################下载相关 END############################
@@ -217,11 +217,11 @@ return:
 
 ###################专辑故事相关 ############################
 1.获取专辑列表借口
-uri:	/album/all.php
+uri:    /album/all.php
 params:
-		direction:	(up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
-		startid		从哪个ID开始，第一页时值为0
-		len		长度
+        direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+        startid     从哪个ID开始，第一页时值为0
+        len     长度
 return:
 {
     "code": 10000,
@@ -253,63 +253,91 @@ return:
 
 
 2.获取专辑信息接口
-uri:	/album/info.php
+uri:    /album/info.php
 params:
-	albumid
-	uid
+    albumid
+    uid
 
 return：
-	{
-	    "code": 10000,
-	    "data": {
-	        "albuminfo": {
-	            "id": 1,
-	            "title": "两只老虎",
-	            "intro": "",
-	            "star_level": "0",
-	            "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg"
-	        },
-	        "storylist": [
-	            {
-	                "id": "1",
-	                "albumid":"1",
-	                "title": "两只老虎 ",
-	                "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
-	                "times": "12",
-	                "file_size": "33",
-	                "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
-	                "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3"
-	            }
-	        ],
-	        "commentlist": [
-	            {
-	                "id": 1,
-	                "uid": 0,
-	                "uname": "匿名用户",
-	                "start_level": 4,
-	                "comment": "123123"
-	            }
-	        ]
-	    }
-	}
+    {
+        "code": 10000,
+        "data": {
+            "albuminfo": {
+                "id": 1,
+                "title": "两只老虎",
+                "intro": "",
+                "star_level": "0",
+                "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg"
+            },
+            "storylist": [
+                {
+                    "id": "1",
+                    "albumid":"1",
+                    "title": "两只老虎 ",
+                    "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
+                    "times": "12",
+                    "file_size": "33",
+                    "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+                    "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3"
+                }
+            ],
+            "commentlist": [
+                {
+                    "id": 1,
+                    "uid": 0,
+                    "uname": "匿名用户",
+                    "start_level": 4,
+                    "comment": "123123"
+                }
+            ]
+        }
+    }
 
 3、获取故事详情
-uri:	/album/info.php
+uri:    /album/info.php
 params:
-	storyid
-	uid
+    storyid
+    uid
 
 return：
-	{
-	    "code": 10000,
-	    "data": {
-	        "id": "1",
-	        "title": "两只老虎 ",
-	        "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
-	        "times": "151",
-	        "file_size": "2470533",
-	        "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
-	        "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3"
-	    }
-	}
+    {
+        "code": 10000,
+        "data": {
+            "id": "1",
+            "title": "两只老虎 ",
+            "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
+            "times": "151",
+            "file_size": "2470533",
+            "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+            "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3"
+        }
+    }
+
+4、获取故事列表
+uri:    /album/story_list.php
+params:
+    direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+    startid     从哪个ID开始，第一页时值为0
+    len         长度
+    albumid     专辑ID
+
+return：
+    {
+        "code": 10000,
+        "data": [
+            {
+                "id": "52",
+                "albumid": "36",
+                "title": "睡前儿歌003",
+                "intro": "小朋友，请跟着晚安妈妈一起说儿歌喔！",
+                "times": "0",
+                "file_size": null,
+                "cover": "http://fdfs.xmcdn.com/group4/M03/97/50/wKgDs1PZDNSyJxzNAAerfEvvAJc376_mobile_large.jpg",
+                "mediapath": ""
+            }
+        }
+    }
+
+
+
 ###################专辑故事相关 END############################
