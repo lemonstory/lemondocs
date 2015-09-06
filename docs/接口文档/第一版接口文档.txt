@@ -1,4 +1,4 @@
-接口请求的Domain暂时使用IP：http://120.26.52.211
+接口请求的Domain临时域名：http://api.xiaoningmeng.me
 
 接口返回值说明：
 1.返回的code码为10000，表示成功
@@ -6,7 +6,7 @@
 3.返回值均为json格式
 
 登录临时使用接口：
-http://120.26.52.211/userinfo/defaultlogin.php?username=18701515649&password=11223344
+http://api.xiaoningmeng.me/userinfo/defaultlogin.php?username=18701515649&password=11223344
 
 
 ###################首页############################
