@@ -198,6 +198,8 @@ return:
 
 
 ###################下载相关############################
+
+****“我的下载”列表，已改为本地存储操作，此接口不再使用***
 1.获取相应状态的下载专辑列表
 uri:    /download/getuserdownlist.php
 
@@ -209,6 +211,36 @@ params:
 
 return:
     {"code":10000, "data":""}
+**********************************************************
+
+
+2.下载单个故事，返回故事的音频文件地址和大小，客户端需要支持断点下载
+uri:
+	/download/downstory.php
+
+params:
+	storyid:	故事id
+
+return:
+	{"code":10000,"data":{"id":"2","title":"xxx","times":"133","filesize":"1062769","mediaurl":"http:\/\/xxxx\/2015\/08\/25\/c81e728d9d4c2f636f067f89cc14862c.mp3"}}
+
+
+
+3.下载一个专辑的所有故事列表，接口返回所有故事的音频文件地址和大小，客户端下载
+uri:
+	/download/downalbum.php
+
+params:
+	albumid:	专辑id
+
+return:
+	{
+	"code":10000,
+	"data":[
+		{"id":"2","title":"xxx","times":"133","filesize":"1062769","mediaurl":"http:\/\/lemonmedia.oss-cn-hangzhou.aliyuncs.com\/2015\/08\/25\/c81e728d9d4c2f636f067f89cc14862c.mp3"},
+		{"id":"2","title":"xxx","times":"133","filesize":"1062769","mediaurl":"http:\/\/lemonmedia.oss-cn-hangzhou.aliyuncs.com\/2015\/08\/25\/c81e728d9d4c2f636f067f89cc14862c.mp3"}
+		]
+	}
 
 
 ###################下载相关 END############################
