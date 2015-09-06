@@ -378,6 +378,35 @@ return：
         }
     }
 
+5、用户收听故事信息上传接口
+uri:    /album/userstoryrecord_add.php
+params:
+    userid      用户ID
+    albumid     专辑ID
+    storyid     故事ID
+    playtimes   播放的秒数
 
+return：
+    {"code": 10000}
+    {"code":100602, "desc"=>"专辑信息不存在"}
+    {"code":100701, "desc"=>"故事信息不存在"}
 
+6、用户收听故事信息获取接口
+uri:    /album/userstoryrecord_get.php
+params:
+    userid      用户ID
+
+return：
+    {
+        "code": 10000,
+        "data": {
+            "id": "11",
+            "userid": "1",
+            "albumid": "1",
+            "storyid": "1",
+            "playtimes": "20",
+            "addtime": "2015-09-07 06:24:21"
+        }
+    }
+    {"code":100504, "desc"=>"还没有收听该音乐"}
 ###################专辑故事相关 END############################
