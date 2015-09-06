@@ -16,7 +16,15 @@ uri:    /default/index.php
 params:
 
 return:
-    {"code":10000}
+    {
+    "code":10000,
+    "data":{
+	"focuspic":[],
+	"hotrecommend":[],
+	"samgeage":[],
+	"newalbum":[]
+	}
+    }
 
 ###################首页 EDN############################
 
