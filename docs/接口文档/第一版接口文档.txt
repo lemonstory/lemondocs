@@ -342,10 +342,12 @@ return：
         }
     }
 
-5、用户收听故事信息上传接口
+5、用户故事或专辑的播放数据上传接口
+当用户在开始播放、暂停播放、进入下一个播放、退出播放、退出或进入后台播放App等行为时，提交播放的故事或专辑数据，和播放时间的位置信息。
+用于后端记录，下次用户继续收听时，从上一次的播放位置开始播放。
+
 uri:    /album/userstoryrecord_add.php
 params:
-    userid      用户ID
     albumid     专辑ID
     storyid     故事ID
     playtimes   播放的秒数
@@ -355,10 +357,11 @@ return：
     {"code":100602, "desc"=>"专辑信息不存在"}
     {"code":100701, "desc"=>"故事信息不存在"}
 
-6、用户收听故事信息获取接口
+
+6、用户故事或专辑的上一次获取接口
 uri:    /album/userstoryrecord_get.php
 params:
-    userid      用户ID
+	
 
 return：
     {
