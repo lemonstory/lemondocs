@@ -138,18 +138,7 @@ return:
 
 
 ###################收听组件接口############################
-1.用户收听故事
-uri:    /listen/addlistenstory.php
-
-params:
-    albumid     专辑id
-    storyid     故事id
-
-return:
-    {"code":10000}
-
-
-2.用户收听列表
+1.用户收听列表
 uri:    /listen/getlistenlist.php
 
 params:
@@ -169,16 +158,6 @@ return:
         "albuminfo":[],             //专辑信息
         "storyinfo":[]              //收藏的故事信息
     }]}
-
-3.用户取消收听
-uri:    /listen/dellistenstory.php
-
-params:
-    albumid
-    storyid
-
-return:
-    {"code":10000}
 
 ###################收听组件接口 END############################
 
@@ -207,22 +186,7 @@ return:
 
 ###################下载相关############################
 
-****“我的下载”列表，已改为本地存储操作，此接口不再使用***
-1.获取相应状态的下载专辑列表
-uri:    /download/getuserdownlist.php
-
-params:
-    taskstatus: 状态，1代表下载中，2代表已下载
-    direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
-    startid     从哪个ID开始，第一页时值为0
-    len     长度
-
-return:
-    {"code":10000, "data":""}
-**********************************************************
-
-
-2.下载单个故事，返回故事的音频文件地址和大小，客户端需要支持断点下载
+1.下载单个故事，返回故事的音频文件地址和大小，客户端需要支持断点下载
 uri:
 	/download/downstory.php
 
@@ -234,7 +198,7 @@ return:
 
 
 
-3.下载一个专辑的所有故事列表，接口返回所有故事的音频文件地址和大小，客户端下载
+2.下载一个专辑的所有故事列表，接口返回所有故事的音频文件地址和大小，客户端下载
 uri:
 	/download/downalbum.php
 
