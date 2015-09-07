@@ -273,6 +273,12 @@ return：
                 "star_level": "0",
                 "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg"
             },
+            "playinfo": {
+                "albumid": "1",                     // 专辑ID
+                "storyid": "1",                     // 故事ID
+                "playtimes": "20",                  // 播放时间（秒）
+                "addtime": "2015-09-07 06:24:21"    // 上一次提交时间
+            },
             "storylist": [
                 {
                     "id": "1",
