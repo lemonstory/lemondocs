@@ -382,6 +382,19 @@ return：
         }
     }
     {"code":100504, "desc"=>"还没有收听该音乐"}
+
+
+7、专辑评论接口
+uri:    /album/comment_add.php
+params:
+    albumid:专辑ID
+    content:评论内容
+    star_level:星级
+
+return：
+    {"code": 10000,}
+    {"code":101001, "desc"=>"评论内容不能为空"}
+    {"code":101002, "desc"=>"评论星级错误"}
 ###################专辑故事相关 END############################
 
 
