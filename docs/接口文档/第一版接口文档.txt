@@ -8,6 +8,11 @@
 登录临时使用接口：
 http://120.26.52.211/userinfo/defaultlogin.php?username=18701515649&password=11223344
 
+@注意：
+所有的http请求后面，都需要携带一个固定参数：visituid,即当前登录账户的uid值
+登录状态的请求：	/default/index.php?visituid=10001
+未登录状态的请求：	/default/index.php?visituid=
+
 
 ###################首页############################
 1.首页列表
