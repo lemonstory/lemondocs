@@ -101,8 +101,30 @@ return:
 	{"code":10000,"data":{"avatartime":xxx}}
 
 
+7.用户个人信息页
+uri:
+	/userinfo/getuserinfo.php
+params:
+
+return:
+	{"code":10000,"data":{"uid":"10001","nickname":"Lemon","avatar":"xx","province":"","city":"","area":"","phonenumber":"","gender":"1","age":"1","address":""}}
 
 
+8.设置用户信息
+uri:
+	/userinfo/setuserinfo.php
+
+params:
+	nickname
+	gender：	1或2		1为男，2为女
+	birthday：	1990-01-01
+	province:	省
+	city:		市
+	area:		区
+	phonenumber：	手机号
+
+return:
+	{"code":10000, "更新字段" => "更新后的值", ...}
 
 ###################用户组件接口 END############################
 
