@@ -92,6 +92,18 @@ return：
     {"code":10000}
 
 
+6.设置用户头像接口
+uri:
+	/userinfo/setavatar.php
+params:
+	avatarfile：	post客户端图片file
+return:
+	{"code":10000,"data":{"avatartime":xxx}}
+
+
+
+
+
 ###################用户组件接口 END############################
 
 
