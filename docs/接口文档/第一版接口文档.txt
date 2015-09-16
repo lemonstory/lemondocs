@@ -177,7 +177,7 @@ return:
 	{"code":10000, "更新字段" => "更新后的值", ...}
 
 
-9.新增收货地址：
+9.用户新增收货地址：
 uri:
 	/userinfo/addaddress.php
 
@@ -202,6 +202,31 @@ return:
 		"address":"",
 		"ecode":""
 	    }]}
+
+
+10.获取用户收货地址列表：
+uri:
+	/userinfo/getaddresslist.php
+params:
+	无
+return:
+	{
+	    "code": 10000,
+	    "data": [
+		{
+		    "id": "5",
+		    "uid": "10001",
+		    "name": "huqq",
+		    "phonenumber": "18701515649",
+		    "province": "江西省",
+		    "city": "南昌市",
+		    "area": "东湖区",
+		    "address": "18号",
+		    "ecode": "10083",
+		    "addtime": "2015-09-16 14:07:34"
+		}
+	    ]
+	}
 
 ###################用户组件接口 END############################
 
