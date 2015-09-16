@@ -158,21 +158,50 @@ return:
 	{"code":10000,"data":{"uid":"10001","nickname":"Lemon","avatar":"xx","province":"","city":"","area":"","phonenumber":"","gender":"1","age":"1","address":""}}
 
 
+
 8.设置用户信息
 uri:
 	/userinfo/setuserinfo.php
 
 params:
 	nickname
-	gender：	1或2		1为男，2为女
-	birthday：	1990-01-01
-	province:	省
-	city:		市
-	area:		区
-	phonenumber：	手机号
+	gender：		1或2		1为男，2为女
+	birthday：		1990-01-01
+	province:		账户地区：省
+	city:			账户地区：市
+	area:			账户地区：区
+	phonenumber：		用户手机号码	
+	defaultaddressid	更新默认收货地址id
 
 return:
 	{"code":10000, "更新字段" => "更新后的值", ...}
+
+
+9.新增收货地址：
+uri:
+	/userinfo/addaddress.php
+
+params:
+	name			收货人
+	phonenumber		手机号联系方式
+	province:		收货地区：省
+	city:			收货地区：市
+	area:			收货地区：区
+	address			收货详细地址	
+	ecode			邮编
+
+return:
+	{
+	    "code":10000,
+	    "data":[{
+		"name":"",               
+		"phonenumber":"",
+		"province":"",
+		"city":"",    
+		"area":"",
+		"address":"",
+		"ecode":""
+	    }]}
 
 ###################用户组件接口 END############################
 
