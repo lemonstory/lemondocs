@@ -163,7 +163,7 @@ return:
 uri:
 	/userinfo/gethomeinfo.php
 params:
-	isgetuserinfo	是否需要返回主页用户信息，0不返回，1返回
+	isgetuserinfo	是否需要返回主页用户信息，0不获取（用于收听历史的分页），1获取（用于第一次进入我的个人主页）
 	direction	收听历史翻页方向，down/up
 	startstoryid	收听历史翻页起始故事id
 	len		
@@ -186,11 +186,31 @@ return:
 			"storyid": "1",
 			"albumid": "2",
 			"uptime": "1412345678",
-			"title": "小燕子",	// 专辑标题
-			"cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",	// 专辑封面
-			"listennum": 2,		// 专辑收听数
-			"favnum": 0,		// 专辑收藏数
-			"commentnum": 0		// 专辑评论数
+			"albuminfo": {
+			    "id": "2",
+			    "title": "小燕子",	// 专辑标题
+			    "is_show": "1",
+			    "age_type": "2",
+			    "category_id": "10",
+			    "star_level": "0",
+			    "view_order": "0",
+			    "from": "kdgs",
+			    "author": "",
+			    "intro": "",
+			    "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",	// 专辑封面
+			    "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=246",
+			    "source_url": "",
+			    "s_cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+			    "age_str": "P-4",
+			    "status": "1",
+			    "add_time": "2015-08-22 12:37:52",
+			    "update_time": "2015-09-05 19:26:30",
+			    "fav": 0,
+			    "listennum": 2,		// 专辑收听数
+			    "favnum": 0,		// 专辑收藏数
+			    "commentnum": 0		// 专辑评论数
+			}
+			
 		    }
 		]
 	    }
@@ -317,26 +337,73 @@ return:
 
 
 ###################收听组件接口############################
-1.用户收听列表
+1.我的故事页接口
 uri:    /listen/getlistenlist.php
 
 params:
+    isgetcount	是否获取收藏总数：0不获取（用于收听历史分页），1获取（用于第一次进入我的故事）
     direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
     startid     从哪个ID开始，第一页时值为0
-    len     长度
+    len		长度
 
 return:
     {
-    "code":10000,
-    "data":[{
-        "id":"1",               //收藏id
-        "uid":"10001",
-        "albumid":"1",
-        "storyid":"1",
-        "addtime":"2015-08-17 17:28:03",    //收藏时间
-        "albuminfo":[],             //专辑信息
-        "storyinfo":[]              //收藏的故事信息
-    }]}
+	"code": 10000,
+	"data": {
+	"listenalbumlist": [		// 收听历史列表
+	    {
+		"uid": "10001",
+		"storyid": "1",
+		"albumid": "2",
+		"uptime": "1412345678",
+		"albuminfo": {		// 专辑信息
+		    "id": "2",
+		    "title": "小燕子",
+		    "is_show": "1",
+		    "age_type": "2",
+		    "category_id": "10",
+		    "star_level": "0",
+		    "view_order": "0",
+		    "from": "kdgs",
+		    "author": "",
+		    "intro": "",
+		    "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=246",
+		    "source_url": "",
+		    "s_cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "age_str": "P-4",
+		    "status": "1",
+		    "add_time": "2015-08-22 12:37:52",
+		    "update_time": "2015-09-05 19:26:30",
+		    "fav": 0,
+		    "listennum": 2,
+		    "favnum": 0,
+		    "commentnum": 0,
+		    "storylist": [	// 专辑中的故事信息
+			{
+			    "id": "2",
+			    "album_id": "2",
+			    "listen_count": null,
+			    "title": "小燕子 ",
+			    "intro": "xx",
+			    "content": null,
+			    "times": "133",
+			    "file_size": "1062769",
+			    "mediapath": "2015/08/25/c81e728d9d4c2f636f067f89cc14862c.mp3",
+			    "source_audio_url": "http://audio.idaddy.cn/a/6/3zax5o5m.audio",
+			    "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s540.jpg",
+			    "s_cover": "http://img.idaddy.cn/b/6/d41jzfe9_s540.jpg",
+			    "status": "1",
+			    "add_time": "2015-08-22 14:53:23",
+			    "upate_time": "2015-08-25 06:03:16"
+			}
+		    ]
+		}
+	    }
+	],
+	"favcount": 0		// 我的收藏总数
+	}
+    }
 
 ###################收听组件接口 END############################
 
