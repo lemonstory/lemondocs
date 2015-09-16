@@ -149,7 +149,7 @@ return:
 	{"code":10000,"data":{"avatartime":xxx}}
 
 
-7.用户个人信息页
+7.用户个人资料页
 uri:
 	/userinfo/getuserinfo.php
 params:
@@ -157,6 +157,44 @@ params:
 return:
 	{"code":10000,"data":{"uid":"10001","nickname":"Lemon","avatar":"xx","province":"","city":"","area":"","phonenumber":"","gender":"1","age":"1","address":""}}
 
+
+
+8.用户个人主页
+uri:
+	/userinfo/gethomeinfo.php
+params:
+	isgetuserinfo	是否需要返回主页用户信息，0不返回，1返回
+	direction	收听历史翻页方向，down/up
+	startstoryid	收听历史翻页起始故事id
+	len		
+return:
+	{
+	    "code": 10000,
+	    "data": {
+		"uid": "10001",
+		"nickname": "Lemon",
+		"avatar": "http://a.xiaoningmeng.me/avatar/10001/",
+		"province": "",
+		"city": "",
+		"area": "",
+		"phonenumber": "",
+		"gender": "1",
+		"age": "1",
+		"listenalbumlist": [		// 收听历史的专辑列表
+		    {
+			"uid": "10001",
+			"storyid": "1",
+			"albumid": "2",
+			"uptime": "1412345678",
+			"title": "小燕子",	// 专辑标题
+			"cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",	// 专辑封面
+			"listennum": 2,		// 专辑收听数
+			"favnum": 0,		// 专辑收藏数
+			"commentnum": 0		// 专辑评论数
+		    }
+		]
+	    }
+	}
 
 
 8.设置用户信息
