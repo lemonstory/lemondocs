@@ -286,59 +286,9 @@ return:
 	    ]
 	}
 
-###################用户组件接口 END############################
 
-
-
-
-
-###################收藏组件接口############################
-1.用户收藏专辑接口
-uri:    /fav/addfavalbum.php
-
-params:
-    albumid     专辑id
-
-return:
-    {"code":10000}
-
-
-2.用户收藏列表
-uri:    /fav/getfavlist.php
-
-params:
-    direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
-    startid     从哪个ID开始，第一页时值为0
-    len     长度
-return:
-    {
-    "code":10000,
-    "data":[{
-        "id":"1",               //收藏id
-        "uid":"10001",
-        "albumid":"1",
-        "addtime":"2015-08-17 17:28:03",    //收藏时间
-        "albuminfo":[],             //专辑信息
-    }]}
-
-
-3.用户取消收藏
-uri:    /fav/delfavalbum.php
-
-params:
-    albumid
-
-return:
-    {"code":10000}
-
-###################收藏组件接口 END############################
-
-
-
-
-###################收听组件接口############################
-1.我的故事页接口
-uri:    /listen/getlistenlist.php
+11.我的故事页接口
+uri:    /userinfo/mystory.php
 
 params:
     isgetcount	是否获取收藏总数：0不获取（用于收听历史分页），1获取（用于第一次进入我的故事）
@@ -405,8 +355,53 @@ return:
 	}
     }
 
-###################收听组件接口 END############################
 
+###################用户组件接口 END############################
+
+
+
+
+
+###################收藏组件接口############################
+1.用户收藏专辑接口
+uri:    /fav/addfavalbum.php
+
+params:
+    albumid     专辑id
+
+return:
+    {"code":10000}
+
+
+2.用户收藏列表
+uri:    /fav/getfavlist.php
+
+params:
+    direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+    startid     从哪个ID开始，第一页时值为0
+    len     长度
+return:
+    {
+    "code":10000,
+    "data":[{
+        "id":"1",               //收藏id
+        "uid":"10001",
+        "albumid":"1",
+        "addtime":"2015-08-17 17:28:03",    //收藏时间
+        "albuminfo":[],             //专辑信息
+    }]}
+
+
+3.用户取消收藏
+uri:    /fav/delfavalbum.php
+
+params:
+    albumid
+
+return:
+    {"code":10000}
+
+###################收藏组件接口 END############################
 
 
 
