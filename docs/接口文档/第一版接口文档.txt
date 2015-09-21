@@ -521,6 +521,7 @@ return：
                 "addtime": "2015-09-07 06:24:21"    // 上一次提交时间
             },
             "fav": 0,                               // 是否收藏 1是 0 否
+            "albumlistennum": 0,                    // 专辑收听数量
             "storylist": [
                 {
                     "id": "1",
@@ -547,7 +548,7 @@ return：
     }
 
 3、获取故事详情
-uri:    /album/info.php
+uri:    /album/story_info.php
 params:
     storyid
     uid
@@ -562,7 +563,8 @@ return：
             "times": "151",
             "file_size": "2470533",
             "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
-            "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3"
+            "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3",
+            "albumfavcount": 0   // 专辑藏数量
         }
     }
 
