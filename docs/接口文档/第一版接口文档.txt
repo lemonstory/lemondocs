@@ -520,6 +520,7 @@ return：
                 "playtimes": "20",                  // 播放时间（秒）
                 "addtime": "2015-09-07 06:24:21"    // 上一次提交时间
             },
+            "fav": 0,                               // 是否收藏 1是 0 否
             "storylist": [
                 {
                     "id": "1",
@@ -532,6 +533,7 @@ return：
                     "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3"
                 }
             ],
+            "commentcount": "77",                    // 评论总数
             "commentlist": [
                 {
                     "id": 1,
