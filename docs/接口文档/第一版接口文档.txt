@@ -79,6 +79,118 @@ return:
     }
 }
 
+2.热门推荐更多列表
+uri
+	/default/hotrecommendlist.php
+params:
+	direction
+	startalbumid	起始专辑id
+	len
+
+return:
+	{
+	    "code": 10000,
+	    "data": [
+		{
+		    "id": "2",
+		    "title": "小燕子",
+		    "is_show": "1",
+		    "age_type": "2",
+		    "category_id": "10",
+		    "star_level": "0",
+		    "view_order": "0",
+		    "from": "kdgs",
+		    "author": "",
+		    "intro": "",
+		    "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=246",
+		    "source_url": "",
+		    "s_cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "age_str": "P-4",
+		    "status": "1",
+		    "add_time": "2015-08-22 12:37:52",
+		    "update_time": "2015-09-05 19:26:30",
+		    "fav": 0,
+		    "listennum": 2
+		}
+	    ]
+	}
+
+
+3.同龄在听更多列表
+uri
+	/default/sameagelist.php
+params:
+	direction
+	startalbumid	起始专辑id
+	len
+
+return:
+	{
+	    "code": 10000,
+	    "data": [
+		{
+		    "id": "2",
+		    "title": "小燕子",
+		    "is_show": "1",
+		    "age_type": "2",
+		    "category_id": "10",
+		    "star_level": "0",
+		    "view_order": "0",
+		    "from": "kdgs",
+		    "author": "",
+		    "intro": "",
+		    "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=246",
+		    "source_url": "",
+		    "s_cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "age_str": "P-4",
+		    "status": "1",
+		    "add_time": "2015-08-22 12:37:52",
+		    "update_time": "2015-09-05 19:26:30",
+		    "fav": 0,
+		    "listennum": 2
+		}
+	    ]
+	}
+
+4.最新上架更多列表
+uri:
+	/default/newonlinelist.php
+params:
+	direction
+	startalbumid	起始专辑id
+	len
+
+return:
+	{
+	    "code": 10000,
+	    "data": [
+		{
+		    "id": "2",
+		    "title": "小燕子",
+		    "is_show": "1",
+		    "age_type": "2",
+		    "category_id": "10",
+		    "star_level": "0",
+		    "view_order": "0",
+		    "from": "kdgs",
+		    "author": "",
+		    "intro": "",
+		    "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=246",
+		    "source_url": "",
+		    "s_cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "age_str": "P-4",
+		    "status": "1",
+		    "add_time": "2015-08-22 12:37:52",
+		    "update_time": "2015-09-05 19:26:30",
+		    "fav": 0,
+		    "listennum": 2
+		}
+	    ]
+	}
+
 ###################首页 EDN############################
 
 
@@ -155,7 +267,32 @@ uri:
 params:
 
 return:
-	{"code":10000,"data":{"uid":"10001","nickname":"Lemon","avatar":"xx","province":"","city":"","area":"","phonenumber":"","gender":"1","age":"1","address":""}}
+	{
+	    "code": 10000,
+	    "data": {
+		"uid": "10001",
+		"nickname": "Lemo",
+		"avatartime": "1442820645",
+		"province": "辽宁",
+		"city": "本溪市",
+		"area": "桓仁满族自治县",
+		"phonenumber": "18172883695",
+		"gender": "1",
+		"age": "11",
+		"addressinfo": {
+		    "id": "5",
+		    "uid": "10001",
+		    "name": "huqq",
+		    "phonenumber": "18701515649",
+		    "province": "江西省",
+		    "city": "南昌市",
+		    "area": "东湖区",
+		    "address": "18号",
+		    "ecode": "10083",
+		    "addtime": "2015-09-16 14:07:34"
+		}
+	    }
+	}
 
 
 
@@ -173,7 +310,7 @@ return:
 	    "data": {
 		"uid": "10001",
 		"nickname": "Lemon",
-		"avatar": "http://a.xiaoningmeng.me/avatar/10001/",
+		"avatartime": "xxxx",
 		"province": "",
 		"city": "",
 		"area": "",
