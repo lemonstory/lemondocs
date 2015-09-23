@@ -14,6 +14,14 @@ http://120.26.52.211/userinfo/defaultlogin.php?username=18701515649&password=112
 未登录状态的请求：	/default/index.php?visituid=
 
 
+客户端请求UA头格式：
+以android为例：
+(R7007,866089020062291,xx,4.3,720*1280,4.589389937671455,320,wifi,OTHER_APP,zh)
+(手机型号，IMEI，运营商，手机版本，分辨率，屏幕尺寸，屏幕密度，网络类型，渠道名，语言）
+
+
+
+
 ###################首页############################
 1.首页列表
 uri:    /default/index.php
