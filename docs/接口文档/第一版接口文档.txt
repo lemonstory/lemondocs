@@ -744,14 +744,16 @@ return：
 
 uri:    /album/userstoryrecord_add.php
 params:
+	传参：
+	content     [{"albumid":1,"storyid":1,"playtimes":20},{"albumid":1,"storyid":1,"playtimes":20}]
+	说明：
     albumid     专辑ID
     storyid     故事ID
     playtimes   播放的秒数
 
 return：
     {"code": 10000}
-    {"code":100602, "desc"=>"专辑信息不存在"}
-    {"code":100701, "desc"=>"故事信息不存在"}
+    {"code": 100505, 'desc':'解析content出错'}
 
 
 6、用户故事或专辑的上一次获取接口
@@ -771,7 +773,7 @@ return：
             "addtime": "2015-09-07 06:24:21"
         }
     }
-    {"code":100504, "desc"=>"还没有收听该音乐"}
+    {"code":100504, "desc":"还没有收听该音乐"}
 
 
 7、专辑评论接口
