@@ -669,7 +669,8 @@ return：
                 "addtime": "2015-09-07 06:24:21"    // 上一次提交时间
             },
             "fav": 0,                               // 是否收藏 1是 0 否
-            "albumlistennum": 0,                    // 专辑收听数量
+            "listennum": 0,		            // 专辑收听数量
+	    "favnum": 0,		            // 专辑收藏数量
             "storylist": [
                 {
                     "id": "1",
