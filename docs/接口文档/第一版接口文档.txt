@@ -118,8 +118,9 @@ return:
 		    "status": "1",
 		    "add_time": "2015-08-22 12:37:52",
 		    "update_time": "2015-09-05 19:26:30",
-		    "fav": 0,
-		    "listennum": 2
+		    "fav": 0,			// 当前用户是否已收藏
+		    "listennum": 2,		// 专辑收听总数
+		    "favnum":2			// 专辑收藏总数
 		}
 	    ]
 	}
@@ -157,7 +158,8 @@ return:
 		    "add_time": "2015-08-22 12:37:52",
 		    "update_time": "2015-09-05 19:26:30",
 		    "fav": 0,
-		    "listennum": 2
+		    "listennum": 2,
+		    "favnum":2
 		}
 	    ]
 	}
@@ -194,7 +196,8 @@ return:
 		    "add_time": "2015-08-22 12:37:52",
 		    "update_time": "2015-09-05 19:26:30",
 		    "fav": 0,
-		    "listennum": 2
+		    "listennum": 2,
+		    "favnum":2
 		}
 	    ]
 	}
