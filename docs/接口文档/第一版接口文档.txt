@@ -604,6 +604,28 @@ return:
 	}
 
 
+3.批量同步上传，本地下载记录（客户端一次可批量上传下载记录，上传成功后将客户端本地的成功上传记录清除，未成功的待下次触发上报时上传）
+uri:
+	/download/syncdown.php
+
+params:
+	syncdata:	同步的数据内容
+	如：
+	"syncdata":[
+		{"clientid":"1","albumid":"1","storyid":"1","status":"1"},
+		{"clientid":"2","albumid":"1","storyid":"2","status":"2"}
+		]
+	参数说明：
+	clientid:	客户端记录编号
+	albumid:	下载的故事所属专辑id
+	storyid:	下载的故事id
+	status:		下载状态，1为下载中，2为已下载完成
+	
+return:
+	{"code":10000,"data":[{"clientid":"1","result":false},{"clientid":"2","result":true}]}
+	
+	
+
 ###################下载相关 END############################
 
 
