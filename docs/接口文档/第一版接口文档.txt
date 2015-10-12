@@ -353,10 +353,10 @@ return:
 			    "status": "1",
 			    "add_time": "2015-08-22 12:37:52",
 			    "update_time": "2015-09-05 19:26:30",
-			    "fav": 0,
+			    "isfav": 0,
 			    "listennum": 2,		// 专辑收听数
-			    "favnum": 0,		// 专辑收藏数
-			    "commentnum": 0		// 专辑评论数
+			    "favcount": 0,		// 专辑收藏数
+			    "commentcount": 0		// 专辑评论数
 			}
 			
 		    }
