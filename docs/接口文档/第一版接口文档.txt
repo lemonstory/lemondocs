@@ -713,6 +713,8 @@ return：
                     "uname": "匿名用户",
                     "start_level": 4,
                     "comment": "123123"
+                    "avatartime": "1234234234234"
+                    "addtime": "2015-10-10 22:22:22"
                 }
             ]
         }
