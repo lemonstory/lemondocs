@@ -778,6 +778,7 @@ params:
     albumid     专辑ID
     storyid     故事ID
     playtimes   播放的秒数
+    datetimes   播放日期(时间戳)
 
 return：
     {"code": 10000}
