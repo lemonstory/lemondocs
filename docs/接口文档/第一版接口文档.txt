@@ -842,6 +842,8 @@ uri:
 
 params:
 	content:反馈内容
+	qq:qq号码
+	tel:电话
 
 return:
 	{"code":10000}
