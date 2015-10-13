@@ -561,7 +561,26 @@ params:
     len     长度
 
 return:
-    {"code":10000, "data":""}
+    {
+	    "code": 10000,
+	    "data": [
+		{
+		    "uid": "10001",
+		    "nickname": "Lemo2",
+		    "avatartime": "1444723686",
+		    "phonenumber": "18172883695",
+		    "defaultbabyid": "1",
+		    "defaultaddressid": "6",
+		    "province": "北京",
+		    "city": "北京市",
+		    "area": "东城区",
+		    "status": "1",
+		    "type": "3",
+		    "addtime": "2015-08-17 16:16:25",
+		    "listennum": "3"
+		}
+	    ]
+	}
 
 
 
