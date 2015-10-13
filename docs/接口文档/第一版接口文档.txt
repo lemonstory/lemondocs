@@ -773,7 +773,7 @@ return：
 uri:    /album/userstoryrecord_add.php
 params:
 	传参：
-	content     [{"albumid":1,"storyid":1,"playtimes":20},{"albumid":1,"storyid":1,"playtimes":20}]
+	content     [{"albumid":1,"storyid":1,"playtimes":20, "datetimes":1444707946},{"albumid":1,"storyid":1,"playtimes":20, "datetimes":1444707946}]
 	说明：
     albumid     专辑ID
     storyid     故事ID
