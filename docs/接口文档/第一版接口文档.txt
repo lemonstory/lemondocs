@@ -263,7 +263,7 @@ return：
     {"code":10000}
 
 
-6.设置用户头像接口
+6.设置用户头像接口(此接口已废除，使用客户端SDK上传头像图片，成功后请求setuserinfo接口更新头像avatartime)
 uri:
 	/userinfo/setavatar.php
 params:
@@ -372,6 +372,7 @@ uri:
 
 params:
 	nickname
+	avatartime		更新用户头像avatartime为当前时间戳
 	gender：		1或2		1为男，2为女
 	birthday：		1990-01-01
 	province:		账户地区：省
