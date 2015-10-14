@@ -313,7 +313,7 @@ uri:
 params:
 	isgetuserinfo	是否需要返回主页用户信息，0不获取（用于收听历史的分页），1获取（用于第一次进入我的个人主页）
 	direction	收听历史翻页方向，down/up
-	startstoryid	收听历史翻页起始故事id
+	startalbumid	收听历史翻页起始专辑id
 	len		
 return:
 	{
@@ -355,8 +355,8 @@ return:
 			    "update_time": "2015-09-05 19:26:30",
 			    "isfav": 0,
 			    "listennum": 2,		// 专辑收听数
-			    "favcount": 0,		// 专辑收藏数
-			    "commentcount": 0		// 专辑评论数
+			    "favnum": 0,		// 专辑收藏数
+			    "commentnum": 0		// 专辑评论数
 			}
 			
 		    }
