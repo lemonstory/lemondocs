@@ -311,6 +311,7 @@ return:
 uri:
 	/userinfo/gethomeinfo.php
 params:
+	uid		被访问的用户uid
 	isgetuserinfo	是否需要返回主页用户信息，0不获取（用于收听历史的分页），1获取（用于第一次进入我的个人主页）
 	direction	收听历史翻页方向，down/up
 	startalbumid	收听历史翻页起始专辑id
