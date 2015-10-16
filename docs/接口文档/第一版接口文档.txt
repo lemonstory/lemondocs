@@ -854,6 +854,34 @@ return:
 		{"id":"2","title":"\u5c0f\u71d5\u5b50","cover":"xxx.jpg"}
 		]
 	}
+
+
+2.热门搜索关键词
+uri:
+	/search/hotsearch.php
+
+params:
+	len	长度
+
+return:
+	{
+	    "code": 10000,
+	    "data": [
+		{
+		    "id": "1",
+		    "searchcontent": "huqq",
+		    "count": "66",
+		    "status": "1"
+		},
+		{
+		    "id": "31",
+		    "searchcontent": "黄",
+		    "count": "28",
+		    "status": "1"
+		}
+	    ]
+	}
+
 ###################搜索 END####################################
 
 
