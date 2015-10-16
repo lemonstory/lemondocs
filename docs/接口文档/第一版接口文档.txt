@@ -120,7 +120,8 @@ return:
 		    "update_time": "2015-09-05 19:26:30",
 		    "fav": 0,			// 当前用户是否已收藏
 		    "listennum": 2,		// 专辑收听总数
-		    "favnum":2			// 专辑收藏总数
+		    "favnum":2,			// 专辑收藏总数
+		    "commentnum":8		// 专辑评论总数
 		}
 	    ]
 	}
@@ -159,7 +160,8 @@ return:
 		    "update_time": "2015-09-05 19:26:30",
 		    "fav": 0,
 		    "listennum": 2,
-		    "favnum":2
+		    "favnum":2,
+		    "commentnum":8		
 		}
 	    ]
 	}
@@ -197,7 +199,8 @@ return:
 		    "update_time": "2015-09-05 19:26:30",
 		    "fav": 0,
 		    "listennum": 2,
-		    "favnum":2
+		    "favnum":2,
+		    "commentnum":8
 		}
 	    ]
 	}
@@ -528,18 +531,41 @@ uri:    /fav/getfavlist.php
 
 params:
     direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
-    startid     从哪个ID开始，第一页时值为0
+    startfavid     从哪个ID开始，第一页时值为0
     len     长度
 return:
     {
-    "code":10000,
-    "data":[{
-        "id":"1",               //收藏id
-        "uid":"10001",
-        "albumid":"1",
-        "addtime":"2015-08-17 17:28:03",    //收藏时间
-        "albuminfo":[],             //专辑信息
-    }]}
+	    "code": 10000,
+	    "data": [
+		{
+		    "favid": "59",				// 收藏id
+		    "albumid": "2",				// 专辑id
+		    "favtime": "2015-10-16 11:24:10",		// 收藏时间
+		    "id": "2",					
+		    "title": "小燕子",
+		    "is_show": "1",
+		    "age_type": "2",
+		    "category_id": "10",
+		    "star_level": "3",
+		    "view_order": "0",
+		    "from": "kdgs",
+		    "author": "",
+		    "intro": "",
+		    "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=246",
+		    "source_url": "",
+		    "s_cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
+		    "age_str": "P-4",
+		    "status": "1",
+		    "add_time": "2015-08-22 12:37:52",
+		    "update_time": "2015-09-23 11:11:04",
+		    "fav": 0,
+		    "listennum": 2,
+		    "favnum": 26,
+		    "commentnum":8
+		}
+	    ]
+	}
 
 
 3.用户取消收藏
