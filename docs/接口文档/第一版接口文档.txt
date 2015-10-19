@@ -480,6 +480,7 @@ return:
 			"listennum": 0,
 			"favnum": 0,
 			"commentnum": 0,
+			"playstoryid": 5,	// 专辑继续播放的故事id
 			"storylist": [		// 专辑下的故事列表
 			    {
 				"id": "50",
@@ -496,8 +497,7 @@ return:
 				"s_cover": "http://fdfs.xmcdn.com/group4/M07/FE/E3/wKgDtFQJ273Qj-uXAAMcis5XYtc068_mobile_large.jpg",
 				"status": "1",
 				"add_time": "2015-08-22 14:57:06",
-				"upate_time": "2015-08-22 06:57:06",
-				"continueplay":1	// 故事是否显示继续播放按钮，0不显示，1显示
+				"upate_time": "2015-08-22 06:57:06"
 			    }
 			]
 		    }
