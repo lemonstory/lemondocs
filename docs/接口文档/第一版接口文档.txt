@@ -453,11 +453,11 @@ return:
 	{
 	    "code": 10000,
 	    "data": {
-		"listenalbumlist": [		// 收听历史列表
-		    {
+		"listenalbumlist": [			 // 收听历史列表
+		    {	
 			"uimid": "1",
-			"albumid": "36",	// 专辑id
-			"uptime": "1412345685",
+			"albumid": "36",		 // 专辑id
+			"uptime": "2014-10-03 22:14:45", // 专辑的更新时间
 			"id": "36",
 			"title": "晚安妈妈睡前儿歌",
 			"is_show": "1",
