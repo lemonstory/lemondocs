@@ -334,33 +334,33 @@ return:
 		"age": "1",
 		"listenalbumlist": [		// 收听历史的专辑列表
 		    {
-			"uid": "10001",
-			"storyid": "1",
-			"albumid": "2",
-			"uptime": "1412345678",
-			"albuminfo": {
-			    "id": "2",
-			    "title": "小燕子",	// 专辑标题
+			"uimid": "1",
+			"albumid": "36",	// 专辑id
+			"uptime": "1412345685",
+			"listenalbumuptime": "2014-10-03 22:14:45",	// 专辑收听历史的最后更新时间
+			"albuminfo": {		// 专辑信息
+			    "id": "36",
+			    "title": "晚安妈妈睡前儿歌",
 			    "is_show": "1",
-			    "age_type": "2",
-			    "category_id": "10",
+			    "age_type": "0",
+			    "category_id": "97",
 			    "star_level": "0",
 			    "view_order": "0",
-			    "from": "kdgs",
+			    "from": "xmly",
 			    "author": "",
 			    "intro": "",
-			    "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",	// 专辑封面
-			    "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=246",
+			    "cover": "http://fdfs.xmcdn.com/group4/M05/C3/43/wKgDtFPwS2PAP2XqAAWIFD65b1U448_web_meduim.jpg",
+			    "link_url": "http://m.ximalaya.com/10553948/album/269634",
 			    "source_url": "",
-			    "s_cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg",
-			    "age_str": "P-4",
+			    "s_cover": "http://fdfs.xmcdn.com/group4/M05/C3/43/wKgDtFPwS2PAP2XqAAWIFD65b1U448_web_meduim.jpg",
+			    "age_str": null,
 			    "status": "1",
-			    "add_time": "2015-08-22 12:37:52",
-			    "update_time": "2015-09-05 19:26:30",
-			    "isfav": 0,
-			    "listennum": 2,		// 专辑收听数
-			    "favnum": 0,		// 专辑收藏数
-			    "commentnum": 0		// 专辑评论数
+			    "add_time": "2015-08-22 14:56:12",
+			    "update_time": "2015-08-22 06:56:12",
+			    "fav": 0,
+			    "listennum": 0,	// 专辑收听总数
+			    "favnum": 0,	// 专辑收藏总数
+			    "commentnum": 0	// 专辑评论总数
 			}
 			
 		    }
