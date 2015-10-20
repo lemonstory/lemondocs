@@ -470,9 +470,9 @@ return:
 				"author": "",
 				"intro": "",
 				"cover": "http://fdfs.xmcdn.com/group4/M05/C3/43/wKgDtFPwS2PAP2XqAAWIFD65b1U448_web_meduim.jpg",
-				"link_url": "http://m.ximalaya.com/10553948/album/269634",
+				"link_url": "http://m.ximalaya.com/10553948/album/269634", // 原文链接地址
 				"source_url": "",
-				"s_cover": "http://fdfs.xmcdn.com/group4/M05/C3/43/wKgDtFPwS2PAP2XqAAWIFD65b1U448_web_meduim.jpg",
+				"s_cover": "http://fdfs.xmcdn.com/group4/M05/C3/43/wKgDtFPwS2PAP2XqAAWIFD65b1U448_web_meduim.jpg", // 原封面地址 封面用cover字段即可
 				"age_str": null,
 				"status": "1",
 				"add_time": "2015-08-22 14:56:12",
@@ -689,25 +689,44 @@ return:
     "code": 10000,
     "data": [
         {
-            "id": "50",
-            "title": "玉米妈妈精选图画书",
-            "intro": "",
-            "star_level": "0",
-            "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
+            "id": "50",   // ID
+            "title": "玉米妈妈精选图画书", // 专辑名称
+            "is_show": "1",                // 是否显示 默认显示 1
+            "age_type": "0",               // 年龄段
+            "category_id": "97",           // 分类ID
+            "star_level": "0",             // 星级
+            "view_order": "0",             // 排序
+            "from": "xmly",                // 来源
+            "author": "",                  // 作者
+            "intro": "",                   // 简介
+            "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg", // 封面
+            "link_url": "http://m.ximalaya.com/4371939/album/238724", 
+            "source_url": "",
+            "s_cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg", // 原图封面地址(封面地址只用cover字段)
+            "age_str": null,  // 年龄段信息
+            "status": "1",    // 状态 1正常
+            "add_time": "2015-08-22 14:56:25",    // 添加时间
+            "update_time": "2015-08-22 06:56:25"  // 更新时间
         },
         {
             "id": "49",
             "title": "天乐阅活动",
+            "is_show": "1",
+            "age_type": "0",
+            "category_id": "97",
+            "star_level": "3",
+            "view_order": "0",
+            "from": "xmly",
+            "author": "",
             "intro": "",
-            "star_level": "0",
-            "cover": "http://fdfs.xmcdn.com/group4/M01/1D/5A/wKgDs1MukJ_zKxPpAAWAbNCXMZY773_web_meduim.jpg"
-        },
-        {
-            "id": "48",
-            "title": "Cloudia唱英文儿歌",
-            "intro": "",
-            "star_level": "0",
-            "cover": ""
+            "cover": "http://fdfs.xmcdn.com/group4/M01/1D/5A/wKgDs1MukJ_zKxPpAAWAbNCXMZY773_web_meduim.jpg",
+            "link_url": "http://m.ximalaya.com/6849502/album/245892",
+            "source_url": "",
+            "s_cover": "http://fdfs.xmcdn.com/group4/M01/1D/5A/wKgDs1MukJ_zKxPpAAWAbNCXMZY773_web_meduim.jpg",
+            "age_str": null,
+            "status": "1",
+            "add_time": "2015-08-22 14:56:21",
+            "update_time": "2015-10-16 18:17:26"
         }
     }
 }
@@ -724,46 +743,98 @@ return：
     {
         "code": 10000,
         "data": {
-            "albuminfo": {
-                "id": 1,
-                "title": "两只老虎",
-                "intro": "",
-                "star_level": "0",
-                "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg"
-            },
-            "playinfo": {
-                "albumid": "1",                     // 专辑ID
-                "storyid": "1",                     // 故事ID
-                "playtimes": "20",                  // 播放时间（秒）
-                "addtime": "2015-09-07 06:24:21"    // 上一次提交时间
-            },
-            "fav": 0,                               // 是否收藏 1是 0 否
-            "listennum": 0,		            // 专辑收听数量
-	    "favnum": 0,		            // 专辑收藏数量
-            "storylist": [
-                {
-                    "id": "1",
-                    "albumid":"1",
-                    "title": "两只老虎 ",
-                    "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
-                    "times": "12",
-                    "file_size": "33",
-                    "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
-                    "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3"
-                }
-            ],
-            "commentcount": "77",                    // 评论总数
-            "commentlist": [
-                {
-                    "id": 1,
-                    "uid": 0,
-                    "uname": "匿名用户",
-                    "start_level": 4,
-                    "comment": "123123"
-                    "avatartime": "1234234234234"
-                    "addtime": "2015-10-10 22:22:22"
-                }
-            ]
+	        "albuminfo": {
+	            "id": "1",
+	            "title": "两只老虎",
+	            "is_show": "1",
+	            "age_type": "1",
+	            "category_id": "10",
+	            "star_level": "0",
+	            "view_order": "0",
+	            "from": "kdgs",
+	            "author": "",
+	            "intro": "",
+	            "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg",
+	            "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=522",
+	            "source_url": "",
+	            "s_cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg",
+	            "age_str": "P+",
+	            "status": "1",
+	            "add_time": "2015-08-22 12:37:52",
+	            "update_time": "2015-09-05 19:26:30"
+	        },
+	        "playinfo": [],
+	        "isfav": 0,
+	        "listennum": 0,
+	        "favcount": 0,
+	        "storylist": [
+	            {
+	                "id": "1",
+	                "album_id": "1",
+	                "listen_count": null,
+	                "title": "两只老虎 ",
+	                "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
+	                "content": null,
+	                "times": "151",
+	                "file_size": "2470533",
+	                "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com/http://lemonmedia.oss-cn-hangzhou.aliyuncs.com/2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3",
+	                "source_audio_url": "http://audio.idaddy.cn/a/2/40n1sm74.audio",
+	                "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+	                "s_cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+	                "status": "1",
+	                "add_time": "2015-08-22 14:53:23",
+	                "upate_time": "2015-08-25 06:02:27",
+	                "albumid": "1"
+	            }
+	        ],
+	        "commentcount": "5",
+	        "commentlist": [
+	            {
+	                "id": "1",
+	                "uid": "10107",
+	                "uname": "萌萌_99",
+	                "avatartime": "1443174272",
+	                "start_level": "0",
+	                "addtime": "2015-09-10 10:08:17",
+	                "comment": "哈哈哈"
+	            },
+	            {
+	                "id": "2",
+	                "uid": "10107",
+	                "uname": "萌萌_99",
+	                "avatartime": "1443174272",
+	                "start_level": "0",
+	                "addtime": "2015-09-10 10:18:47",
+	                "comment": "其实"
+	            },
+	            {
+	                "id": "3",
+	                "uid": "10107",
+	                "uname": "萌萌_99",
+	                "avatartime": "1443174272",
+	                "start_level": "0",
+	                "addtime": "2015-09-10 10:20:38",
+	                "comment": "其实"
+	            },
+	            {
+	                "id": "4",
+	                "uid": "10107",
+	                "uname": "萌萌_99",
+	                "avatartime": "1443174272",
+	                "start_level": "0",
+	                "addtime": "2015-09-10 17:03:16",
+	                "comment": "其实"
+	            },
+	            {
+	                "id": "5",
+	                "uid": "10107",
+	                "uname": "萌萌_99",
+	                "avatartime": "1443174272",
+	                "start_level": "0",
+	                "addtime": "2015-09-11 11:17:19",
+	                "comment": "其实"
+	            }
+	        ]
         }
     }
 
@@ -778,13 +849,22 @@ return：
         "code": 10000,
         "data": {
             "id": "1",
-            "title": "两只老虎 ",
-            "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
-            "times": "151",
-            "file_size": "2470533",
-            "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
-            "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3",
-            "albumfavcount": 0   // 专辑藏数量
+			"albumid": "1",
+			"listen_count": null,
+			"title": "两只老虎 ",
+			"intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
+			"content": null,
+			"times": "151",
+			"file_size": "2470533",
+			"mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com/2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3",
+			"source_audio_url": "http://audio.idaddy.cn/a/2/40n1sm74.audio",
+			"cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+			"s_cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+			"status": "1",
+			"add_time": "2015-08-22 14:53:23",
+			"upate_time": "2015-08-25 06:02:27",
+			"album_id": "1",
+			"albumfavcount": "1"// 专辑藏数量
         }
     }
 
@@ -802,13 +882,21 @@ return：
         "data": [
             {
                 "id": "52",
-                "albumid": "36",
-                "title": "睡前儿歌003",
-                "intro": "小朋友，请跟着晚安妈妈一起说儿歌喔！",
-                "times": "0",
-                "file_size": null,
-                "cover": "http://fdfs.xmcdn.com/group4/M03/97/50/wKgDs1PZDNSyJxzNAAerfEvvAJc376_mobile_large.jpg",
-                "mediapath": ""
+				"albumid": "36",
+				"listen_count": null,
+				"title": "睡前儿歌003",
+				"intro": "小朋友，请跟着晚安妈妈一起说儿歌喔！",
+				"content": null,
+				"times": "0",
+				"file_size": null,
+				"mediapath": "http://fdfs.xmcdn.com/group4/M04/9A/D0/wKgDtFPZDCKShRUDABelQjiK80A922.mp3",
+				"source_audio_url": "http://fdfs.xmcdn.com/group4/M04/9A/D0/wKgDtFPZDCKShRUDABelQjiK80A922.mp3",
+				"cover": "http://fdfs.xmcdn.com/group4/M03/97/50/wKgDs1PZDNSyJxzNAAerfEvvAJc376_mobile_large.jpg",
+				"s_cover": "http://fdfs.xmcdn.com/group4/M03/97/50/wKgDs1PZDNSyJxzNAAerfEvvAJc376_mobile_large.jpg",
+				"status": "1",
+				"add_time": "2015-08-22 14:57:07",
+				"upate_time": "2015-08-22 06:57:07",
+				"album_id": "36"
             }
         }
     }
