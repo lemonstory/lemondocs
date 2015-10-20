@@ -784,7 +784,6 @@ return：
 	                "status": "1",
 	                "add_time": "2015-08-22 14:53:23",
 	                "upate_time": "2015-08-25 06:02:27",
-	                "albumid": "1"
 	            }
 	        ],
 	        "commentcount": "5",
@@ -849,7 +848,7 @@ return：
         "code": 10000,
         "data": {
             "id": "1",
-			"albumid": "1",
+			"album_id": "1",
 			"listen_count": null,
 			"title": "两只老虎 ",
 			"intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
@@ -863,7 +862,6 @@ return：
 			"status": "1",
 			"add_time": "2015-08-22 14:53:23",
 			"upate_time": "2015-08-25 06:02:27",
-			"album_id": "1",
 			"albumfavcount": "1"// 专辑藏数量
         }
     }
@@ -882,7 +880,7 @@ return：
         "data": [
             {
                 "id": "52",
-				"albumid": "36",
+				"album_id": "36",
 				"listen_count": null,
 				"title": "睡前儿歌003",
 				"intro": "小朋友，请跟着晚安妈妈一起说儿歌喔！",
@@ -896,7 +894,6 @@ return：
 				"status": "1",
 				"add_time": "2015-08-22 14:57:07",
 				"upate_time": "2015-08-22 06:57:07",
-				"album_id": "36"
             }
         }
     }
