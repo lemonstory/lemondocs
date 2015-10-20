@@ -415,6 +415,35 @@ return:
 	    }]}
 
 
+9.用户更新收货地址：
+uri:
+	/userinfo/setaddress.php
+params:
+	addressid		修改的地址id
+	name			收货人
+	phonenumber		手机号联系方式
+	province:		收货地区：省
+	city:			收货地区：市
+	area:			收货地区：区
+	address			收货详细地址	
+	ecode			邮编
+
+return:
+	{"code":10000,"data":{"name":"huqq2","province":"\u6c5f\u897f\u7701","city":"\u4e5d\u6c5f\u5e02","phonenumber":"1870151564","address":"123123"}}
+
+
+9.用户删除收货地址：
+uri:
+	/userinfo/deladdress.php
+
+params:
+	addressid	删除的地址id
+
+return:
+	{"code":10000}
+
+
+
 10.获取用户收货地址列表：
 uri:
 	/userinfo/getaddresslist.php
