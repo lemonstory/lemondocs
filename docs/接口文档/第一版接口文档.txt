@@ -794,7 +794,7 @@ return：
 	            "isfav": 0,
 		        "listennum": 0,
 		        "favnum": 0,
-		        "commentcount": "5"
+		        "commentnum": "5"
 	        },
 	        "storylist": [
 	            {
