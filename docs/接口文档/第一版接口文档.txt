@@ -488,6 +488,7 @@ return:
 			"albumid": "36",			    // 专辑id
 			"listenalbumuptime": "2014-10-03 22:14:45", // 专辑收听历史的更新时间
 			"playstoryid": 5,			    // 专辑继续播放的故事id
+			"playtimes":20,
 			"albuminfo": {
 				"id": "36",
 				"title": "晚安妈妈睡前儿歌",
