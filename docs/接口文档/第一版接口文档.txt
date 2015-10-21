@@ -790,12 +790,12 @@ return：
 	            "age_str": "P+",
 	            "status": "1",
 	            "add_time": "2015-08-22 12:37:52",
-	            "update_time": "2015-09-05 19:26:30"
+	            "update_time": "2015-09-05 19:26:30",
+	            "isfav": 0,
+		        "listennum": 0,
+		        "favnum": 0,
+		        "commentcount": "5"
 	        },
-	        "playinfo": [],
-	        "isfav": 0,
-	        "listennum": 0,
-	        "favcount": 0,
 	        "storylist": [
 	            {
 	                "id": "1",
@@ -815,7 +815,6 @@ return：
 	                "upate_time": "2015-08-25 06:02:27",
 	            }
 	        ],
-	        "commentcount": "5",
 	        "commentlist": [
 	            {
 	                "id": "1",
@@ -891,7 +890,7 @@ return：
 			"status": "1",
 			"add_time": "2015-08-22 14:53:23",
 			"upate_time": "2015-08-25 06:02:27",
-			"albumfavcount": "1"// 专辑藏数量
+			"favnum": "1"// 专辑藏数量
         }
     }
 
