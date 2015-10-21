@@ -266,14 +266,6 @@ return：
     {"code":10000}
 
 
-6.设置用户头像接口(此接口已废除，使用客户端SDK上传头像图片，成功后请求setuserinfo接口更新头像avatartime)
-uri:
-	/userinfo/setavatar.php
-params:
-	avatarfile：	post客户端图片file
-return:
-	{"code":10000,"data":{"avatartime":xxx}}
-
 
 7.用户个人资料页
 uri:
@@ -285,14 +277,15 @@ return:
 	    "code": 10000,
 	    "data": {
 		"uid": "10001",
-		"nickname": "Lemo",
-		"avatartime": "1442820645",
-		"province": "辽宁",
-		"city": "本溪市",
-		"area": "桓仁满族自治县",
+		"nickname": "Lemo2",
+		"avatartime": "1445402121",
+		"province": "河北",
+		"city": "石家庄市",
+		"area": "长安区",
 		"phonenumber": "18172883695",
+		"birthday": "2014-10-21",
 		"gender": "1",
-		"age": "11",
+		"age": "0",
 		"addressinfo": {
 		    "id": "5",
 		    "uid": "10001",
@@ -324,14 +317,20 @@ return:
 	    "code": 10000,
 	    "data": {
 		"uid": "10001",
-		"nickname": "Lemon",
-		"avatartime": "xxxx",
-		"province": "",
-		"city": "",
-		"area": "",
-		"phonenumber": "",
+		"nickname": "Lemo2",
+		"avatartime": "1445402121",
+		"phonenumber": "18172883695",
+		"defaultbabyid": "1",
+		"defaultaddressid": "7",
+		"province": "河北",
+		"city": "石家庄市",
+		"area": "长安区",
+		"status": "1",
+		"type": "3",
+		"addtime": "2015-08-17 16:16:25",
+		"birthday": "2014-10-21",
 		"gender": "1",
-		"age": "1",
+		"age": "0",
 		"listenalbumlist": [		// 收听历史的专辑列表
 		    {
 			"uimid": "1",
