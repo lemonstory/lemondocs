@@ -987,19 +987,62 @@ return：
 
 
 ###################搜索接口####################################
-1.根据专辑标题、专辑作者名字、故事标题搜索，搜索结果为匹配的专辑列表
+1.根据专辑标题搜索专辑列表，以及故事标题搜索故事列表
 uri:
-	/album/albumsearch.php
+	/search/albumstorysearch.php
 params:
 	searchcontent	搜索内容（支持英文字母、数字、汉字）
+	len		读取长度
 return:
-	{
-	"code":10000,
-	"data":[
-		{"id":"1","title":"\u4e24\u53ea\u8001\u864e","cover":"xxx.jpg"},
-		{"id":"2","title":"\u5c0f\u71d5\u5b50","cover":"xxx.jpg"}
-		]
-	}
+{
+    "code": 10000,
+    "data": {
+        "storylist": [		// 搜索故事列表
+            {
+                "id": "52",
+                "album_id": "36",
+                "listen_count": null,
+                "title": "睡前儿歌003",
+                "intro": "小朋友，请跟着晚安妈妈一起说儿歌喔！",
+                "content": null,
+                "times": "0",
+                "file_size": null,
+                "mediapath": "http://fdfs.xmcdn.com/group4/M04/9A/D0/wKgDtFPZDCKShRUDABelQjiK80A922.mp3",
+                "source_audio_url": "http://fdfs.xmcdn.com/group4/M04/9A/D0/wKgDtFPZDCKShRUDABelQjiK80A922.mp3",
+                "cover": "http://fdfs.xmcdn.com/group4/M03/97/50/wKgDs1PZDNSyJxzNAAerfEvvAJc376_mobile_large.jpg",
+                "s_cover": "http://fdfs.xmcdn.com/group4/M03/97/50/wKgDs1PZDNSyJxzNAAerfEvvAJc376_mobile_large.jpg",
+                "status": "1",
+                "add_time": "2015-08-22 14:57:07",
+                "upate_time": "2015-08-22 06:57:07"
+            }
+        ],
+        "storycount": 2,	// 搜索故事总数
+        "albumlist": [		// 搜索专辑列表
+            {
+                "id": "36",
+                "title": "晚安妈妈睡前儿歌",
+                "is_show": "1",
+                "age_type": "0",
+                "category_id": "97",
+                "star_level": "0",
+                "view_order": "0",
+                "from": "xmly",
+                "author": "",
+                "intro": "",
+                "cover": "http://fdfs.xmcdn.com/group4/M05/C3/43/wKgDtFPwS2PAP2XqAAWIFD65b1U448_web_meduim.jpg",
+                "link_url": "http://m.ximalaya.com/10553948/album/269634",
+                "source_url": "",
+                "s_cover": "http://fdfs.xmcdn.com/group4/M05/C3/43/wKgDtFPwS2PAP2XqAAWIFD65b1U448_web_meduim.jpg",
+                "age_str": null,
+                "status": "1",
+                "add_time": "2015-08-22 14:56:12",
+                "update_time": "2015-08-22 06:56:12",
+                "fav": 0
+            }
+        ],
+        "albumcount": 1		// 搜索专辑总数
+    }
+}
 
 
 2.热门搜索关键词
