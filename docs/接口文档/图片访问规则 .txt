@@ -1,0 +1,24 @@
+图片：
+
+访问规则：
+故事辑封面/故事封面图片：p.xiaoningmeng.net/年/月/日/filename+后缀/{$size}
+焦点图图片：p.xiaoningmeng.net/focus/filename+后缀/
+
+说明：
+封面图size：		尺寸规格:100x100, 200x200， 230x230, 460x460 （不加size则是访问原图）
+焦点图size:		尺寸规格：720x293
+
+
+例如：
+封面图：http://p.xiaoningmeng.net/2015/08/21/c4ca4238a0b923820dcc509a6f75849b.jpg@!100x100
+焦点图：http://p.xiaoningmeng.net/focus/1.png@!720x293
+
+
+原图地址：
+封面图：http://p.xiaoningmeng.net/2015/08/21/c4ca4238a0b923820dcc509a6f75849b.jpg
+焦点图：http://p.xiaoningmeng.net/focus/1.png@!720x293
+
+
+
+音频文件访问：
+mf.xiaoningmeng.net/2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3

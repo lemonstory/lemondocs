@@ -1,18 +1,18 @@
 一：头像图片CDN解析说明：
 1.lemonavatar图片处理：
-	绑定的域名：	aoss.xiaoningmeng.me
+	绑定的域名：	aoss.xiaoningmeng.net
 	图片服务的域名：lemonavatar.img-cn-hangzhou.aliyuncs.com
-	CDN加速的域名： aoss.xiaoningmeng.me.w.kunlungr.com
+	CDN加速的域名： aoss.xiaoningmeng.net.w.kunlungr.com
 
-2.头像cdn图片请求域名：aoss.xiaoningmeng.me
+2.头像cdn图片请求域名：aoss.xiaoningmeng.net
 	源站：解析到oss的图片服务域名lemonavatar.img-cn-hangzhou.aliyuncs.com
-	CNAME:解析到CDN加速域名aoss.xiaoningmeng.me.w.kunlungr.com
+	CNAME:解析到CDN加速域名aoss.xiaoningmeng.net.w.kunlungr.com
 
 
-3.头像图片请求域名：a.xiaoningmeng.me
+3.头像图片请求域名：a.xiaoningmeng.net
 	源站：解析到120.26.52.211
 
-4.请求a.xiaoningmeng头像图片，读取aoss.xiaoningmeng.me域名的cdn内容
+4.请求a.xiaoningmeng头像图片，读取aoss.xiaoningmeng.net域名的cdn内容
 
 
 
