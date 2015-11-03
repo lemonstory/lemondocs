@@ -1,4 +1,4 @@
-接口请求的Domain临时域名：http://api.xiaoningmeng.me
+接口请求的域名：api.xiaoningmeng.net
 
 接口返回值说明：
 1.返回的code码为10000，表示成功
@@ -6,7 +6,7 @@
 3.返回值均为json格式
 
 登录临时使用接口：
-http://120.26.52.211/userinfo/defaultlogin.php?username=18701515649&password=11223344
+http://api.xiaoningmeng.net/userinfo/defaultlogin.php?username=18701515649&password=11223344
 
 @注意：
 所有的http请求后面，都需要携带一个固定参数：visituid,即当前登录账户的uid值
@@ -16,7 +16,7 @@ http://120.26.52.211/userinfo/defaultlogin.php?username=18701515649&password=112
 
 客户端请求UA头格式：
 以android为例：
-www.xiaoningmeng.me/1.0/adr (R7007,866089020062291,xxx,4.3,720*1280,4.589389937671455,320,wifi,OTHER_APP,zh)
+api.xiaoningmeng.net/1.0/adr (R7007,866089020062291,xxx,4.3,720*1280,4.589389937671455,320,wifi,OTHER_APP,zh)
 	域名/app版本/系统类型(手机型号，IMEI，运营商，手机版本，分辨率，屏幕尺寸，屏幕密度，网络类型，渠道名，语言）
 
 
@@ -993,6 +993,7 @@ uri:
 params:
 	searchcontent	搜索内容（支持英文字母、数字、汉字）
 	len		读取长度
+	page		分页：默认第一页为1，第二页为2
 return:
 {
     "code": 10000,
