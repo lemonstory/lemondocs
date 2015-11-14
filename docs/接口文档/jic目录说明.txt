@@ -1,0 +1,13 @@
+api		api.xiaoningmeng.net项目相关的css/js/img
+apk：		apk文件目录，用于android下载
+m_core：	mobile版公共样式目录
+pc_core：	浏览器版公共样式目录，若某些文件与mobile版公共样式为相同文件，则默认存放到pc_core公共目录中
+www：		官网样式目录
+manage		管理后台样式目录
+
+
+访问url，以www目录为例：
+
+http://jic.xiaoningmeng.net/www/css/xxx.css
+http://jic.xiaoningmeng.net/www/js/xxx.js
+http://jic.xiaoningmeng.net/www/img/xxx.jpg
