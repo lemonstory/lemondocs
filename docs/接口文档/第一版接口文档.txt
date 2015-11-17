@@ -558,7 +558,7 @@ uri:    /fav/getfavlist.php
 
 params:
     direction:  (up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
-    startfavid     从哪个ID开始，第一页时值为0
+    startfavid     从哪个收藏ID开始，第一页时值为0
     len     长度
 return:
     {
