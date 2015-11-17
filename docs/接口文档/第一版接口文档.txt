@@ -991,9 +991,9 @@ uri:
 	/search/albumstorysearch.php
 params:
 	searchtype	搜索类型：
-			story	只取故事数据
-			album	只取专辑数据
-			all	同时取故事和专辑的数据
+			"story"	只取故事数据
+			"album"	只取专辑数据
+			""	为空，同时取故事和专辑的数据
 
 	searchcontent	搜索内容（支持英文字母、数字、汉字）
 	len		读取长度
