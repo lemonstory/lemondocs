@@ -773,6 +773,11 @@ params:
     albumid
     uid
 
+    iscommentpage	是否为评论获取分页，默认为0，评论分页读取数据时为1，则接口只返commentlist数据
+    direction		分页获取的方向
+    startid		分页开始的评论Id
+    len			每页的长度
+
 return：
     {
         "code": 10000,
