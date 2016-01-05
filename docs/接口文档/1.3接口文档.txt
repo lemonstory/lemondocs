@@ -73,12 +73,8 @@ return:
 
 2.首页接口，增加标签列表
 url:
-	
-
 
 params:
-
-
 
 return：
 	
@@ -154,3 +150,66 @@ return：
 }
 
 
+
+3.指定标签的专辑列表
+url:
+	/tag/gettagalbumlist.php
+params:
+	currenttagid	指定标签id，可以是一级标签id，也可以是二级标签id
+
+return:
+{
+    "code": 10000,
+    "data": {
+        "selectfirsttagid": "1",	// 当前选中的一级标签id
+        "selectsecondtagid": 0,		// 当前选中的二级标签id,为0表示全部
+        "firsttaglist": [		// 一级标签列表
+            {
+                "id": "1",
+                "pid": "0",
+                "name": "儿歌",
+                "md5name": "129061a45be0043eac553947747459c2",
+                "cover": "",
+                "ordernum": "100",
+                "status": "1",
+                "addtime": "2016-01-04 11:43:42"
+            }
+        ],
+        "secondtaglist": [		// 二级标签列表
+            {
+                "id": "13",
+                "pid": "1",
+                "name": "经典儿歌",
+                "md5name": "51ec32d39f3dc79121a699ed776bbfa1",
+                "cover": "",
+                "ordernum": "100",
+                "status": "1",
+                "addtime": "2016-01-04 11:43:42"
+            }
+        ],
+        "tagalbumlist": [		// 标签下的专辑列表
+            {
+                "id": "71",
+                "title": "两只老虎",
+                "is_show": "1",
+                "age_type": "1",
+                "category_id": "13",
+                "star_level": "0",
+                "view_order": "0",
+                "story_num": "1",
+                "from": "kdgs",
+                "author": "",
+                "intro": "",
+                "cover_time": "0",
+                "cover": "2015/10/31/e2c420d928d4bf8ce0ff2ec19b371514.jpg",
+                "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=522",
+                "source_url": "",
+                "s_cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg",
+                "age_str": "P+",
+                "status": "1",
+                "add_time": "2015-10-30 15:46:35",
+                "update_time": "2015-11-01 10:28:10"
+            }
+        ]
+    }
+}
