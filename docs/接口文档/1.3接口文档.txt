@@ -156,7 +156,10 @@ url:
 	/tag/gettagalbumlist.php
 params:
 	currenttagid	指定标签id，可以是一级标签id，也可以是二级标签id
-
+	isgettag	是否获取一级和二级标签列表，默认为1获取，分页时不重复获取传0即可
+	direction
+	startalbumid			
+	len
 return:
 {
     "code": 10000,
@@ -189,7 +192,7 @@ return:
         ],
         "tagalbumlist": [		// 标签下的专辑列表
             {
-                "id": "71",
+                "id": "71",		// 用于startalbumid
                 "title": "两只老虎",
                 "is_show": "1",
                 "age_type": "1",
