@@ -156,6 +156,8 @@ url:
 	/tag/gettagalbumlist.php
 params:
 	currenttagid	指定标签id，可以是一级标签id，也可以是二级标签id
+	hotrecommend	0/1:是否为“最热门”
+	goodcomment	0/1:是否为“好评榜”
 	isgettag	是否获取一级和二级标签列表，默认为1获取，分页时不重复获取传0即可
 	direction
 	startalbumid			
@@ -165,7 +167,7 @@ return:
     "code": 10000,
     "data": {
         "selectfirsttagid": "1",	// 当前选中的一级标签id
-        "selectsecondtagid": 0,		// 当前选中的二级标签id,为0表示全部
+        "selectsecondtagid": 0,		// 当前选中的二级标签id,为0表示全部,hotrecommend为"最热门",goodcomment为"好评榜"
         "firsttaglist": [		// 一级标签列表
             {
                 "id": "1",
