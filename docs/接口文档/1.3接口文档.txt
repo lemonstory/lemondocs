@@ -155,13 +155,13 @@ return：
 url:
 	/tag/gettagalbumlist.php
 params:
-	currenttagid	指定标签id，可以是一级标签id，也可以是二级标签id
-	hotrecommend	0/1:是否为“最热门”
-	goodcomment	0/1:是否为“好评榜”
-	isgettag	是否获取一级和二级标签列表，默认为1获取，分页时不重复获取传0即可
-	direction
-	startalbumid			
-	len
+	currenttagid	必填	指定标签id，可以是一级标签id，也可以是二级标签id
+	hotrecommend	选填	0/1:是否为“最热门”
+	goodcomment	选填	0/1:是否为“好评榜”
+	isgettag	选填	是否获取一级和二级标签列表，默认为1获取，分页时不重复获取传0即可
+	direction	选填	默认为down
+	startalbumid	选填	默认为0		
+	len		必填
 return:
 {
     "code": 10000,
