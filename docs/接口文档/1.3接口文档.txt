@@ -215,6 +215,18 @@ return:
                 "add_time": "2015-10-30 15:46:35",
                 "update_time": "2015-11-01 10:28:10"
             }
+        ],
+	"specialtaglist": [
+            {
+                "name": "最热门",
+                "paramkey": "hotrecommend",
+                "paramvalue": 1
+            },
+            {
+                "name": "好评榜",
+                "paramkey": "goodcomment",
+                "paramvalue": 1
+            }
         ]
     }
 }
