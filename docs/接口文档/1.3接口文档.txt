@@ -216,10 +216,15 @@ return:
                 "update_time": "2015-11-01 10:28:10"
             }
         ],
-	"specialtaglist": [
+	 "specialtaglist": [
+            {
+                "name": "推荐",
+                "paramkey": "recommend",
+                "paramvalue": 1
+            },
             {
                 "name": "最热门",
-                "paramkey": "hotrecommend",
+                "paramkey": "hot",
                 "paramvalue": 1
             },
             {
