@@ -294,3 +294,126 @@ return:
         ]
     }
 }
+
+
+5.同龄在听列表
+url:
+	/default/sameagelist.php
+
+params:
+	currentfirsttagid	指定标签id，必须是一级标签id
+	isgettag		是否获取一级标签列表，默认为1获取，分页时不重复获取传0即可
+	p
+	len
+
+return:
+{
+    "code": 10000,
+    "data": {
+        "sameagelist": [
+            {
+                "id": "10293",
+                "title": "阿威地球行",
+                "is_show": "1",
+                "age_type": "0",
+                "category_id": "117",
+                "star_level": "0",
+                "view_order": "10000",
+                "story_num": "5",
+                "from": "kdgs",
+                "author": "",
+                "intro": "",
+                "cover_time": "0",
+                "cover": "",
+                "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=7481",
+                "source_url": "",
+                "s_cover": "http://img.idaddy.cn/b/1/dmp63ota_s150.jpg",
+                "age_str": "5岁+",
+                "status": "1",
+                "add_time": "2016-01-07 01:27:13",
+                "update_time": "2016-01-07 03:10:09",
+                "fav": 0,
+                "listennum": 0
+            }
+        ],
+        "firsttaglist": [
+            {
+                "id": "1",
+                "pid": "0",
+                "name": "儿歌",
+                "md5name": "129061a45be0043eac553947747459c2",
+                "cover": "",
+                "ordernum": "100",
+                "status": "1",
+                "addtime": "2016-01-04 11:43:42"
+            }
+        ]
+    }
+}
+
+
+
+6.最新上架列表
+url:
+	/default/newonlinelist.php
+
+params:
+	currentfirsttagid	指定标签id，必须是一级标签id
+	isgettag		是否获取一级标签列表，默认为1获取，分页时不重复获取传0即可
+	p
+	len
+
+return:
+{
+    "code": 10000,
+    "data": {
+        "newonlinelist": [
+            {
+                "id": "10293",
+                "title": "阿威地球行",
+                "is_show": "1",
+                "age_type": "0",
+                "category_id": "117",
+                "star_level": "0",
+                "view_order": "10000",
+                "story_num": "5",
+                "from": "kdgs",
+                "author": "",
+                "intro": "",
+                "cover_time": "0",
+                "cover": "",
+                "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=7481",
+                "source_url": "",
+                "s_cover": "http://img.idaddy.cn/b/1/dmp63ota_s150.jpg",
+                "age_str": "5岁+",
+                "status": "1",
+                "add_time": "2016-01-07 01:27:13",
+                "update_time": "2016-01-07 03:10:09",
+                "fav": 0,
+                "listennum": 0
+            }
+        ],
+        "firsttaglist": [
+            {
+                "id": "1",
+                "pid": "0",
+                "name": "儿歌",
+                "md5name": "129061a45be0043eac553947747459c2",
+                "cover": "",
+                "ordernum": "100",
+                "status": "1",
+                "addtime": "2016-01-04 11:43:42"
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+
+
+
+
