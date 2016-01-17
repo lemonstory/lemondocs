@@ -409,7 +409,90 @@ return:
 }
 
 
+7.专辑详情页
+uri:    /album/info.php
+params:
+    albumid
+    uid
 
+    iscommentpage	是否为评论获取分页，默认为0，评论分页读取数据时为1，则接口只返commentlist数据
+    direction		分页获取的方向
+    startid		分页开始的评论Id
+    len			每页的长度
+
+return：
+{
+"code": 10000,
+"data": {
+	"albuminfo": {
+	    "id": "1",
+	    "title": "两只老虎",
+	    "is_show": "1",
+	    "age_type": "1",
+	    "category_id": "10",
+	    "star_level": "0",
+	    "view_order": "0",
+	    "from": "kdgs",
+	    "author": "",
+	    "intro": "",
+	    "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg",
+	    "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=522",
+	    "source_url": "",
+	    "s_cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg",
+	    "age_str": "P+",
+	    "status": "1",
+	    "add_time": "2015-08-22 12:37:52",
+	    "update_time": "2015-09-05 19:26:30",
+	    "isfav": 0,
+		"listennum": 0,
+		"favnum": 0,
+		"commentnum": "5"
+	},
+	"storylist": [
+	    {
+		"id": "1",
+		"album_id": "1",
+		"listen_count": null,
+		"title": "两只老虎 ",
+		"intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
+		"content": null,
+		"times": "151",
+		"file_size": "2470533",
+		"mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com/http://lemonmedia.oss-cn-hangzhou.aliyuncs.com/2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3",
+		"source_audio_url": "http://audio.idaddy.cn/a/2/40n1sm74.audio",
+		"cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+		"s_cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+		"status": "1",
+		"add_time": "2015-08-22 14:53:23",
+		"upate_time": "2015-08-25 06:02:27",
+		"playcover":"",		// 播放页故事封面地址
+	    }
+	],
+	"commentlist": [
+	    {
+		"id": "1",
+		"uid": "10107",
+		"uname": "萌萌_99",
+		"avatartime": "1443174272",
+		"start_level": "0",
+		"addtime": "2015-09-10 10:08:17",
+		"comment": "哈哈哈"
+	    }
+	]
+        "taglist": [		// 新增专辑标签列表
+            {
+                "id": "23",
+                "pid": "2",
+                "name": "睡前故事",
+                "md5name": "8cc0c3461ef9ff8270a55b4ef2c1fb0c",
+                "cover": "",
+                "ordernum": "100",
+                "status": "1",
+                "addtime": "2016-01-04 11:43:43"
+            }
+        ]
+    }
+}
 
 
 
