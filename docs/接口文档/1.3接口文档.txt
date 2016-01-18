@@ -491,7 +491,7 @@ return：
                 "addtime": "2016-01-04 11:43:43"
             }
         ],
-	"recommendalbumlist": [
+	"recommendalbumlist": [		// 相关推荐的专辑列表
             {
                 "id": "3702",
                 "title": "黑猫警长",
