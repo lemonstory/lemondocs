@@ -94,19 +94,15 @@ return：
                 "id": "2",		// 专辑id
                 "title": "小燕子",	// 专辑标题
                 "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg"	// 专辑封面
-		"listennum": 2
-            },
-            {
-                "id": "49",
-                "title": "天乐阅活动",
-                "cover": "http://fdfs.xmcdn.com/group4/M01/1D/5A/wKgDs1MukJ_zKxPpAAWAbNCXMZY773_web_meduim.jpg"
-		"listennum": 0
+		"listennum": 2,
+		"recommenddesc": "一个优雅女孩的成长故事"
             },
             {
                 "id": "50",
                 "title": "玉米妈妈精选图画书",
                 "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
-		"listennum": 0
+		"listennum": 0,
+		"recommenddesc": ""
             }
         ],
 	// 同龄在听
@@ -115,14 +111,10 @@ return：
                 "id": "49",
                 "title": "天乐阅活动",
                 "cover": "http://fdfs.xmcdn.com/group4/M01/1D/5A/wKgDs1MukJ_zKxPpAAWAbNCXMZY773_web_meduim.jpg"
-		"listennum": 2
+		"listennum": 2,
+		"recommenddesc": "一个优雅女孩的成长故事"
             },
-            {
-                "id": "2",
-                "title": "小燕子",
-                "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg"
-		"listennum": 2
-            }
+            
         ],
 	// 最新上架
         "newalbum": [
@@ -130,7 +122,8 @@ return：
                 "id": "2",
                 "title": "小燕子",
                 "cover": "http://img.idaddy.cn/b/6/d41jzfe9_s150.jpg"
-		"listennum": 2
+		"listennum": 2,
+		"recommenddesc": "一个优雅女孩的成长故事"
             }
         ],
 	// 标签
