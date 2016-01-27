@@ -151,7 +151,7 @@ params:
 	currenttagid	必填	指定标签id，可以是一级标签id，也可以是二级标签id
 	isgettag	选填	是否获取一级和二级标签列表，默认为1获取，分页时不重复获取传0即可
 	direction	选填	默认为down
-	startalbumid	选填	默认为0		
+	startrelationid	选填	默认为0		
 	len		必填
 
 	recommend	选填	0/1:是否为“推荐”，即specialtaglist返回的paramkey，参数的值取paramvalue
@@ -187,28 +187,45 @@ return:
                 "addtime": "2016-01-04 11:43:42"
             }
         ],
-        "tagalbumlist": [		// 标签下的专辑列表
+        "tagalbumlist": [		// 标签下的内容列表
             {
-                "id": "71",		// 用于startalbumid
-                "title": "两只老虎",
-                "is_show": "1",
-                "age_type": "1",
-                "category_id": "13",
-                "star_level": "0",
-                "view_order": "0",
-                "story_num": "1",
-                "from": "kdgs",
-                "author": "",
-                "intro": "",
-                "cover_time": "0",
-                "cover": "2015/10/31/e2c420d928d4bf8ce0ff2ec19b371514.jpg",
-                "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=522",
-                "source_url": "",
-                "s_cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg",
-                "age_str": "P+",
-                "status": "1",
-                "add_time": "2015-10-30 15:46:35",
-                "update_time": "2015-11-01 10:28:10"
+                "id": "10823",		// startrelationid的值
+                "tagid": "140",
+                "albumid": "10844",
+                "isrecommend": "0",
+                "isnewonline": "0",
+                "issameage": "0",
+                "albumfavnum": "0",
+                "albumlistennum": "0",
+                "commentstarlevel": "0",
+                "recommendstatus": "0",
+                "newonlinestatus": "0",
+                "sameagestatus": "0",
+                "uptime": "1453655794",
+                "addtime": "2016-01-25 01:16:34",
+                "albuminfo": {
+                    "id": "10844",
+                    "title": "管家婆日记：驴小弟变石头",
+                    "is_show": "1",
+                    "age_type": "3",
+                    "category_id": "141",
+                    "star_level": "0",
+                    "view_order": "10000",
+                    "story_num": "1",
+                    "from": "kdgs",
+                    "author": "",
+                    "intro": "",
+                    "cover_time": "0",
+                    "cover": "",
+                    "link_url": "http://m.idaddy.cn/sp0/freeAudio/info/audioId=7633",
+                    "source_url": "",
+                    "s_cover": "http://img.idaddy.cn/b/3/ku6jg1am_s150.jpg",
+                    "age_str": "2-10岁",
+                    "status": "1",
+                    "add_time": "2016-01-25 01:16:34",
+                    "update_time": "2016-01-25 02:05:17",
+                    "fav": 0
+                }
             }
         ],
 	 "specialtaglist": [
