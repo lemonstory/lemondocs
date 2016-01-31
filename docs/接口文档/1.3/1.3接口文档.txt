@@ -145,6 +145,15 @@ return：
 
 
 3.指定标签的专辑列表
+全部：
+	/tag/gettagalbumlist.php?currenttagid=12&len=12&startrelationid=0&direction=&visituid=&isgettag=1
+推荐：
+	/tag/gettagalbumlist.php?currenttagid=12&len=12&startrelationid=0&direction=&visituid=&isgettag=0&recommend=1
+最热门：
+	/tag/gettagalbumlist.php?currenttagid=12&len=12&startrelationid=0&direction=&visituid=&isgettag=0&hot=1
+好评榜：
+	/tag/gettagalbumlist.php?currenttagid=12&len=12&startrelationid=0&direction=&visituid=&isgettag=0&goodcomment=1
+
 url:
 	/tag/gettagalbumlist.php
 params:
