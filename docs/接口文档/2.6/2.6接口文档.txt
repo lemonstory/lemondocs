@@ -1,0 +1,792 @@
+说明:
+    接口的返回值格式:json
+    基本结构:
+        {
+            "code":状态码, //和http状态码一致,例:200表示正常,404表示不存在 等等
+            "data":{数据对象},
+            "desc":{注释}
+        }
+    header头的版本号需改为2.6
+
+备注:
+    category和tag的关系为处理,在接口中也未体现
+
+
+接口列表:
+
+    1.首页
+
+        url:
+            /default/index.php
+        params:
+        return：
+        {
+                "code": 200,
+                "data": {
+                    // 焦点图
+                    "focus_pic”:{
+                        “total”:5,
+                        “items”:[
+                            {
+                                "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
+                                "linkurl": "http://www.baidu.com"	// 跳转地址：url或专辑详情
+                            }
+                        ],
+                    },
+
+                //年龄分组
+                "age_level": {
+                    “total”:5,
+                    “items”:[
+                        {
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
+                             “title”: “0~2岁”	// 标题
+                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=0&max=2”	// 跳转地址：url或专辑详情
+                        },
+                        {
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
+                            “title”: “3~6岁”	// 标题
+                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=3&max=6”	// 跳转地址：url或专辑详情
+                        }
+                    ],
+
+                }
+
+                //内容分类
+                "content_category“:{
+                    “total”:3,
+                    “items”:[
+                        {
+                            “title”: “全部分类”	// 标题
+                            "linkurl": "xnm://www.xiaoningmeng.net/album/category.php”	// 跳转地址：分类页
+                        },
+                        {
+                            “title”: “作者”	// 标题
+                            "linkurl": "xnm://www.xiaoningmeng.net/author/info.php”	// 跳转地址：作者页
+                        },
+                        {
+                            “title”: “主播”	// 标题
+                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=3&max=6”	// 跳转地址：主播页
+                        },
+                    ],
+                }
+
+
+                “album_section”:{
+                    “total”:3,
+                    “items”:[
+                            {
+                                "title”:”今日精选”,
+                                "total":6,
+                                "items":[
+                                    {
+                                        "id": "2",		// 专辑id
+                                        "title": "小燕子",	// 专辑标题
+                                        "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
+                                        "listen_num": 2,
+                                        "recommend_desc": "一个优雅女孩的成长故事”,
+                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+
+                                    },
+                                    {
+                                        "id": "50",
+                                        "title": "玉米妈妈精选图画书",
+                                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
+                                        "listennum": 0,
+                                        "recommenddesc": ""
+                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+                                    },
+                                ],
+
+                            },
+                            {
+                                "title”:”最新上架”,
+                                "total":6,
+                                "items":[
+                                    {
+                                        "id": "2",		// 专辑id
+                                        "title": "小燕子",	// 专辑标题
+                                        "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
+                                        "listen_num": 2,
+                                        "recommend_desc": "一个优雅女孩的成长故事”,
+                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+                                    },
+                                    {
+                                        "id": "50",
+                                        "title": "玉米妈妈精选图画书",
+                                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
+                                        "listennum": 0,
+                                        "recommenddesc": ""
+                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+                                    },
+                                ],
+                            },
+
+                            {
+                                "title”:”同龄在听”,
+                                "total":6,
+                                "items":[
+                                    {
+                                        "id": "2",		// 专辑id
+                                        "title": "小燕子",	// 专辑标题
+                                        "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
+                                        "listen_num": 2,
+                                        "recommend_desc": "一个优雅女孩的成长故事”,
+                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+
+                                    },
+                                    {
+                                        "id": "50",
+                                        "title": "玉米妈妈精选图画书",
+                                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
+                                        "listennum": 0,
+                                        "recommenddesc": ""
+                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+                                    },
+                                ],
+                            },
+                            {
+                                "title":"儿歌",
+                                "total":4,
+                                "items":[
+                                    {
+                                        "id": "2",		// 专辑id
+                                        "title": "小燕子",	// 专辑标题
+                                        "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
+                                        "listen_num": 2,
+                                        "recommend_desc": "一个优雅女孩的成长故事”,
+                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+
+                                    },
+                                    {
+                                        "id": "50",
+                                        "title": "玉米妈妈精选图画书",
+                                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
+                                        "listennum": 0,
+                                        "recommenddesc": ""
+                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+                                    },
+                                ],
+                            },
+                    ],
+                }
+                “ad_msg”:{
+                     “total”:3,
+                     “items”:[
+                        {
+                            "below_to_album_section_index”:0, //相对于专辑分组某一项的位置,0表示在第一个section的下面
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
+                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=3&max=6”	// 跳转地址：http,xmm
+                        },
+                        {
+                            "below_to_album_section_index”:1, //相对于专辑分组某一项的位置,1表示在第一个section的下面
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
+                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=3&max=6”	// 跳转地址：http,xmm
+                        },
+
+                     ],
+                }
+            }
+        }
+
+
+
+    2.全部分类
+
+        url:
+            /default/category.php
+        params:
+        return：
+        {
+            "code": 200,
+            "data": {
+                “total”:4
+                “items”:[
+                    {
+                        “tag_id”: 1,
+                        “title”: “绘本”,
+                        “child_total”: 5,
+                        “child_items”:[{“title”: “自我认知”,“tag_id”: 5},{“title”: “习惯养成”,“tag_id”: 5},],
+                    },
+                                    {
+                        “tag_id”: 2,
+                        “title”: “儿歌”,
+                        “child_total”: 5,
+                        “child_items”[{“title”: “迪士尼”,“tag_id”: 5},{“title”: “贝瓦儿歌”,“tag_id”: 5},],
+                    },
+
+                ],
+
+            }
+        }
+
+    #TUDO:category是什么,下面的标签没有处理
+
+    3.今日精选-更多
+
+        url:
+            /default/recommend_list.php
+        params:
+            min_age		    //最小年龄
+            max_age		    //最大年龄
+            start_album_id	//起始专辑ID
+            len		        //长度
+        return：
+        {
+            "code": 200,
+            "data": {
+                "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
+                “total”:20,
+                “items”:[
+                    {
+                        "id": "10293",
+                            "title": "阿威地球行",
+                    "intro": "阿威地球行",
+                    "recommend": "阿威地球行",
+                            "category_id": "117",
+                            "star_level": "0",
+                            "view_order": "10000",
+                            "story_num": "5",
+                            "author": "",
+                            "intro": "",
+                            "cover_time": "0",
+                            "cover": "",
+                            "age_str": "5岁+",
+                            "status": "1",
+                            "add_time": "2016-01-07 01:27:13",
+                            "update_time": "2016-01-07 03:10:09",
+                            "fav": 0,
+                            "listennum": 0
+
+                        },
+
+                ],
+            }
+        }
+
+    4.最新上架(待补充)
+    5.同龄在听(待补充)
+
+    7.我的故事(还需优化)
+        uri:/userinfo/mystory.php
+        params:
+            is_get_count		是否获取收藏总数：0不获取（用于收听历史分页），1获取（用于第一次进入我的故事）
+            direction:		(up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
+            start_album_id	从哪个专辑ID开始，第一页时值为0
+            len			长度
+        return:
+        {
+            "code": 200,
+            "data": {
+            "fav_count": 0
+                "listen_album_list": [
+                    {
+                        "uimid": "1",
+                        "albumid": "3",
+                        "uptime": "1447326529",
+                        "listen_album_uptime": "2015-11-12 19:08:49",
+                        "playtimes": 0,
+                        "play_story_id": 35,
+                        "album_info": {
+                            "id": "3",
+                            "title": "西游记",
+                            "category_id": "124",
+                            "star_level": "5",
+                            "view_order": "0",
+                            "story_num": "39",
+                            "author": "",
+                            "intro": "编辑推荐…”,
+                            "cover_time": "0",
+                            "cover": "http://p.xiaoningmeng.net/album/2015/10/31/eccbc87e4b5ce2fe28308fd9f2a7baf3.jpg@!100x100",
+                            "age_str": null,
+                            "status": "1",
+                            "add_time": "2015-10-30 15:45:09",
+                            "update_time": "2015-11-18 23:59:21",
+                            "fav": 0,
+                            "storyinfo": {			// 由原先的storylist改为storyinfo
+                                "id": "35",
+                                "album_id": "3",
+                                "listen_count": null,
+                                "title": "西游记-第一回",
+                                "intro": "爱好播讲的80后型男，请叫我布谷，也可关注微信公众号--布谷鸟的时间，那里有更多有趣的内容。",
+                                "content": null,
+                                "times": "775",
+                                "file_size": "6195453",
+                                "mediapath": "http://mf.xiaoningmeng.net/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.mp3",
+                                "source_audio_url": "http://fdfs.xmcdn.com/group15/M09/79/2C/wKgDaFYHq_SBkU6UAF6I_Xq8syc415.mp3",
+                                "cover_time": "0",
+                                "cover": "2015/10/31/1c383cd30b7c298ab50293adfecb7b18.jpg",
+                                "view_order": "0",
+                                "s_cover": "http://fdfs.xmcdn.com/group15/M09/79/2B/wKgDaFYHq9jhm0ZmAAGMLrcbBTA973_mobile_large.jpg",
+                                "status": "1",
+                                "add_time": "2015-10-30 15:45:38",
+                                "upate_time": "2015-10-31 16:25:36",
+                                "playcover": "http://p.xiaoningmeng.net/story/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.jpg@!230x230"
+                            }
+                        }
+                    }
+                ],
+
+            }
+        }
+
+    8.我的故事 - 删除(同时本地删除该专辑下的所有下载文件)
+
+    9.作者
+        url:
+            /default/authors.php
+
+        params:
+            start_author_id	//起始作者ID
+            len		        //长度 (start_author_id=0,len=0 取全部)
+        return：
+        {
+            "code": 200,
+            "data": {
+                “total”:20,
+                “items”:[
+                    {
+                        "id": "10293",
+                            “name”: “宫西达也”,
+                            "avatar": "http://p.xiaoningmeng.net/story/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.jpg@!230x230",
+                            “album_count”: "0",
+                    “country_us”: “jp”,
+                    “country_zh”: “日本”,
+
+                        },
+
+                ],
+            }
+        }
+
+    10.作者专辑
+
+        url:
+            /default/author_album_list.php
+        params:
+            author_id	    //起始作者ID
+            start_album_id	//从哪个专辑ID开始，第一页时值为0
+            min_age		    //最小年龄
+            max_age		    //最大年龄 (min_age=0,max_age=0 全部年龄段)
+            len		        //长度
+        return：
+        {
+            "code": 200,
+            "data": {
+                "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
+                “total”:20,
+                “items”:[
+                    {
+                        "id": "10293",
+                        "title": "阿威地球行",
+                        "intro": "阿威地球行的简介”,
+                        "recommend": "全国优秀儿童文学奖",
+                        "category_id": "117",
+                        "star_level": "0",
+                        "view_order": "10000",
+                        "story_num": "5",
+                        "author": "",
+                        "intro": "",
+                        "cover_time": "0",
+                        "cover": "",
+                        "age_str": "5岁+",
+                        "status": "1",
+                        "add_time": "2016-01-07 01:27:13",
+                        "update_time": "2016-01-07 03:10:09",
+                        "fav": 0,
+                        "listennum": 0
+
+                    },
+
+                ],
+            }
+        }
+
+    11.主播
+
+        url:
+            /default/anchors.php
+
+        params:
+            start_anchor_id	//起始主播ID
+            len		        //长度 (start_anchor_id=0,len=0 取全部)
+        return：
+        {
+            "code": 200,
+            "data": {
+                “total”:20,
+                “items”:[
+                    {
+                        "id": "10293",
+                        “name”: “凯叔讲故事”,
+                        “intro”: “原央视财经主持人…”,
+                        "avatar": "http://p.xiaoningmeng.net/story/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.jpg@!230x230",
+                        “listen_num”: “1000万”,
+
+                    },
+
+                ],
+            }
+        }
+
+    12.主播专辑
+
+        url:
+            /default/anchor_album_list.php
+        params:
+            anchor_id	//起始作者ID
+            start_album_id	//从哪个专辑ID开始，第一页时值为0
+            min_age		//最小年龄
+            max_age		//最大年龄 (min_age=0,max_age=0 全部年龄段)
+                len		//长度
+        return：
+        {
+            "code": 200,
+            "data": {
+                "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
+                “total”:20,
+                “items”:[
+                    {
+                        "id": "10293",
+                        "title": "阿威地球行",
+                        "intro": "阿威地球行的简介”,
+                        "recommend": "全国优秀儿童文学奖",
+                        "category_id": "117",
+                        "star_level": "0",
+                        "view_order": "10000",
+                        "story_num": "5",
+                        "author": "",
+                        "intro": "",
+                        "cover_time": "0",
+                        "cover": "",
+                        "age_str": "5岁+",
+                        "status": "1",
+                        "add_time": "2016-01-07 01:27:13",
+                        "update_time": "2016-01-07 03:10:09",
+                        "fav": 0,
+                        "listennum": 0
+                    },
+                ],
+            }
+
+        }
+
+    12.0~2岁(首页)
+
+        url:
+            /default/age_level_list.php
+        params:
+            min_age		//最小年龄
+            max_age		//最大年龄 (min_age=0,max_age=0 全部年龄段)
+        return：
+        {
+            "code": 200,
+            "data": {
+                // 焦点图
+                "focus_pic”:{
+                “total”:5,
+                “items”:[
+                    {
+                        "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
+                        "linkurl": "http://www.baidu.com"	// 跳转地址：url或专辑详情
+                    }
+                ],
+            },
+
+            “album_section”:{
+                “total”:3,
+                “items”:[
+                {
+                    "title”:”热门播放”,
+                    "total”:4,
+                    items:[
+                        {
+                            "id": "2",		// 专辑id
+                            "title": "小燕子",	// 专辑标题
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
+                            "listen_num": 2,
+                            "recommend_desc": "一个优雅女孩的成长故事”,
+                            "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+
+                        },
+                        {
+                            "id": "50",
+                            "title": "玉米妈妈精选图画书",
+                            "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
+                            "listen_num": 2,
+                            "recommend_desc": "一个优雅女孩的成长故事”,
+                            "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+                        },
+                    ],
+
+
+                },
+                {
+                    "title”:”贝瓦儿歌”,
+                    total:6,
+                    items:[
+                        {
+                            "id": "2",		// 专辑id
+                            "title": "小燕子",	// 专辑标题
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
+                            "listen_num": 2,
+                            "recommend_desc": "一个优雅女孩的成长故事”,
+                            "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+
+                        },
+                        {
+                            "id": "50",
+                            "title": "玉米妈妈精选图画书",
+                            "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
+                            "listen_num": 2,
+                            "recommend_desc": "一个优雅女孩的成长故事”,
+                            "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
+                        },
+                    ],
+
+                },
+
+            },
+
+            “recommend_tags”:{
+                “total”:6,
+                “items”:[
+                    {
+                        “tag_id": "50",
+                        "title": “巧虎儿歌”,
+                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
+                    },
+
+                                    {
+                        “tag_id": "50",
+                        "title": “韵律童谣”,
+                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
+                    },
+                ]
+            }
+        }
+
+    13.热门播放-年龄分级
+
+        url:
+            /default/hot_album_list.php
+
+        params:
+            min_age		//最小年龄
+            max_age		//最大年龄 (min_age=0,max_age=0 全部年龄段)
+            start_album_id	//从哪个专辑ID开始，第一页时值为0
+            len		//长度 (start_author_id=0,len=0 取全部)
+
+        return：
+        {
+            "code": 200,
+            "data": {
+                "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
+                “total”:20,
+                “items”:[
+                    {
+                        "id": "10293",
+                        "title": "阿威地球行",
+                        "intro": "阿威地球行的简介”,
+                        "recommend": "全国优秀儿童文学奖",
+                        "category_id": "117",
+                        "star_level": "0",
+                        "view_order": "10000",
+                        "story_num": "5",
+                        "author": "",
+                        "intro": "",
+                        "cover_time": "0",
+                        "cover": "",
+                        "age_str": "5岁+",
+                        "status": "1",
+                        "add_time": "2016-01-07 01:27:13",
+                        "update_time": "2016-01-07 03:10:09",
+                        "fav": 0,
+                        "listen_num": 0
+                        “recommend_tags”:{
+                        “total”:6,
+                        “items”:[
+                        {
+                            "id": "23",
+                            "pid": "2",
+                            "name": "睡前故事",
+                            "md5name": "8cc0c3461ef9ff8270a55b4ef2c1fb0c",
+                            "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg”,
+                            "ordernum": "100",
+                            "status": "1",
+                            "addtime": "2016-01-04 11:43:43"
+                        },
+
+                        {
+
+                            "id": "23",
+                            "pid": "2",
+                            "name": "韵律童谣",
+                            "md5name": "8cc0c3461ef9ff8270a55b4ef2c1fb0c",
+                            "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg”,
+                            "ordernum": "100",
+                            "status": "1",
+                            "addtime": "2016-01-04 11:43:43"
+                        },
+                        ]
+                    }
+
+                    },
+
+                ],
+            }
+
+        }
+
+    14.标签-专辑列表(儿歌)
+        url:
+            /default/tag_album_list.php
+
+        params:
+            tag_id 		//
+            min_age		//最小年龄
+            max_age		//最大年龄 (min_age=0,max_age=0 全部年龄段)
+            start_album_id	//从哪个专辑ID开始，第一页时值为0
+            len		//长度 (start_author_id=0,len=0 取全部)
+
+        return：
+        {
+                "code": 200,
+                "data": {
+                "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
+                “total”:20,
+                “items”:[
+                    {
+                        "id": "10293",
+                            "title": "阿威地球行",
+                    "intro": "阿威地球行的简介”,
+                    "recommend": "全国优秀儿童文学奖",
+                            "category_id": "117",
+                            "star_level": "0",
+                            "view_order": "10000",
+                            "story_num": "5",
+                            "author": "",
+                            "intro": "",
+                            "cover_time": "0",
+                            "cover": "",
+                            "age_str": "5岁+",
+                            "status": "1",
+                            "add_time": "2016-01-07 01:27:13",
+                            "update_time": "2016-01-07 03:10:09",
+                            "fav": 0,
+                            "listen_num": 0
+
+                        },
+
+                ],
+
+        }
+
+    15.专辑详情
+        uri:    /album/info.php
+        params:
+                albumid
+                uid
+
+        return：
+        {
+            "code": 200,
+            "data": {
+                "album_info": {
+                    "id": "1",
+                    "title": "两只老虎",
+                    "category_id": "10",
+                    "star_level": "0",
+                    "view_order": "0",
+                    "author": "",
+                    "intro": "",
+                    "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg",
+                    "age_str": "P+",
+                    "status": "1",
+                    "add_time": "2015-08-22 12:37:52",
+                    "update_time": "2015-09-05 19:26:30",
+                    "is_fav": 0,
+                    "listen_num": 0,
+                    "fav_num": 0,
+                    "comment_num": "5"
+                },
+
+            "story_list”:
+                “total”:20,
+                “items”:[
+                    {
+                    "id": "1",
+                    "album_id": "1",
+                    "listen_count": null,
+                    "title": "两只老虎 ",
+                    "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
+                    "content": null,
+                    "times": "151",
+                    "file_size": "2470533",
+                    "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com/http://lemonmedia.oss-cn-hangzhou.aliyuncs.com/2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3",
+                    "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
+                    "status": "1",
+                    "add_time": "2015-08-22 14:53:23",
+                    "upate_time": "2015-08-25 06:02:27",
+                    "playcover":"",		// 播放页故事封面地址
+                    }
+                ],
+
+
+            “recommend_tags”:{
+                “total”:6,
+                “items”:[
+                {
+                    "id": "23",
+                    "pid": "2",
+                    "name": "睡前故事",
+                    "md5name": "8cc0c3461ef9ff8270a55b4ef2c1fb0c",
+                    "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg”,
+                    "ordernum": "100",
+                    "status": "1",
+                    "addtime": "2016-01-04 11:43:43"
+                },
+
+                {
+
+                    "id": "23",
+                    "pid": "2",
+                    "name": "韵律童谣",
+                    "md5name": "8cc0c3461ef9ff8270a55b4ef2c1fb0c",
+                    "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg”,
+                    "ordernum": "100",
+                    "status": "1",
+                    "addtime": "2016-01-04 11:43:43"
+                },
+                ]
+                }
+
+            "recommend_albums": {
+
+                “total”:20,
+                “items”:[
+                    {
+                        "id": "10293",
+                        "title": "阿威地球行",
+                        "intro": "阿威地球行的简介”,
+                        "recommend": "全国优秀儿童文学奖",
+                        "category_id": "117",
+                        "star_level": "0",
+                        "view_order": "10000",
+                        "story_num": "5",
+                        "author": "",
+                        "intro": "",
+                        "cover_time": "0",
+                        "cover": "",
+                        "age_str": "5岁+",
+                        "status": "1",
+                        "add_time": "2016-01-07 01:27:13",
+                        "update_time": "2016-01-07 03:10:09",
+                        "fav": 0,
+                        "listennum": 0
+
+                    },
+                ]
+            }
+        }
+    }
