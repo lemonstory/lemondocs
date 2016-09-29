@@ -2,7 +2,7 @@
     接口的返回值格式:json
     基本结构:
         {
-            "code":状态码, //和http状态码一致,例:200表示正常,404表示不存在 等等
+            "code":状态码, //和http状态码一致,例:10000表示正常 等等(参考ErrorConf.class.php)
             "data":{数据对象},
             "desc":{注释}
         }
@@ -21,7 +21,7 @@
         params:
         return：
         {
-                "code": 200,
+                "code": 10000,
                 "data": {
                     // 焦点图
                     "focus_pic”:{
@@ -66,7 +66,7 @@
                         },
                         {
                             “title”: “主播”	// 标题
-                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=3&max=6”	// 跳转地址：主播页
+                            "linkurl": "xnm://www.xiaoningmeng.net/anchor/info.php”	// 跳转地址：主播页
                         },
                     ],
                 }
@@ -198,7 +198,7 @@
         params:
         return：
         {
-            "code": 200,
+            "code": 10000,
             "data": {
                 “total”:4
                 “items”:[
@@ -233,7 +233,7 @@
             len		        //长度
         return：
         {
-            "code": 200,
+            "code": 10000,
             "data": {
                 "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
                 “total”:20,
@@ -276,7 +276,7 @@
             len			长度
         return:
         {
-            "code": 200,
+            "code": 10000,
             "data": {
             "fav_count": 0
                 "listen_album_list": [
@@ -332,30 +332,35 @@
 
     8.我的故事 - 删除(同时本地删除该专辑下的所有下载文件)
 
+    //http://www1.jctrans.com/tool/dm.htm
     9.作者
         url:
             /default/authors.php
 
         params:
-            start_author_id	//起始作者ID
-            len		        //长度 (start_author_id=0,len=0 取全部)
+            start_author_id	                    //起始作者ID
+            len		                            //长度 (start_author_id=0,len=0 取全部)
         return：
         {
-            "code": 200,
+            "code": 10000,                      //状态吗
             "data": {
-                “total”:20,
-                “items”:[
+                "total": 2,                     //items的总数量
+                "items": [
                     {
-                        "id": "10293",
-                            “name”: “宫西达也”,
-                            "avatar": "http://p.xiaoningmeng.net/story/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.jpg@!230x230",
-                            “album_count”: "0",
-                    “country_us”: “jp”,
-                    “country_zh”: “日本”,
-
-                        },
-
-                ],
+                        "uid": "14850",         //作者UID
+                        "album_num": "1",       //作者的专辑数量
+                        "listen_num": "0",      //作者的专辑的收听量
+                        "nickname": "董仁威",    //作者的姓名
+                        "avatartime": "0"       //作者头像的更新时间
+                    },
+                    {
+                        "uid": "14852",
+                        "album_num": "1",
+                        "listen_num": "0",
+                        "nickname": "费希尔",
+                        "avatartime": "0"
+                    }
+                ]
             }
         }
 
@@ -364,44 +369,48 @@
         url:
             /default/author_album_list.php
         params:
-            author_id	    //起始作者ID
-            start_album_id	//从哪个专辑ID开始，第一页时值为0
-            min_age		    //最小年龄
-            max_age		    //最大年龄 (min_age=0,max_age=0 全部年龄段)
-            len		        //长度
+            author_id	                        //作者ID
+            start_album_id	                    //从哪个专辑ID开始，第一页时值为0
+            min_age		                        //最小年龄
+            max_age		                        //最大年龄 (min_age=0,max_age=0 全部年龄段)
+            len		                            //长度(不设置表示全部)
         return：
-        {
-            "code": 200,
-            "data": {
-                "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
-                “total”:20,
-                “items”:[
-                    {
-                        "id": "10293",
-                        "title": "阿威地球行",
-                        "intro": "阿威地球行的简介”,
-                        "recommend": "全国优秀儿童文学奖",
-                        "category_id": "117",
-                        "star_level": "0",
-                        "view_order": "10000",
-                        "story_num": "5",
-                        "author": "",
-                        "intro": "",
-                        "cover_time": "0",
-                        "cover": "",
-                        "age_str": "5岁+",
-                        "status": "1",
-                        "add_time": "2016-01-07 01:27:13",
-                        "update_time": "2016-01-07 03:10:09",
-                        "fav": 0,
-                        "listennum": 0
-
+            {
+                "code": 10000,                  //状态码
+                "data": {
+                    "age_level": {              //该作者的专辑涉及到的所有年龄分级
+                        "total": 2,             //年龄分级总数量
+                        "items": [
+                            {
+                                "age_level_str": "全部",  //年龄分级名称
+                                "min_age": "0",          //该年龄分级的最小年龄
+                                "max_age": "0",          //该年龄分级的最大年龄
+                                "album_num": 1           //该年龄分级下的专辑数量
+                            },
+                            {
+                                "age_level_str": "11-14岁",  //年龄分级名称
+                                "min_age": 11,               //最小年龄
+                                "max_age": 14,               //最大年龄
+                                "album_num": 1               //专辑数量
+                            }
+                        ]
                     },
-
-                ],
+                    "total": 1,                 //当前query条件下专辑总量
+                    "items": [                  //专辑信息
+                        {
+                            "id": "14988",
+                            "title": "爱的教育",
+                            "cover": "2016/09/27/6b339b7d02cfba0555465b5af99b37de.jpg",
+                            "cover_time": "1474954165",
+                            "star_level": "0",
+                            "story_num": "27",
+                            "intro": "成为世界最受欢迎的读物之一。",
+                            "min_age": "6",
+                            "max_age": "14"
+                        }
+                    ]
+                }
             }
-        }
-
     11.主播
 
         url:
@@ -412,7 +421,7 @@
             len		        //长度 (start_anchor_id=0,len=0 取全部)
         return：
         {
-            "code": 200,
+            "code": 10000,
             "data": {
                 “total”:20,
                 “items”:[
@@ -441,7 +450,7 @@
                 len		//长度
         return：
         {
-            "code": 200,
+            "code": 10000,
             "data": {
                 "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
                 “total”:20,
@@ -480,7 +489,7 @@
             max_age		//最大年龄 (min_age=0,max_age=0 全部年龄段)
         return：
         {
-            "code": 200,
+            "code": 10000,
             "data": {
                 // 焦点图
                 "focus_pic”:{
@@ -579,7 +588,7 @@
 
         return：
         {
-            "code": 200,
+            "code": 10000,
             "data": {
                 "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
                 “total”:20,
@@ -651,7 +660,7 @@
 
         return：
         {
-                "code": 200,
+                "code": 10000,
                 "data": {
                 "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
                 “total”:20,
@@ -690,7 +699,7 @@
 
         return：
         {
-            "code": 200,
+            "code": 10000,
             "data": {
                 "album_info": {
                     "id": "1",
