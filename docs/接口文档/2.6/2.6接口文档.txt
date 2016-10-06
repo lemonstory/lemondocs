@@ -423,27 +423,26 @@
         {
             "code": 10000,
             "data": {
-                “total”:20,
-                “items”:[
+                "total": 19,
+                "items": [
                     {
-                        "id": "10293",
-                        “name”: “凯叔讲故事”,
-                        “intro”: “原央视财经主持人…”,
-                        "avatar": "http://p.xiaoningmeng.net/story/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.jpg@!230x230",
-                        “listen_num”: “1000万”,
-
+                        "uid": "14917",
+                        "album_num": "1",
+                        "listen_num": "0",
+                        "nickname": "王智勇",
+                        "avatartime": "0"
                     },
-
-                ],
+                    ...
+                ]
             }
         }
 
-    12.主播专辑
+    12.主播专辑 (返回值结构和 作者专辑接口 类似)
 
         url:
             /default/anchor_album_list.php
         params:
-            anchor_id	//起始作者ID
+            anchor_id	//主播UID
             start_album_id	//从哪个专辑ID开始，第一页时值为0
             min_age		//最小年龄
             max_age		//最大年龄 (min_age=0,max_age=0 全部年龄段)
@@ -452,32 +451,32 @@
         {
             "code": 10000,
             "data": {
-                "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
-                “total”:20,
-                “items”:[
+                "age_level": {
+                    "total": 1,
+                    "items": [
+                        {
+                            "age_level_str": "全部",
+                            "min_age": "0",
+                            "max_age": "0"
+                        }
+                    ]
+                },
+                "total": 4,
+                "items": [
                     {
-                        "id": "10293",
-                        "title": "阿威地球行",
-                        "intro": "阿威地球行的简介”,
-                        "recommend": "全国优秀儿童文学奖",
-                        "category_id": "117",
+                        "id": "14830",
+                        "title": "唐颂教育传统文化：寓言故事",
+                        "cover": "2016/09/13/e798a0d5dea21ef441815910d5943598.jpg",
+                        "cover_time": "1473773406",
                         "star_level": "0",
-                        "view_order": "10000",
-                        "story_num": "5",
-                        "author": "",
-                        "intro": "",
-                        "cover_time": "0",
-                        "cover": "",
-                        "age_str": "5岁+",
-                        "status": "1",
-                        "add_time": "2016-01-07 01:27:13",
-                        "update_time": "2016-01-07 03:10:09",
-                        "fav": 0,
-                        "listennum": 0
+                        "story_num": "19",
+                        "intro": "　　在孩子大脑发育的关键期给孩子经典著作的熏陶，会给孩子播种下一颗智慧的种子，并且长出慧根来。这个慧根，将给孩子奠定一个大智慧、大格局的人生基础。这集寓言故事将经典寓言汇总，给小学语文最好的课堂知识和课外补充。",
+                        "min_age": "0",
+                        "max_age": "0"
                     },
-                ],
+                    ...
+                ]
             }
-
         }
 
     12.0~2岁(首页)
