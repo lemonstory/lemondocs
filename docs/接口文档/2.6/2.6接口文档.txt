@@ -351,14 +351,14 @@
                         "album_num": "1",       //作者的专辑数量
                         "listen_num": "0",      //作者的专辑的收听量
                         "nickname": "董仁威",    //作者的姓名
-                        "avatartime": "0"       //作者头像的更新时间
+                        "avatar": "http://a.xiaoningmeng.net/avatar/14850/1475841005/180"       //作者头像
                     },
                     {
                         "uid": "14852",
                         "album_num": "1",
                         "listen_num": "0",
                         "nickname": "费希尔",
-                        "avatartime": "0"
+                        "avatar": "http://a.xiaoningmeng.net/avatar/14852/1475841005/180"
                     }
                 ]
             }
@@ -426,11 +426,11 @@
                 "total": 19,
                 "items": [
                     {
-                        "uid": "14917",
+                        "uid": "14850",
                         "album_num": "1",
                         "listen_num": "0",
-                        "nickname": "王智勇",
-                        "avatartime": "0"
+                        "nickname": "董仁威",
+                        "avatar": "http://a.xiaoningmeng.net/avatar/14850/1475841005/180"
                     },
                     ...
                 ]
