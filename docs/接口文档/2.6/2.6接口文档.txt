@@ -14,184 +14,568 @@
 
 接口列表:
 
-    1.首页
+    1.首页[已完成]
 
         url:
             /default/index.php
         params:
         return：
         {
-                "code": 10000,
-                "data": {
-                    // 焦点图
-                    "focus_pic”:{
-                        “total”:5,
-                        “items”:[
-                            {
-                                "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
-                                "linkurl": "http://www.baidu.com"	// 跳转地址：url或专辑详情
-                            }
-                        ],
-                    },
-
-                //年龄分组
-                "age_level": {
-                    “total”:5,
-                    “items”:[
+            "code": 10000,
+            "data": {
+                "focus_pic": {
+                    "total": 5,
+                    "items": [
                         {
-                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
-                             “title”: “0~2岁”	// 标题
-                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=0&max=2”	// 跳转地址：url或专辑详情
+                            "cover": "http://p.xiaoningmeng.net/focus/32.png@!640x260?v=1475734342",
+                            "linkurl": "https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-15121060416.33.P6UR58&id=538647555934"
                         },
                         {
-                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
-                            “title”: “3~6岁”	// 标题
-                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=3&max=6”	// 跳转地址：url或专辑详情
+                            "cover": "http://p.xiaoningmeng.net/focus/30.png@!640x260?v=1475233642",
+                            "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=13048"
+                        },
+                        {
+                            "cover": "http://p.xiaoningmeng.net/focus/10.png@!640x260?v=1448113232",
+                            "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=4547"
+                        },
+                        {
+                            "cover": "http://p.xiaoningmeng.net/focus/7.png@!640x260?v=1447651895",
+                            "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=4513"
+                        },
+                        {
+                            "cover": "http://p.xiaoningmeng.net/focus/2.png@!640x260?v=1447429140",
+                            "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=1729"
                         }
-                    ],
-
-                }
-
-                //内容分类
-                "content_category“:{
-                    “total”:3,
-                    “items”:[
+                    ]
+                },
+                "age_level": {
+                    "total": 4,
+                    "items": [
                         {
-                            “title”: “全部分类”	// 标题
-                            "linkurl": "xnm://www.xiaoningmeng.net/album/category.php”	// 跳转地址：分类页
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",
+                            "title": "0-2岁"
                         },
                         {
-                            “title”: “作者”	// 标题
-                            "linkurl": "xnm://www.xiaoningmeng.net/author/info.php”	// 跳转地址：作者页
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",
+                            "title": "3-6岁"
                         },
                         {
-                            “title”: “主播”	// 标题
-                            "linkurl": "xnm://www.xiaoningmeng.net/anchor/info.php”	// 跳转地址：主播页
-                        },
-                    ],
-                }
-
-
-                “album_section”:{
-                    “total”:3,
-                    “items”:[
-                            {
-                                "title”:”今日精选”,
-                                "total":6,
-                                "items":[
-                                    {
-                                        "id": "2",		// 专辑id
-                                        "title": "小燕子",	// 专辑标题
-                                        "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
-                                        "listen_num": 2,
-                                        "recommend_desc": "一个优雅女孩的成长故事”,
-                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
-
-                                    },
-                                    {
-                                        "id": "50",
-                                        "title": "玉米妈妈精选图画书",
-                                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
-                                        "listennum": 0,
-                                        "recommenddesc": ""
-                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
-                                    },
-                                ],
-
-                            },
-                            {
-                                "title”:”最新上架”,
-                                "total":6,
-                                "items":[
-                                    {
-                                        "id": "2",		// 专辑id
-                                        "title": "小燕子",	// 专辑标题
-                                        "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
-                                        "listen_num": 2,
-                                        "recommend_desc": "一个优雅女孩的成长故事”,
-                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
-                                    },
-                                    {
-                                        "id": "50",
-                                        "title": "玉米妈妈精选图画书",
-                                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
-                                        "listennum": 0,
-                                        "recommenddesc": ""
-                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
-                                    },
-                                ],
-                            },
-
-                            {
-                                "title”:”同龄在听”,
-                                "total":6,
-                                "items":[
-                                    {
-                                        "id": "2",		// 专辑id
-                                        "title": "小燕子",	// 专辑标题
-                                        "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
-                                        "listen_num": 2,
-                                        "recommend_desc": "一个优雅女孩的成长故事”,
-                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
-
-                                    },
-                                    {
-                                        "id": "50",
-                                        "title": "玉米妈妈精选图画书",
-                                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
-                                        "listennum": 0,
-                                        "recommenddesc": ""
-                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
-                                    },
-                                ],
-                            },
-                            {
-                                "title":"儿歌",
-                                "total":4,
-                                "items":[
-                                    {
-                                        "id": "2",		// 专辑id
-                                        "title": "小燕子",	// 专辑标题
-                                        "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png"	// 专辑封面
-                                        "listen_num": 2,
-                                        "recommend_desc": "一个优雅女孩的成长故事”,
-                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
-
-                                    },
-                                    {
-                                        "id": "50",
-                                        "title": "玉米妈妈精选图画书",
-                                        "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg"
-                                        "listennum": 0,
-                                        "recommenddesc": ""
-                                        "linkurl": "xnm://www.xiaoningmeng.net/album/info.php?albumid=7235”	// 跳转地址：专辑详情
-                                    },
-                                ],
-                            },
-                    ],
-                }
-                “ad_msg”:{
-                     “total”:3,
-                     “items”:[
-                        {
-                            "below_to_album_section_index”:0, //相对于专辑分组某一项的位置,0表示在第一个section的下面
-                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
-                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=3&max=6”	// 跳转地址：http,xmm
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",
+                            "title": "7-10岁"
                         },
                         {
-                            "below_to_album_section_index”:1, //相对于专辑分组某一项的位置,1表示在第一个section的下面
-                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",	//封面
-                            "linkurl": "xnm://www.xiaoningmeng.net/age_grade/info.php?min=3&max=6”	// 跳转地址：http,xmm
+                            "cover": "http://lemonpic.oss-cn-hangzhou.aliyuncs.com/focus/1.png",
+                            "title": "11-14岁"
+                        }
+                    ]
+                },
+                "content_category": {
+                    "total": 3,
+                    "items": [
+                        {
+                            "cover": "http://p.xiaoningmeng.net/tag/2016/01/28/c81e728d9d4c2f636f067f89cc14862c.png?v=1453911544",
+                            "title": "分类"
                         },
-
-                     ],
+                        {
+                            "cover": "http://p.xiaoningmeng.net/tag/2016/01/28/c81e728d9d4c2f636f067f89cc14862c.png?v=1453911544",
+                            "title": "作者"
+                        },
+                        {
+                            "cover": "http://p.xiaoningmeng.net/tag/2016/01/28/c81e728d9d4c2f636f067f89cc14862c.png?v=1453911544",
+                            "title": "主播"
+                        }
+                    ]
+                },
+                "album_section": {
+                    "items": [
+                        {
+                            "title": "今日精选",
+                            "total": 6,
+                            "items": [
+                                {
+                                    "id": "11058",
+                                    "title": "乌鸦面包店",
+                                    "intro": "《乌鸦面包店》是日本幽默绘本大师加古里子的代表作，讲述了一个关于亲情与爱的故事。在泉水森林的“乌鸦面包店”里，四个健康可爱的乌鸦宝宝出生了。为了照顾小乌鸦们，乌鸦爸爸和乌鸦妈妈常常忙得照顾不上店里的生意，不是把面包烤焦就是冷落了客人，店里生意渐渐变差，家里也越来越穷。不过，随着小乌鸦们健康地长大，事情出现了转机……",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/21/ddd65013f9f3507850f6bd4b5a68f901.jpg@!460x460?v=2016/09/21/ddd65013f9f3507850f6bd4b5a68f901.jpg",
+                                    "listennum": 12,
+                                    "recommenddesc": "引导孩子正确认识财富，创造财富"
+                                },
+                                {
+                                    "id": "9473",
+                                    "title": "云朵工厂",
+                                    "intro": "我要跟你讲述一个发生在小小的内陆国家的故事。那个国家叫帕佩鲁姆，既没有海，也没有云朵--那些不可或缺的云朵！但是，那又是一个那么那么特别的国家，他们的居民自己生产那些他们缺少的东西。 比如……云朵。 故事就从帕佩鲁姆那座不同寻常的云朵工厂开始了。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/8123b781e08f4d9e89ea88f53e6431a9.jpg@!460x460?v=2016/10/08/8123b781e08f4d9e89ea88f53e6431a9.jpg",
+                                    "listennum": 19,
+                                    "recommenddesc": "国际大奖小说"
+                                },
+                                {
+                                    "id": "15149",
+                                    "title": "假如给我三天光明",
+                                    "intro": "        <span>《假如给我三天光明》是海伦?凯勒的自传作品。本书共分为两个部分，第一部分主要写了海伦变成盲聋哑人后的生活。刚开始，海伦的情绪非常暴躁，常常发脾气，她感觉不到现实生活中的爱，她的内心充满了对光明的渴望。直到安妮?莎莉文老师的到来，才燃起了海伦对生活的希望。随着时间的推移，海伦在老师和亲人的陪同下，学会了阅读和写作，认识和体会了许多不同的事物。凭着海伦坚强的意志，她闯过一个个困境，从考入大学到走进社会，一路的艰辛和努力，足以让我们动容。第二部分是海伦的散文代表作《假如给我三天光明》，这是本书中最精彩、最有影响力的篇章。在散文中，海伦假想自己如果有三天的光明将会去做什么：第一天，她要看到老师和亲朋好友，好好端详他们的面孔，将他们的外貌深深地印在心上。第二天，她要去参观博物馆、戏院或电影院，了解人类和自然界的真实面目。第三天，她要在现实世界里，在从事日常生活的人们中间度过平凡的一天。三天的活动，充实而短暂，海伦以一个身残志坚的柔弱女子的视角，告诫身体健全的我们应该好好珍惜生命，珍惜时间，热爱生活，关爱他人。</span><br>\r\n<span>　　让我们徜徉在作者朴实的语言世界中，走进她的生活，了解她的内心，真切地去感受那份坚强与善良。<br>\r\n<br>\r\n</span>\r\n      ",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/24/45847868f97554aaf56672aab3f644e9.jpg@!460x460?v=2016/09/24/45847868f97554aaf56672aab3f644e9.jpg",
+                                    "listennum": 76,
+                                    "recommenddesc": "什么样的力量让我们感动"
+                                },
+                                {
+                                    "id": "14508",
+                                    "title": "爱国儿歌精选",
+                                    "intro": "我们是中国人，我们热爱自己的国家。让我们的孩子来听一听这些爱国儿歌，因为他们是祖国的未来。专辑精选的爱国儿歌童谣，是表现儿童天真、向上、热爱祖国的好题材。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/28/ffb72475a81de0e95b910ffad039f5c2.jpg@!460x460?v=2016/09/28/ffb72475a81de0e95b910ffad039f5c2.jpg",
+                                    "listennum": 258,
+                                    "recommenddesc": "爱国歌曲代代传"
+                                },
+                                {
+                                    "id": "4347",
+                                    "title": "小猪唏哩呼噜",
+                                    "intro": " 唏哩呼噜是中国儿童文学史上一只著名的小猪。 因为他吃东西的时候，总是头也不抬地“唏哩呼噜、唏哩呼噜”一片晌，所以就叫了这个名字。 唏哩呼噜是一只不平凡的小猪，别看他小，经历过的事情可不少，恐怕有的大人都不如他。 唏哩呼噜被大狼叼走，要被分成块放进小狼宝宝的肚里，他并没有怕，而是巧妙地逃脱了大狼的手心，还战胜了要吃掉小狼们的月牙熊，成功地保护了小狼们；他为鸭太太做保镖、一个人赶夜路到城里送鸭蛋；还帮鸡太太鸡宅捉鬼呢",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/27/64b3ec1fdfacead70c3a9bd77d824306.jpg@!460x460?v=2016/09/27/64b3ec1fdfacead70c3a9bd77d824306.jpg",
+                                    "listennum": 89,
+                                    "recommenddesc": "一只小猪的生活趣事"
+                                },
+                                {
+                                    "id": "4896",
+                                    "title": "爱丽丝漫游奇境",
+                                    "intro": "本书包括两部曾经风靡欧美的童话小说《爱丽丝梦游仙境》和《爱丽丝镜中游》。作品以梦幻般的故事将读者带入一个奇妙的世界。那里的一切扑朔迷离，变幻莫测，时而还穿插着幽默诙谐的文字游戏、双关语或打油诗，读来好似荒诞，实际富有严密的逻辑性和深刻的内涵，是智慧与幻想的奇妙结晶。据说本书在英国是莎士比亚作品和《圣经》之外发行量最多的图书之一。《爱丽丝梦游仙境》和《爱丽丝镜中游》也使其作者卡罗尔在成为数学家、逻辑学家之后荣登小说家宝座。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/28/7a9a322cbe0d06a98667fdc5160dc6f8.jpg@!460x460?v=2016/09/28/7a9a322cbe0d06a98667fdc5160dc6f8.jpg",
+                                    "listennum": 898,
+                                    "recommenddesc": "一同飞往欢乐童趣的梦幻奇境"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "同龄在听",
+                            "total": 6,
+                            "items": [
+                                {
+                                    "id": "6592",
+                                    "title": "白狼荒原上的三天三夜",
+                                    "intro": " 贝克一行三人秘密前往北极圈，飞机遭遇冰风暴，坠落在阿拉斯加荒原上。阿尔伯伯腿部受伤，为了寻求救援队的帮助，贝克和小伙伴缇堪尼必须挖掘雪洞躲避暴风雪，用自制的绳索爬过冰桥，用驯鹿苔藓充饥......可是，在杳无人迹、万年冰封的阿拉斯加山脉上，贝克震惊的发现，有一个模糊的狼影，始终跟随着他们的脚步......",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/09/71dd9b48ff8928e726d4d21a5af243f3.jpg@!460x460?v=2016/10/09/71dd9b48ff8928e726d4d21a5af243f3.jpg",
+                                    "listennum": 11,
+                                    "recommenddesc": "探险家贝尔写给儿子的求生秘籍"
+                                },
+                                {
+                                    "id": "12959",
+                                    "title": "吉美启蒙儿歌精选集",
+                                    "intro": "类别：温馨篇 \r\n内容来自国内知名点读书出版商“吉美文化“（微信jmbook520），您可通过电台收听到国内外优秀的绘本故事、原创儿歌和宝贝分享快乐，更多精彩请关注微信。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/006bfae3a90bab38e29382170867e962.jpg@!460x460?v=2016/10/08/006bfae3a90bab38e29382170867e962.jpg",
+                                    "listennum": 521,
+                                    "recommenddesc": "首首经典 句句好听"
+                                },
+                                {
+                                    "id": "14660",
+                                    "title": "宝宝听书（一）",
+                                    "intro": "　　这套故事数的最大特点是，图书所配CD均由专业人员演播，他们通过富有亲和力的嗓音，精彩的语言表现力，让孩子们仿佛能够通过声音看到故事中所描绘的画面。\r\n　　专家们的精彩演绎，使每个故事都成为一个精彩的故事剧，听起来兴趣盎然，一定能充分调动孩子们的想象力和对故事的热爱，并能培养孩子集中注意力的能力。孩子和妈妈一起来听故事，也是一种与众不同的新的亲子休闲方式。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/30/683c46992e4642f7cf7ea1dc7db4f93a.jpg@!460x460?v=2016/09/30/683c46992e4642f7cf7ea1dc7db4f93a.jpg",
+                                    "listennum": 68,
+                                    "recommenddesc": "插上想象的翅膀一起翱翔"
+                                },
+                                {
+                                    "id": "14350",
+                                    "title": "睡前十分钟故事",
+                                    "intro": "　　本书一共收录了179个经典好听的故事，这些故事都是国内著名童话家写的故事原作，语言生动幽默，富有趣味和教育意义。为了使播讲吸引小听众，我们专门请来了中央人民广播电台\"小喇叭\"节目的主持人郑晶姐姐、她会给孩子们讲故事的牟云阿姨和\"邮递员\"叔叔张文星，他们讲述使得原本美妙温馨童话故事妙笔生花。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/24/effbafd134873f47f49c740581fb1854.jpg@!460x460?v=2016/09/24/effbafd134873f47f49c740581fb1854.jpg",
+                                    "listennum": 176,
+                                    "recommenddesc": "带你进入甜蜜梦境"
+                                },
+                                {
+                                    "id": "12451",
+                                    "title": "小鹿斑比",
+                                    "intro": "故事从小鹿斑比在母亲身边蹒跚学步、牙牙学语开始，其间它品尝到了酸、甜、苦、辣的生活滋味，认识到了大森林的柔和与残酷；它在与朋友们一起历经磨难与考验时，不断地了解外界的知识，不断地丰富内心的感受······",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/22/492f948808daf55a3f9e7ddd3694f546.jpg@!460x460?v=2016/09/22/492f948808daf55a3f9e7ddd3694f546.jpg",
+                                    "listennum": 108,
+                                    "recommenddesc": "一部能打动孩子心灵的世界经典童话"
+                                },
+                                {
+                                    "id": "3824",
+                                    "title": "经典儿童故事",
+                                    "intro": "经典的儿童故事。第一次一家三口一起录故事。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/18/67974233917cea0e42a49a2fb7eb4cf4.jpg@!460x460?v=2016/09/18/67974233917cea0e42a49a2fb7eb4cf4.jpg",
+                                    "listennum": 183,
+                                    "recommenddesc": "经典儿童故事"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "最新上架",
+                            "total": 6,
+                            "items": [
+                                {
+                                    "id": "6446",
+                                    "title": "小田鼠哇克的故事",
+                                    "intro": "哇克是一只糊里糊涂的小田鼠，哇克和爱他的妈妈还有许多小伙伴们快乐地生活在田鼠城堡里。他和小朋友一样爱运动，喜欢唱歌。他的拿手曲目是《吱哇歌》。他还是田鼠城堡里数一数二的小歌手呢。对了，哇克还会演奏小提琴。他勤劳善良又热心，热爱生活，关心朋友，遇事肯动脑筋想办法；不过，他有点儿爱忘事儿，有时候像个“小迷糊”；偶尔犯点儿小错误，但总是能够及时改正哦。发生在小田鼠哇克身上的精彩故事可多了！快来看看吧！",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/09/4c7958ae576e324677837d348a133102.jpg@!460x460?v=2016/10/09/4c7958ae576e324677837d348a133102.jpg",
+                                    "listennum": 3,
+                                    "recommenddesc": "妙趣横生的幽默系列童话"
+                                },
+                                {
+                                    "id": "14954",
+                                    "title": "吹牛大王历险记",
+                                    "intro": "　　原为德国民间故事，后来由德国埃·拉斯伯和戈·毕尔格两位作家再创作而成。这是介于童话和幻想故事之间的作品。它是根据十八世纪德国男爵敏豪森讲的故事编写的。\r\n　　敏豪森男爵实有其人，他是18世纪德国汉诺威地区的庄园主，出身于名门望族。他又是个军人，在俄国服务过，和土耳其人打过仗，喜爱打猎。敏豪森擅长言谈，生性幽默，慷慨大方，深得朋友敬重。他膝下无子女，妻子是一位颇具家势财产的女人，可怜先他而去。后来他又与一位18岁的妙龄女郎婚配。这第二次婚姻却十分不幸。1787年2月22日，他受尽感情煎熬，终于长眠。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/24/3fe89c9f9000fc1e58862236bf409d13.jpg@!460x460?v=2016/09/24/3fe89c9f9000fc1e58862236bf409d13.jpg",
+                                    "listennum": 1,
+                                    "recommenddesc": "儿童文学的瑰宝和讽刺文学的丰碑"
+                                },
+                                {
+                                    "id": "13234",
+                                    "title": "学会爱自己系列故事",
+                                    "intro": " 《不要随便跟陌生人走》（德国） ——如果有陌生人要带你走，你会智慧地拒绝他吗？  说的虽然是大家常常挂在嘴边的主题，但是，其中介绍的一些应对危机的方法却是孩子们真正需要的，可以给孩子们很多帮助。 ",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/b0e864a6eccfc779c8119f5a4468797f.png@!460x460?v=2016/10/08/b0e864a6eccfc779c8119f5a4468797f.png",
+                                    "listennum": 17,
+                                    "recommenddesc": "教会孩子大声说“不”"
+                                },
+                                {
+                                    "id": "12420",
+                                    "title": "小狗钱钱",
+                                    "intro": "儿童财商启蒙最佳读本。要想有所成就，必须从小做起。欧洲你才打死舍费尔用生动的理财童话，教孩子如何从小学会支配金钱，而不是受金钱的支配；如何像富人一样思考，正确认识和使用金钱；如何进行理财投资，找到积累资产的方法，早日实现财务自由。《小狗钱钱》不止是适合孩子听的理财童话，对成年人同样大有裨益。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/2b8f7198614e3d872116d3c2840fd37c.jpg@!460x460?v=2016/10/08/2b8f7198614e3d872116d3c2840fd37c.jpg",
+                                    "listennum": 7,
+                                    "recommenddesc": "如童话般的理财故事"
+                                },
+                                {
+                                    "id": "11865",
+                                    "title": "神笔马良",
+                                    "intro": "《神笔马良》是著名作家洪汛涛的代表作，是二十世纪五十年代的中国影响最大的儿童文学作品。此书在国内家喻户晓，马良形象深入人心。马良从小喜欢画画，但是他家里很穷，买不起笔，他日思夜想，希望能拥有一支笔，终于得到了一只神笔。神笔能让马良的画活起来，马良用神笔给百姓画画，帮助他们，但是引起了地主等恶势力的嫉妒，坏人纷纷来抢他的神笔。马良历尽千辛万苦，充分发挥自己的聪明才智，战胜了各方恶势力。从此神笔和马良的故事就流传开了。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/03/01/fa393b662023edc37bd15563ac2c2167.jpg@!460x460?v=2016/03/01/fa393b662023edc37bd15563ac2c2167.jpg",
+                                    "listennum": 37,
+                                    "recommenddesc": "用一支笔改变世界"
+                                },
+                                {
+                                    "id": "14290",
+                                    "title": "卡尔和贝瑞童话故事集",
+                                    "intro": "卡尔是个小男孩，对什么都充满好奇，机灵，有主意。贝瑞是个漂亮的小萝莉，虽然经常欺负卡尔，但关键时刻还是会经常帮卡尔的忙。此外，同学肥腩以及古怪的哈森",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/23/1cbd0a834ad09f5650b3536f90478f25.jpg@!460x460?v=2016/09/23/1cbd0a834ad09f5650b3536f90478f25.jpg",
+                                    "listennum": 40,
+                                    "recommenddesc": "关于友谊的温馨童话"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "故事",
+                            "total": 4,
+                            "items": [
+                                {
+                                    "id": "11058",
+                                    "title": "乌鸦面包店",
+                                    "intro": "《乌鸦面包店》是日本幽默绘本大师加古里子的代表作，讲述了一个关于亲情与爱的故事。在泉水森林的“乌鸦面包店”里，四个健康可爱的乌鸦宝宝出生了。为了照顾小乌鸦们，乌鸦爸爸和乌鸦妈妈常常忙得照顾不上店里的生意，不是把面包烤焦就是冷落了客人，店里生意渐渐变差，家里也越来越穷。不过，随着小乌鸦们健康地长大，事情出现了转机……",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/21/ddd65013f9f3507850f6bd4b5a68f901.jpg@!460x460?v=2016/09/21/ddd65013f9f3507850f6bd4b5a68f901.jpg",
+                                    "listennum": 12,
+                                    "recommenddesc": "引导孩子正确认识财富，创造财富"
+                                },
+                                {
+                                    "id": "9473",
+                                    "title": "云朵工厂",
+                                    "intro": "我要跟你讲述一个发生在小小的内陆国家的故事。那个国家叫帕佩鲁姆，既没有海，也没有云朵--那些不可或缺的云朵！但是，那又是一个那么那么特别的国家，他们的居民自己生产那些他们缺少的东西。 比如……云朵。 故事就从帕佩鲁姆那座不同寻常的云朵工厂开始了。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/8123b781e08f4d9e89ea88f53e6431a9.jpg@!460x460?v=2016/10/08/8123b781e08f4d9e89ea88f53e6431a9.jpg",
+                                    "listennum": 19,
+                                    "recommenddesc": "国际大奖小说"
+                                },
+                                {
+                                    "id": "15149",
+                                    "title": "假如给我三天光明",
+                                    "intro": "        <span>《假如给我三天光明》是海伦?凯勒的自传作品。本书共分为两个部分，第一部分主要写了海伦变成盲聋哑人后的生活。刚开始，海伦的情绪非常暴躁，常常发脾气，她感觉不到现实生活中的爱，她的内心充满了对光明的渴望。直到安妮?莎莉文老师的到来，才燃起了海伦对生活的希望。随着时间的推移，海伦在老师和亲人的陪同下，学会了阅读和写作，认识和体会了许多不同的事物。凭着海伦坚强的意志，她闯过一个个困境，从考入大学到走进社会，一路的艰辛和努力，足以让我们动容。第二部分是海伦的散文代表作《假如给我三天光明》，这是本书中最精彩、最有影响力的篇章。在散文中，海伦假想自己如果有三天的光明将会去做什么：第一天，她要看到老师和亲朋好友，好好端详他们的面孔，将他们的外貌深深地印在心上。第二天，她要去参观博物馆、戏院或电影院，了解人类和自然界的真实面目。第三天，她要在现实世界里，在从事日常生活的人们中间度过平凡的一天。三天的活动，充实而短暂，海伦以一个身残志坚的柔弱女子的视角，告诫身体健全的我们应该好好珍惜生命，珍惜时间，热爱生活，关爱他人。</span><br>\r\n<span>　　让我们徜徉在作者朴实的语言世界中，走进她的生活，了解她的内心，真切地去感受那份坚强与善良。<br>\r\n<br>\r\n</span>\r\n      ",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/24/45847868f97554aaf56672aab3f644e9.jpg@!460x460?v=2016/09/24/45847868f97554aaf56672aab3f644e9.jpg",
+                                    "listennum": 76,
+                                    "recommenddesc": "什么样的力量让我们感动"
+                                },
+                                {
+                                    "id": "4896",
+                                    "title": "爱丽丝漫游奇境",
+                                    "intro": "本书包括两部曾经风靡欧美的童话小说《爱丽丝梦游仙境》和《爱丽丝镜中游》。作品以梦幻般的故事将读者带入一个奇妙的世界。那里的一切扑朔迷离，变幻莫测，时而还穿插着幽默诙谐的文字游戏、双关语或打油诗，读来好似荒诞，实际富有严密的逻辑性和深刻的内涵，是智慧与幻想的奇妙结晶。据说本书在英国是莎士比亚作品和《圣经》之外发行量最多的图书之一。《爱丽丝梦游仙境》和《爱丽丝镜中游》也使其作者卡罗尔在成为数学家、逻辑学家之后荣登小说家宝座。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/28/7a9a322cbe0d06a98667fdc5160dc6f8.jpg@!460x460?v=2016/09/28/7a9a322cbe0d06a98667fdc5160dc6f8.jpg",
+                                    "listennum": 898,
+                                    "recommenddesc": "一同飞往欢乐童趣的梦幻奇境"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "儿歌",
+                            "total": 4,
+                            "items": [
+                                {
+                                    "id": "12959",
+                                    "title": "吉美启蒙儿歌精选集",
+                                    "intro": "类别：温馨篇 \r\n内容来自国内知名点读书出版商“吉美文化“（微信jmbook520），您可通过电台收听到国内外优秀的绘本故事、原创儿歌和宝贝分享快乐，更多精彩请关注微信。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/006bfae3a90bab38e29382170867e962.jpg@!460x460?v=2016/10/08/006bfae3a90bab38e29382170867e962.jpg",
+                                    "listennum": 521,
+                                    "recommenddesc": "首首经典 句句好听"
+                                },
+                                {
+                                    "id": "11942",
+                                    "title": "摇一谣",
+                                    "intro": "摇啊摇，摇出一首好歌谣，梁老师每天给宝宝说歌谣。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/28/c93e07f14a29ef0aeb9ffb75fbd148e3.jpg@!460x460?v=2016/09/28/c93e07f14a29ef0aeb9ffb75fbd148e3.jpg",
+                                    "listennum": 69,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "11856",
+                                    "title": "跟我学童谣",
+                                    "intro": "我是露西姐姐。从今天开始，我要给大家连续播出，由沧州市作协，武春章老先生编辑撰写，由中国图书出版社出版的，一部社会主义核心价值观童谣。童谣共分八个篇章，爱国篇，敬业篇，诚信，友善，孝敬，勤俭，法治篇，生态篇。每一首童谣都寄托着，武春章先生，这位八旬老人，对孩子们的深情和厚望，读罢，不仅能唤醒人们的童心，而且能让孩子从小埋下爱国爱家的种子，引领少年儿童的健康成长。一首首欢乐活泼，寓教于乐的童谣，让孩子在传唱中，滋润心田，在幼小的心灵中，生枝，发芽，开花，结果。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/21/ef77022c7b788c29c95a72a87414cd96.jpg@!460x460?v=2016/09/21/ef77022c7b788c29c95a72a87414cd96.jpg",
+                                    "listennum": 74,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "11730",
+                                    "title": "儿歌经典300首",
+                                    "intro": "微信平台【早教课堂】推荐：儿歌能刺激孩子大脑的发育，锻炼他们的记忆力和感受力、发展他们的空间感和时间感，而且对宝宝的语言、数理、逻辑能力的提高都有很大的帮助。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/28/7d9151910198dc0e9938f28d90b3723a.jpg@!460x460?v=2016/09/28/7d9151910198dc0e9938f28d90b3723a.jpg",
+                                    "listennum": 390,
+                                    "recommenddesc": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "国学",
+                            "total": 4,
+                            "items": [
+                                {
+                                    "id": "9400",
+                                    "title": "小学生必背古诗80首",
+                                    "intro": "我的女儿上小学一年级，要求背诵古诗。于是我就专门录一套必背古诗80首，希望优优跟着学习的同时，也能给大家带来些方便。教育部小学《语文教学大纲》指定背诵篇目，古诗是中国五千年悠久文化的高度凝练，一首诗，蕴藏着一个故事，一种情怀，散发出难以抗拒的魅力。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/30/6738fc33dd0b3906cd3626397cd247a7.jpg@!460x460?v=2016/09/30/6738fc33dd0b3906cd3626397cd247a7.jpg",
+                                    "listennum": 24,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "4297",
+                                    "title": "三国演义",
+                                    "intro": "《三国演义》又名《三国志演义》、《三国志通俗演义》，是我国小说史上最著名最杰出的长篇章回体历史小说。《三国演义》的作者是元末明初人罗贯中，在其成书前，“三国故事”已经历了数百年的历史发展过程。在唐代，三国故事已广为流传，连儿童都很熟悉。随着市民文艺的发展，宋代的“说话”艺人，已有专门说三国故事的，当时称为“说三分”。元代出现的《三国志平话》，实际上是从说书人使用的本子，虽较简略粗糙，但已初肯《三国演义》的规模。罗贯中在群众传说和民间艺人创作的基础上，又依据陈寿《三国志》及裴松之注中所征引的资料（还包括《世说新语》及注中的资料），经过巨大的创作劳动，写在了规模宏伟的巨著——《三国演义》。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2015/12/11/30cde89544caa549a813d660c4b27967.png@!460x460?v=2015/12/11/30cde89544caa549a813d660c4b27967.png",
+                                    "listennum": 223,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "3642",
+                                    "title": "千字文译读",
+                                    "intro": "这是一首以儿童生活为题材的诗作。在唐诗中，写儿童的题材比较少，因而显得可贵。这首七绝写小儿垂钓别有情趣。前两句叙述、描写，从外形着笔，是实写。后两句诗侧重神态来写。此诗没有绚丽的色彩，没有刻意的雕饰，就似一枝清丽的出水芙蓉，在平淡浅易的叙述中透露出几分纯真、无限童趣和一些专注。 ",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/30/300d1539c3b6aa1793b5678b857732cf.jpg@!460x460?v=2016/09/30/300d1539c3b6aa1793b5678b857732cf.jpg",
+                                    "listennum": 14,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "11209",
+                                    "title": "国学西学",
+                                    "intro": "        <span>独立良师  </span>\r\n<span><span>王语雷和丁一</span></span>\r\n<span>  【</span>\r\n<span>成长作文国学堂 </span>\r\n<span>】 ：</span>\r\n<span><span>全国作文教学大赛特等奖、海峡两岸高中线下微课大赛第一名</span></span>\r\n<span>。   </span>\r\n\r\n      ",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/30/5ad4f73ea28ca73f8fe529067b237db1.jpg@!460x460?v=2016/09/30/5ad4f73ea28ca73f8fe529067b237db1.jpg",
+                                    "listennum": 3,
+                                    "recommenddesc": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "英语",
+                            "total": 4,
+                            "items": [
+                                {
+                                    "id": "4462",
+                                    "title": "女巫温妮英文故事",
+                                    "intro": "编辑推荐\r\n《女巫温妮》是英国插画大师科奇·保罗成名之作！英国红房子儿童图书奖获奖作品！关于女巫和魔法的图画书经典！\r\n\r\n作者简介\r\n作者：（澳大利亚）瓦莱丽·托马斯（Thomas V.） 译者：任溶溶 插图者：（英国）科奇·保罗（Paul K.）\r\n\r\n瓦莱丽·托马斯，出生于澳大利亚墨尔本的瓦莱丽，一定是特别热爱魔法世界，才能把女巫温妮的故事写得这么妙趣横生、引人入胜。当然，这也跟瓦莱丽喜欢孩子、熟知孩子的内心有关。她在澳大利亚和英国当过老师，写出过许多让孩子们爱不释手的故事。瓦莱丽还喜欢到世界各地旅行，把旅行中的五彩心情都变成了斑斓有趣的书。她一定想过：“要是我有一把飞天扫帚就好啦，想去哪儿就去哪儿！” \r\n科奇·保罗，画出了女巫温妮的科奇·保罗有一个让人羡慕的童年——整天在非洲的韦尔德草原上无拘无束地玩耍，难怪他有这么丰富的想象力！更何况，科奇·保罗还刻苦地学习了美术和影视动画，努力让自己成为“世界上最伟大的肖像画家”。为了画出孩子们最喜欢的作品，科奇·保罗经常去学校，在和孩子们的交往中激发创作灵感。科奇·保罗和两个孩子住在英国的牛津，不过每到夏天，他们都会去希腊享受一下爱琴海上灿烂无比的阳光。 \r\n任溶溶，一个精通俄文、英文、意大利文、日文等多种文字的翻译家，一个写出过很多儿童诗歌、童话、儿童小说的好玩儿的作家，一个得过国际儿童读物联盟翻译奖、亚洲儿童文学奖、陈伯吹儿童文学奖杰出贡献奖、宋庆龄儿童文学奖特殊贡献奖等一连串奖的可爱的老先生。他总是生活得特别带劲儿，像挥动魔法棒的女巫温妮那样，兴致勃勃地去经历生活中的每一件事。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/04/21/0b5e29aa1acf8bdc5d8935d7036fa4f5.jpg@!460x460?v=2016/04/21/0b5e29aa1acf8bdc5d8935d7036fa4f5.jpg",
+                                    "listennum": 338,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "11627",
+                                    "title": "糖果屋历险记",
+                                    "intro": "糖果屋历险记",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/04/21/c28180798c5c9bc681b3b23b2b4ce398.jpg@!460x460?v=2016/04/21/c28180798c5c9bc681b3b23b2b4ce398.jpg",
+                                    "listennum": 315,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "11626",
+                                    "title": "阿拉丁和神灯",
+                                    "intro": "阿拉丁和神灯",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/04/21/e27c71957d1e6c223e0d48a165da2ee1.jpg@!460x460?v=2016/04/21/e27c71957d1e6c223e0d48a165da2ee1.jpg",
+                                    "listennum": 279,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "11628",
+                                    "title": "彼得潘",
+                                    "intro": "彼得潘",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/04/21/c5aa65949d20f6b20e1a922c13d974e7.jpg@!460x460?v=2016/04/21/c5aa65949d20f6b20e1a922c13d974e7.jpg",
+                                    "listennum": 323,
+                                    "recommenddesc": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "绘本",
+                            "total": 4,
+                            "items": [
+                                {
+                                    "id": "11058",
+                                    "title": "乌鸦面包店",
+                                    "intro": "《乌鸦面包店》是日本幽默绘本大师加古里子的代表作，讲述了一个关于亲情与爱的故事。在泉水森林的“乌鸦面包店”里，四个健康可爱的乌鸦宝宝出生了。为了照顾小乌鸦们，乌鸦爸爸和乌鸦妈妈常常忙得照顾不上店里的生意，不是把面包烤焦就是冷落了客人，店里生意渐渐变差，家里也越来越穷。不过，随着小乌鸦们健康地长大，事情出现了转机……",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/21/ddd65013f9f3507850f6bd4b5a68f901.jpg@!460x460?v=2016/09/21/ddd65013f9f3507850f6bd4b5a68f901.jpg",
+                                    "listennum": 12,
+                                    "recommenddesc": "引导孩子正确认识财富，创造财富"
+                                },
+                                {
+                                    "id": "6283",
+                                    "title": "形形色色镇",
+                                    "intro": "原著：九斗  配音：北京声优百代制作   配乐：深圳百涂文化传播制作 \r\n  \r\n出品方：深圳糖菓科技                 形形色色镇微信服务号：Fantown\r\n \r\n  \r\n故事简介： \r\n  \r\n       神秘的迷雾谷，来了一群稻草人。几个月前他们还在农场的田园里工作，因为没有抵挡住蝗虫大军的进犯，被赶出了庄稼地到处流浪。在魔法师的点拨下，稻草人们 运用智慧和团结，驱散了迷雾谷的重重迷雾。他们惊喜地发现，这里原来有个好听的名字叫“形形色色镇”，而且漫山遍野长着空心草，正是稻草人们必须的食物。 他们决定留下来过快乐的生活。 \r\n  \r\n       可是好景不长，贪婪的蝗虫们很快发现了形形色色镇，它们把空心草洗劫一空。沮丧的稻草人们发现，只有让自己变成强大才能保卫家园。 \r\n  \r\n       他们诞生了一个伟大的梦想－－变成人类。稻草人们求助魔法师，魔法师说要想变成人类，首先要学习人类生活的基本技能，通过完成“衣、食、住、行”等方面的生产任务，才有达成变成人类的心愿。 \r\n  \r\n       于是，稻草人们一边学习劳动，一边与蝗虫间和自然环境展开机智的博弈。我们的学习也由此开始…… \r\n  \r\n       {关于更新｝：本剧第一季 共二十集，分为“成长系列”和“性格培养系列”，每周更新两集。为免去您搜索收听的麻烦，请关注本剧并加入收藏夹。 \r\n  \r\n     ｛关于分享｝：分享，是一种美德。如果您想更多的了解“形形色色镇”，或者希望更多的孩子像您的孩子一样在形形色色镇有所收获，请关注我们的公众号并将它分享给你在乎的人，让我们一起守护明天的太阳！ \r\n  \r\n       \r\n形形色色镇微信服务号：Fantown\r\n ",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/09/8a9c8ac001d3ef9e4ce39b1177295e03.jpg@!460x460?v=2016/10/09/8a9c8ac001d3ef9e4ce39b1177295e03.jpg",
+                                    "listennum": 2,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "4056",
+                                    "title": "玛德琳系列",
+                                    "intro": "各位大朋友们、各位小朋友们，你们好，欢迎来到老虎工作室！ 我们是一群热爱播音、喜欢孩子的爸爸妈妈，或者在不久的将来即将成为爸爸妈妈：)。从我们做父母的那一天起，我们开始思考，什么是我们能给孩子最好的教育？如何保护我们的孩子远离现实世界的急功近利和暴力血腥？算是一种注定的缘分，我们发现用电台讲故事是一种极好的方式来为孩子营造一片自由的成长空间，因而走到了一起。 故事书用精美的图片、简单的文字为孩子们讲述了世间的真善美，我们共同生活着的这个宇宙、这个星球，植物、动物、山川、河流，还有我们对自己、对朋友、对家人的思考和认识，告诉他们如何做人、如何做事。不同于看动画片、也不同于学校课堂的知识教育，当孩子们躺在床上、闭上眼睛倾听童话故事的时候，他们的思想是完全自由的，不被现实世界的条条框框所局限，也不被科学领域的物理定律所左右，他们心中的童话世界是完全凭着自己的想象构建出来的，原生的创造力因而得以最大限度地发挥和保留。我们能给孩子的永远只是鼓励、不加妨碍、创造条件，他们便会心怀感恩从一棵棵小树苗成长为一株株参天大树，使他们懂得如何爱自己，如何做真实的自己，更懂得如何去保护比他们弱小的小小树苗在这片爱心的海洋中一起成长。 我们的电台每天发布3个故事，为了便于大家的收听，特别用专辑的方式按照故事系列和主播来重新组织了所有的节目。也欢迎大家订阅我们的微信公众号“老虎工作室”，我们会在那里分享故事的精美图文，也分享我们认同的教育理念和育儿心得。 如果你愿意，让我们一路同行。一起见证孩子们的成长，一起感受这个世界的美丽！",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/9529fbba677729d3206b3b9073d1e9ca.jpg@!460x460?v=2016/10/08/9529fbba677729d3206b3b9073d1e9ca.jpg",
+                                    "listennum": 1,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "12770",
+                                    "title": "暖房子经典绘本系列",
+                                    "intro": "作者：(英)克里斯蒂娜·巴特勒|译者：禹田文化；出版社：北京联合出版社 \r\n《暖房子绘本·关于爱的故事:雨中的小红伞》内容简介：“噼啪，噼啪！”下雨了！小刺猬穿上小雨衣，打起了小红伞，出门去玩。路上，他遇见了浑身淋湿的小鼹鼠，就把雨伞借给了他，谁知道突然刮起来，一阵大风把他们两个一起刮进了河里，小刺猬刚好掉进小红伞，可是小鼹鼠却没那么走运了。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/21/4d7c59dcc50edd1199828ea005928f85.jpg@!460x460?v=2016/09/21/4d7c59dcc50edd1199828ea005928f85.jpg",
+                                    "listennum": 312,
+                                    "recommenddesc": "让家更温暖，让爱更甜蜜"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "音乐",
+                            "total": 4,
+                            "items": [
+                                {
+                                    "id": "5365",
+                                    "title": "世界的国歌",
+                                    "intro": "七田真为“0－6岁婴幼儿”提供最专业的胎教、早教、育儿服务，迄今已在日本、美国、澳大利亚等国家及地区开办500多所教学中心，足迹遍及12个国家，已惠及全球400000个家庭\r\n欢迎关注公众微信号：七田真",
+                                    "cover": "http://p.xiaoningmeng.net/album/2015/11/03/b105e5a192f80ef3ec4ee4756af089a3.jpg@!460x460?v=2015/11/03/b105e5a192f80ef3ec4ee4756af089a3.jpg",
+                                    "listennum": 104,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "6369",
+                                    "title": "古典音乐",
+                                    "intro": "七田真为“0－6岁婴幼儿”提供最专业的胎教、早教、育儿服务，迄今已在日本、美国、澳大利亚等国家及地区开办500多所教学中心，足迹遍及12个国家，已惠及全球400000个家庭\r\n欢迎关注公众微信号：七田真",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/30/0599ed8cdae6949af69385a4b59ff0dc.jpg@!460x460?v=2016/09/30/0599ed8cdae6949af69385a4b59ff0dc.jpg",
+                                    "listennum": 297,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "12795",
+                                    "title": "声律启蒙",
+                                    "intro": "《声律启蒙》是训练儿童应对，掌握声韵格律的启蒙读物。按韵分编，包罗天文、地理、花木、鸟兽、人物、器物等的虚实应对。从单字对到双字对，三字对、五字对、七字对到十一字对，声韵协调，琅琅上口，从中得到语音、词汇、修辞的训练。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/30/e57edfc7529f0c7b21788231308caeab.jpg@!460x460?v=2016/09/30/e57edfc7529f0c7b21788231308caeab.jpg",
+                                    "listennum": 226,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "13693",
+                                    "title": "我的音乐启蒙第一课",
+                                    "intro": "我的音乐启蒙第一课",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/30/455a9ce9e0c8e8a0c7745eecd6a64be4.jpg@!460x460?v=2016/09/30/455a9ce9e0c8e8a0c7745eecd6a64be4.jpg",
+                                    "listennum": 53,
+                                    "recommenddesc": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "科普",
+                            "total": 4,
+                            "items": [
+                                {
+                                    "id": "6574",
+                                    "title": "多瑞奶奶讲百科知识",
+                                    "intro": " “多瑞奶奶”方钟，黑龙江人民广播电台文艺部副主任，著名节目主持人。从事播音主持工作近三十年，获全国优秀广播节目一等奖、全国广播电视节目主持人开拓奖即金话筒奖等。播音主持风格自然流畅、富有感染力。 让孩子们在阅读中找到学习的乐趣，提高朗读水平，给孩子传递阅读正能量。这些正能量的品质，影响甚至决定着孩子的未来！ 分享是一种美德，让更多的有阅读爱好的孩子们来找多瑞奶奶吧！ 更多课文请加微信:yuemeng7777 关注公众平台：多瑞奶奶读课文 ",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/09/4eb0194ddf4d6c7a72dca4fd3149e92e.jpg@!460x460?v=2016/10/09/4eb0194ddf4d6c7a72dca4fd3149e92e.jpg",
+                                    "listennum": 0,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "6508",
+                                    "title": "幼儿十万个为什么",
+                                    "intro": "少年儿童出版社为0-8岁小朋友打造的听书频道。欢迎到各大网络书店购买｟春华童书｠，欢迎边读边听，更多快乐更多乐趣。微信号：小青蛙爱阅读全拼",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/58d2d622ed4026cae2e56dffc5818a11.jpg@!460x460?v=2016/10/08/58d2d622ed4026cae2e56dffc5818a11.jpg",
+                                    "listennum": 2,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "6513",
+                                    "title": "爸爸妈妈进课堂",
+                                    "intro": "带着爸爸妈妈进课堂，教爸爸妈妈做最好的家长、做孩子的老师和好朋友，了解专业的教育知识，帮助家长走出教育误区。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/3bff829dde3583558708865f6de7be37.jpg@!460x460?v=2016/10/08/3bff829dde3583558708865f6de7be37.jpg",
+                                    "listennum": 0,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "6512",
+                                    "title": "沈闯的十万个为什么",
+                                    "intro": "涵盖了地球、自然、社会、科学、等方面形形色色的问题，可以是孩子睡前的好朋友哦。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/10/08/abd1c782880cc59759f4112fda0b8f98.jpg@!460x460?v=2016/10/08/abd1c782880cc59759f4112fda0b8f98.jpg",
+                                    "listennum": 9,
+                                    "recommenddesc": ""
+                                }
+                            ]
+                        },
+                        {
+                            "title": "育儿",
+                            "total": 4,
+                            "items": [
+                                {
+                                    "id": "14746",
+                                    "title": "母亲的榜样",
+                                    "intro": "《名家教子书:母亲的榜样》让您迅速了解大师教育智慧的核心内容，从而能够轻而易举地亲近和理解世界教育大师的智慧，感受世界经典教育方法的巨大魅力。对于那些渴望获得成功的教子经验的中国父亲和母亲来说，《名家教子书:母亲的榜样》是一部有很大参考价值的家庭教育读本，甚至可以说是一套权威而完善的教育宝典。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/13/0bb759879533c4232940d44d174f0cf1.jpg@!460x460?v=2016/09/13/0bb759879533c4232940d44d174f0cf1.jpg",
+                                    "listennum": 1,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "14711",
+                                    "title": "半小时爸爸",
+                                    "intro": "　　本书通过童话故事、散文、儿歌、歌曲、游戏、看图说话、古诗等培养孩子美好的情感、良好的自我意识、坚强的意志、高尚的品德、乐观自信的个性、活泼开朗的性格和宽广的胸怀。本书以可直接供家长操作的具体活动为主要内容，每个活动配以数条专家建议，针对活动的操作方法、发展目标以及注意事项对家长进行指导，每个活动标有活动时间。家长可从数个活动中自行挑选，每天组成半小时训练内容，给孩子以科学的家庭教育。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/11/7421d74f57142680e679057ddc98edf5.jpg@!460x460?v=2016/09/11/7421d74f57142680e679057ddc98edf5.jpg",
+                                    "listennum": 1,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "14734",
+                                    "title": "好父母教品德",
+                                    "intro": "　　当父母翻开张振鹏编著的《好父母教品德(培养完美孩子的40个道德细节)》，就会知道如何教孩子孝敬父母、尊敬老师、关爱同学、心怀感恩、诚实有加、信守诺言、宽容大度、谦虚不骄、仁厚待人、敢于道歉、换位思考、尊重他人、懂得忍耐、与人分享、真诚利他、乐于助人、自我反省、改正过错、懂得廉耻、亲近贤能、淡泊名利、无私无我、爱心满怀、心地善良、为人正直、有同情心、勤劳肯干、乐观向上、心怀自信、坚强不渝、不怕吃苦、勇敢不懦、持之以恒、热忱在心、勤俭节约、热爱祖国、遵守公德、遵守秩序、爱护动物、保护环境……《好父母教品德(培养完美孩子的40个道德细节)》教给父母的不是知识，而是落实德行教育的方法，只有去做，去落实，去力行，读这本书才是有意义的。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/13/548bada0dbbcaf6d92cc76c5b773e7b9.jpg@!460x460?v=2016/09/13/548bada0dbbcaf6d92cc76c5b773e7b9.jpg",
+                                    "listennum": 1,
+                                    "recommenddesc": ""
+                                },
+                                {
+                                    "id": "15112",
+                                    "title": "走进孩子内心世界",
+                                    "intro": "0-3岁儿童心理百科\r\n本书可谓是一部为中国广大父母量身定做的亲子教育读本，通过日常生活孩子的各种问题，学习为人父母的心得；举例引用现实例子，讲述家庭教育之道；以学习和借鉴，教你如何成为一名优秀的父母。\r\n　　本书中有很多父母教育孩子的心得体会，以及真正了解和解决孩子所存在问题的方法方案。每一个案例都是你的孩子在生活中会碰到的问题，在看过本书之后，希望能引发你的兴趣和思考。你会发现许多值得一想的问题，许多可以尝试的主意，许多真实有趣的例子，还有有效解决相关问题的教育方法。\r\n与其说本书是教子有方父母心得，实际上也是为了宝宝更好成长给你提出的在日常生活中切实可行的建议。",
+                                    "cover": "http://p.xiaoningmeng.net/album/2016/09/14/ac909707722279dced6b3d6d2d646fa4.jpg@!460x460?v=2016/09/14/ac909707722279dced6b3d6d2d646fa4.jpg",
+                                    "listennum": 1,
+                                    "recommenddesc": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ad": {
+                    "total": 2,
+                    "items": [
+                        {
+                            "cover": "https://img3.doubanio.com/view/dale-online/dale_ad/public/ae6b5444cfad075.jpg",
+                            "linkurl": "https://www.douban.com/"
+                        },
+                        {
+                            "cover": "https://img3.doubanio.com/view/dale-online/dale_ad/public/18a3cc696cf9561.jpg",
+                            "linkurl": "https://www.douban.com/"
+                        }
+                    ]
                 }
             }
         }
+        说明:每个album_section->item下面都会有一个广告位.各个广告位的广告根据ad->items的顺序来定
 
 
 
-    2.全部分类
+    2.全部分类[已完成]
 
         url:
             /default/category.php
@@ -267,7 +651,7 @@
     4.最新上架(待补充)
     5.同龄在听(待补充)
 
-    7.我的故事(还需优化)
+    6.我的故事(还需优化)
         uri:/userinfo/mystory.php
         params:
             is_get_count		是否获取收藏总数：0不获取（用于收听历史分页），1获取（用于第一次进入我的故事）
@@ -330,10 +714,11 @@
             }
         }
 
-    8.我的故事 - 删除(同时本地删除该专辑下的所有下载文件)
+    7.我的故事 - 删除(同时本地删除该专辑下的所有下载文件)
 
     //http://www1.jctrans.com/tool/dm.htm
-    9.作者
+
+    8.作者[已完成]
         url:
             /default/authors.php
 
@@ -364,7 +749,7 @@
             }
         }
 
-    10.作者专辑
+    9.作者专辑[已完成]
 
         url:
             /default/author_album_list.php
@@ -411,7 +796,8 @@
                     ]
                 }
             }
-    11.主播
+
+    10.主播[已完成]
 
         url:
             /default/anchors.php
@@ -437,7 +823,7 @@
             }
         }
 
-    12.主播专辑 (返回值结构和 作者专辑接口 类似)
+    11.主播专辑 (返回值结构和 作者专辑接口 类似)[已完成]
 
         url:
             /default/anchor_album_list.php
@@ -479,7 +865,7 @@
             }
         }
 
-    12.0~2岁(首页)
+    12.0~2岁(首页) [已完成]
 
         url:
             /default/age_level_list.php
@@ -574,7 +960,7 @@
             }
         }
 
-    13.热门播放-年龄分级
+    13.热门播放-年龄分级 [已完成]
 
         url:
             /default/hot_album_list.php
@@ -646,7 +1032,7 @@
 
         }
 
-    14.标签-专辑列表(儿歌)
+    14.标签-专辑列表(儿歌) [已完成]
         url:
             /default/tag_album_list.php
 
