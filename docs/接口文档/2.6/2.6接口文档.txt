@@ -17,7 +17,7 @@
     1.首页[已完成]
 
         url:
-            /default/index.php
+            /default/v2.6/index.php
         params:
         return：
         {
