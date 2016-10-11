@@ -578,29 +578,31 @@
     2.全部分类[已完成]
 
         url:
-            /default/category.php
+            /default/v2.6/category.php
         params:
         return：
         {
             "code": 10000,
             "data": {
-                “total”:4
-                “items”:[
+                "total": 8,
+                "items": [
                     {
-                        “tag_id”: 1,
-                        “title”: “绘本”,
-                        “child_total”: 5,
-                        “child_items”:[{“title”: “自我认知”,“tag_id”: 5},{“title”: “习惯养成”,“tag_id”: 5},],
-                    },
-                                    {
-                        “tag_id”: 2,
-                        “title”: “儿歌”,
-                        “child_total”: 5,
-                        “child_items”[{“title”: “迪士尼”,“tag_id”: 5},{“title”: “贝瓦儿歌”,“tag_id”: 5},],
-                    },
-
-                ],
-
+                        "id": "2",
+                        "name": "故事",
+                        "child_total": 6,
+                        "child_items": [
+                            {
+                                "id": "23",
+                                "name": "睡前故事"
+                            },
+                            {
+                                "id": "158",
+                                "name": "童话寓言"
+                            },
+                            ...
+                        ]
+                    }
+                ]
             }
         }
 
@@ -720,7 +722,7 @@
 
     8.作者[已完成]
         url:
-            /default/authors.php
+            /default/v2.6/anchors.php
 
         params:
             start_author_id	                    //起始作者ID
@@ -752,7 +754,7 @@
     9.作者专辑[已完成]
 
         url:
-            /default/author_album_list.php
+            /default/v2.6/author_album_list.php
         params:
             author_id	                        //作者ID
             start_album_id	                    //从哪个专辑ID开始，第一页时值为0
@@ -800,7 +802,7 @@
     10.主播[已完成]
 
         url:
-            /default/anchors.php
+            /default/v2.6/anchors.php
 
         params:
             start_anchor_id	//起始主播ID
@@ -826,7 +828,7 @@
     11.主播专辑 (返回值结构和 作者专辑接口 类似)[已完成]
 
         url:
-            /default/anchor_album_list.php
+            /default/v2.6/anchor_album_list.php
         params:
             anchor_id	//主播UID
             start_album_id	//从哪个专辑ID开始，第一页时值为0
@@ -868,7 +870,7 @@
     12.0~2岁(首页) [已完成]
 
         url:
-            /default/age_level_list.php
+            /default/v2.6/age_level_list.php
         params:
             min_age		//最小年龄
             max_age		//最大年龄 (min_age=0,max_age=0 全部年龄段)
@@ -963,7 +965,7 @@
     13.热门播放-年龄分级 [已完成]
 
         url:
-            /default/hot_album_list.php
+            /default/v2.6/hot_album_list.php
 
         params:
             min_age		//最小年龄
@@ -1034,7 +1036,7 @@
 
     14.标签-专辑列表(儿歌) [已完成]
         url:
-            /default/tag_album_list.php
+            /default/v2.6/tag_album_list.php
 
         params:
             tag_id 		//
