@@ -606,47 +606,112 @@
             }
         }
 
-    #TUDO:category是什么,下面的标签没有处理
-
-    3.今日精选-更多
+    3.今日精选-更多[已完成]
 
         url:
-            /default/recommend_list.php
+            /default/v2.6/recommend_list.php
         params:
             min_age		    //最小年龄
             max_age		    //最大年龄
-            start_album_id	//起始专辑ID
+            page	        //页码
             len		        //长度
         return：
         {
             "code": 10000,
             "data": {
-                "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
-                “total”:20,
-                “items”:[
-                    {
-                        "id": "10293",
-                            "title": "阿威地球行",
-                    "intro": "阿威地球行",
-                    "recommend": "阿威地球行",
-                            "category_id": "117",
-                            "star_level": "0",
-                            "view_order": "10000",
-                            "story_num": "5",
-                            "author": "",
-                            "intro": "",
-                            "cover_time": "0",
-                            "cover": "",
-                            "age_str": "5岁+",
-                            "status": "1",
-                            "add_time": "2016-01-07 01:27:13",
-                            "update_time": "2016-01-07 03:10:09",
-                            "fav": 0,
-                            "listennum": 0
-
+                "age_level": {
+                    "total": 5,
+                    "items": [
+                        {
+                            "age_level_str": "全部",
+                            "min_age": 0,
+                            "max_age": 14,
+                            "album_num": 434
                         },
-
-                ],
+                        {
+                            "age_level_str": "0-2岁",
+                            "min_age": 0,
+                            "max_age": 2,
+                            "album_num": 267
+                        },
+                        {
+                            "age_level_str": "3-6岁",
+                            "min_age": 3,
+                            "max_age": 6,
+                            "album_num": 323
+                        },
+                        {
+                            "age_level_str": "7-10岁",
+                            "min_age": 7,
+                            "max_age": 10,
+                            "album_num": 243
+                        },
+                        {
+                            "age_level_str": "11-14岁",
+                            "min_age": 11,
+                            "max_age": 14,
+                            "album_num": 234
+                        }
+                    ]
+                },
+                "total": 5,
+                "items": [
+                    {
+                        "id": "12434",
+                        "title": "了不起的狐狸爸爸",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/09/23/1f3e9145ab192941f32098750221c602.jpg@!460x460?v=1474626392",
+                        "listennum": 538,
+                        "recommenddesc": "一起走进狐狸爸爸的魔力世界",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "9236",
+                        "title": "查理和巧克力工厂",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/09/22/8576a5108a045a711b0927e2408d4b34.jpg@!460x460?v=1474543356",
+                        "listennum": 312,
+                        "recommenddesc": "开启一场奇幻旅程",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "12770",
+                        "title": "暖房子经典绘本系列",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/09/21/4d7c59dcc50edd1199828ea005928f85.jpg@!460x460?v=1474451589",
+                        "listennum": 335,
+                        "recommenddesc": "让家更温暖，让爱更甜蜜",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "14973",
+                        "title": "女巫温妮",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/09/20/5ca1b0a18c411c3ebfc35c9dad7da921.jpg@!460x460?v=1474370407",
+                        "listennum": 190,
+                        "recommenddesc": "一场奇妙的魔法之旅",
+                        "tag": {
+                            "id": "137",
+                            "name": "绘本"
+                        }
+                    },
+                    {
+                        "id": "3872",
+                        "title": "彼得兔的故事",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/11/02/d35b05a832e2bb91f110d54e34e2da79.jpg@!460x460",
+                        "listennum": 438,
+                        "recommenddesc": "百年经典温情故事",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    }
+                ]
             }
         }
 
