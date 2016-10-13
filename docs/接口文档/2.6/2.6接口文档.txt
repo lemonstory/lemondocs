@@ -1367,111 +1367,147 @@
 
         }
 
-    15.专辑详情
-        uri:    /album/info.php
+    15.专辑详情 [已完成]
+        uri:    /default/v2.6/album/info.php
         params:
                 albumid
-                uid
-
         return：
         {
             "code": 10000,
             "data": {
-                "album_info": {
-                    "id": "1",
-                    "title": "两只老虎",
-                    "category_id": "10",
+                "albumInfo": {
+                    "id": "14980",
+                    "title": "蓝皮兔的故事",
                     "star_level": "0",
-                    "view_order": "0",
-                    "author": "",
-                    "intro": "",
-                    "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s150.jpg",
-                    "age_str": "P+",
-                    "status": "1",
-                    "add_time": "2015-08-22 12:37:52",
-                    "update_time": "2015-09-05 19:26:30",
-                    "is_fav": 0,
-                    "listen_num": 0,
-                    "fav_num": 0,
-                    "comment_num": "5"
+                    "story_num": "3",
+                    "intro": "　　很久很久以前，由于兔群的王位之争，一群落败的荒原兔被霸王豺和山猫追杀，逃进樱槐谷定居下来。由于只有靠遍地生长的皮梗为食，逐渐地，这群荒原兔变成了蓝皮兔。最蓝最蓝的一只小蓝皮兔就叫皮梗……",
+                    "age_str": "(3-14)岁",
+                    "cover": "http://p.xiaoningmeng.net/album/2016/09/27/4e12250d354ea681500f34a5660aa870.jpg@!460x460?v=1474968952",
+                    "fav": 0,
+                    "listennum": 2,
+                    "favnum": 0,
+                    "commentnum": 0
                 },
-
-            "story_list”:
-                “total”:20,
-                “items”:[
+                "storylist": [
                     {
-                    "id": "1",
-                    "album_id": "1",
-                    "listen_count": null,
-                    "title": "两只老虎 ",
-                    "intro": "旋律的起源可以追溯到17世纪的欧洲.法国儿歌《雅克修士》。旋律轻快活泼，歌词也是简单有趣，充满童真，是一首很适合小朋友的儿歌。",
-                    "content": null,
-                    "times": "151",
-                    "file_size": "2470533",
-                    "mediapath": "http://lemonmedia.oss-cn-hangzhou.aliyuncs.com/http://lemonmedia.oss-cn-hangzhou.aliyuncs.com/2015/08/25/c4ca4238a0b923820dcc509a6f75849b.mp3",
-                    "cover": "http://img.idaddy.cn/b/2/pkf6x4nt_s540.jpg",
-                    "status": "1",
-                    "add_time": "2015-08-22 14:53:23",
-                    "upate_time": "2015-08-25 06:02:27",
-                    "playcover":"",		// 播放页故事封面地址
+                        "id": "451351",
+                        "title": "蓝皮兔的故事（上集）",
+                        "times": "1313",
+                        "mediapath": "http://mf.xiaoningmeng.net/2016/09/15/615bc3d419639c3acf118d672ffde362.mp3",
+                        "view_order": "1"
+                    },
+                    {
+                        "id": "451352",
+                        "title": "蓝皮兔的故事（中集）",
+                        "times": "846",
+                        "mediapath": "http://mf.xiaoningmeng.net/2016/09/15/7fd7e564f6db03b4c2511e24e0204ec5.mp3",
+                        "view_order": "2"
+                    },
+                    {
+                        "id": "451353",
+                        "title": "蓝皮兔的故事（下集）",
+                        "times": "2027",
+                        "mediapath": "http://mf.xiaoningmeng.net/2016/09/14/71a9c4db392777fd0a6a8bd01b96363c.mp3",
+                        "view_order": "3"
                     }
                 ],
-
-
-            “recommend_tags”:{
-                “total”:6,
-                “items”:[
-                {
-                    "id": "23",
-                    "pid": "2",
-                    "name": "睡前故事",
-                    "md5name": "8cc0c3461ef9ff8270a55b4ef2c1fb0c",
-                    "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg”,
-                    "ordernum": "100",
-                    "status": "1",
-                    "addtime": "2016-01-04 11:43:43"
-                },
-
-                {
-
-                    "id": "23",
-                    "pid": "2",
-                    "name": "韵律童谣",
-                    "md5name": "8cc0c3461ef9ff8270a55b4ef2c1fb0c",
-                    "cover": "http://fdfs.xmcdn.com/group3/M07/FC/0D/wKgDslL7YA2ToPxLAAGgW7fdH0o080_web_meduim.jpg”,
-                    "ordernum": "100",
-                    "status": "1",
-                    "addtime": "2016-01-04 11:43:43"
-                },
-                ]
-                }
-
-            "recommend_albums": {
-
-                “total”:20,
-                “items”:[
+                "taglist": [
                     {
-                        "id": "10293",
-                        "title": "阿威地球行",
-                        "intro": "阿威地球行的简介”,
-                        "recommend": "全国优秀儿童文学奖",
-                        "category_id": "117",
-                        "star_level": "0",
-                        "view_order": "10000",
-                        "story_num": "5",
-                        "author": "",
-                        "intro": "",
-                        "cover_time": "0",
-                        "cover": "",
-                        "age_str": "5岁+",
-                        "status": "1",
-                        "add_time": "2016-01-07 01:27:13",
-                        "update_time": "2016-01-07 03:10:09",
-                        "fav": 0,
-                        "listennum": 0
-
+                        "id": "2",
+                        "name": "故事",
+                        "cover": "http://p.xiaoningmeng.net/tag/2016/01/28/c81e728d9d4c2f636f067f89cc14862c.png?v=1453911544"
                     },
+                    {
+                        "id": "29",
+                        "name": "动物故事",
+                        "cover": ""
+                    }
+                ],
+                "recommendalbumlist": [
+                    {
+                        "id": "4084",
+                        "title": "蜡笔小黑",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/11/02/7ac71d433f282034e088473244df8c02.jpg@!460x460",
+                        "listennum": 1212,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "13131",
+                        "title": "睡前好故事",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/04/10/052a1a3c0142ad636571f88ea2506eac.jpg@!460x460?v=1460223006",
+                        "listennum": 13508,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "13303",
+                        "title": "月光下的肚肚狼",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/05/04/4d8ab89733dd9a88f1a9d130ca675c2e.jpg@!460x460?v=1462296622",
+                        "listennum": 5054,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "1137",
+                        "title": "女巫温妮（二）",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/12/26/801c14f07f9724229175b8ef8b4585a8.jpg@!460x460?v=1451139289",
+                        "listennum": 683,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "10745",
+                        "title": "可以不可以",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/01/23/08525774e9cc6cc7577ed9be1f01a185.jpg@!460x460?v=1453556943",
+                        "listennum": 1242,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "10773",
+                        "title": "小蜜蜂玛雅",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/01/25/ea89621bee7c88b2c5be6681c8ef4906.jpg@!460x460?v=1453725854",
+                        "listennum": 2760,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "1104",
+                        "title": "好孩子最想知道的寓言故事",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/11/01/4da04049a062f5adfe81b67dd755cecc.jpg@!460x460",
+                        "listennum": 751,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "10370",
+                        "title": "人鱼公主的灵感",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/01/10/ecb565cd82de68494c294dc8d4b419a0.jpg@!460x460?v=1452407125",
+                        "listennum": 2984,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "10200",
+                        "title": "格兰特船长的儿女（下）",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/02/04/c1c6fff1643a3af5bd167488ff19012d.jpg@!460x460?v=1454518665",
+                        "listennum": 1646,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "3780",
+                        "title": "大画世界经典系列",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/01/18/3569df159ec477451530c4455b2a9e86.jpg@!460x460?v=1453121784",
+                        "listennum": 741,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "4138",
+                        "title": "玛蒂娜系列故事",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/11/19/88479e328a8633f54e9c667651832fbc.jpg@!460x460?v=1447929340",
+                        "listennum": 3445,
+                        "recommenddesc": ""
+                    },
+                    {
+                        "id": "10270",
+                        "title": "我自己能睡",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/01/10/73dd2e5d59ee0b29b52058d4393b170f.jpg@!460x460?v=1452420171",
+                        "listennum": 856,
+                        "recommenddesc": ""
+                    }
                 ]
             }
         }
-    }
