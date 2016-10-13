@@ -715,7 +715,114 @@
             }
         }
 
-    4.最新上架(待补充)
+    4.最新上架-更多[已完成]
+        url:
+            /default/v2.6/online_list.php
+        params:
+            min_age		    //最小年龄
+            max_age		    //最大年龄
+            page	        //页码
+            len		        //长度
+        return：
+        {
+            "code": 10000,
+            "data": {
+                "age_level": {
+                    "total": 5,
+                    "items": [
+                        {
+                            "age_level_str": "全部",
+                            "min_age": 0,
+                            "max_age": 14,
+                            "album_num": 409
+                        },
+                        {
+                            "age_level_str": "0-2岁",
+                            "min_age": 0,
+                            "max_age": 2,
+                            "album_num": 17
+                        },
+                        {
+                            "age_level_str": "3-6岁",
+                            "min_age": 3,
+                            "max_age": 6,
+                            "album_num": 85
+                        },
+                        {
+                            "age_level_str": "7-10岁",
+                            "min_age": 7,
+                            "max_age": 10,
+                            "album_num": 7
+                        },
+                        {
+                            "age_level_str": "11-14岁",
+                            "min_age": 11,
+                            "max_age": 14,
+                            "album_num": 2
+                        }
+                    ]
+                },
+                "total": 5,
+                "items": [
+                    {
+                        "id": "14993",
+                        "title": "长腿叔叔",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/09/28/9d83ecaab703bbfd06d5df223179d175.jpg@!460x460?v=1475042161",
+                        "listennum": 14,
+                        "recommenddesc": "它教会我们面对困难如何坚强",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "6504",
+                        "title": "睡梦乡儿童圣经故事 ",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/10/865bf46435bd84fa5d89f64cf3ba7347.jpg@!460x460?v=1476069595",
+                        "listennum": 10,
+                        "recommenddesc": "感人动听的圣经故事",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "6446",
+                        "title": "小田鼠哇克的故事",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/09/4c7958ae576e324677837d348a133102.jpg@!460x460?v=1476000089",
+                        "listennum": 24,
+                        "recommenddesc": "妙趣横生的幽默系列童话",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "14954",
+                        "title": "吹牛大王历险记",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/09/24/3fe89c9f9000fc1e58862236bf409d13.jpg@!460x460?v=1474697740",
+                        "listennum": 7,
+                        "recommenddesc": "儿童文学的瑰宝和讽刺文学的丰碑",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "13234",
+                        "title": "学会爱自己系列故事",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/08/b0e864a6eccfc779c8119f5a4468797f.png@!460x460?v=1475925530",
+                        "listennum": 36,
+                        "recommenddesc": "教会孩子大声说“不”",
+                        "tag": {
+                            "id": "137",
+                            "name": "绘本"
+                        }
+                    }
+                ]
+            }
+        }
+
     5.同龄在听(待补充)
 
     6.我的故事(还需优化)
