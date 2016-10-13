@@ -620,92 +620,90 @@
             "code": 10000,
             "data": {
                 "age_level": {
-                    "total": 5,
+                    "total": 4,
                     "items": [
                         {
                             "age_level_str": "全部",
                             "min_age": 0,
                             "max_age": 14,
-                            "album_num": 434
+                            "album_num": 434,
+                            "selected": 0
                         },
                         {
                             "age_level_str": "0-2岁",
                             "min_age": 0,
                             "max_age": 2,
-                            "album_num": 267
+                            "album_num": 33,
+                            "selected": 1
                         },
                         {
                             "age_level_str": "3-6岁",
                             "min_age": 3,
                             "max_age": 6,
-                            "album_num": 323
+                            "album_num": 93,
+                            "selected": 0
                         },
                         {
                             "age_level_str": "7-10岁",
                             "min_age": 7,
                             "max_age": 10,
-                            "album_num": 243
-                        },
-                        {
-                            "age_level_str": "11-14岁",
-                            "min_age": 11,
-                            "max_age": 14,
-                            "album_num": 234
+                            "album_num": 9,
+                            "selected": 0
                         }
                     ]
                 },
                 "total": 5,
                 "items": [
                     {
-                        "id": "12434",
-                        "title": "了不起的狐狸爸爸",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/09/23/1f3e9145ab192941f32098750221c602.jpg@!460x460?v=1474626392",
-                        "listennum": 538,
-                        "recommenddesc": "一起走进狐狸爸爸的魔力世界",
+                        "id": "4659",
+                        "title": "草房子",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/11/8685549650016d9e1d14bf972262450b.jpg@!460x460?v=1476181887",
+                        "listennum": 51,
+                        "recommenddesc": "一段淳朴至美的童年回忆",
                         "tag": {
                             "id": "2",
                             "name": "故事"
                         }
                     },
                     {
-                        "id": "9236",
-                        "title": "查理和巧克力工厂",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/09/22/8576a5108a045a711b0927e2408d4b34.jpg@!460x460?v=1474543356",
-                        "listennum": 312,
-                        "recommenddesc": "开启一场奇幻旅程",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "12770",
-                        "title": "暖房子经典绘本系列",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/09/21/4d7c59dcc50edd1199828ea005928f85.jpg@!460x460?v=1474451589",
-                        "listennum": 335,
-                        "recommenddesc": "让家更温暖，让爱更甜蜜",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "14973",
-                        "title": "女巫温妮",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/09/20/5ca1b0a18c411c3ebfc35c9dad7da921.jpg@!460x460?v=1474370407",
-                        "listennum": 190,
-                        "recommenddesc": "一场奇妙的魔法之旅",
+                        "id": "6927",
+                        "title": "派老头和捣乱猫",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/12/23/0ad5292c158f3924f8b480367fcbeb94.jpg@!460x460?v=1450885518",
+                        "listennum": 778,
+                        "recommenddesc": "瑞典最著名的儿童绘本",
                         "tag": {
                             "id": "137",
                             "name": "绘本"
                         }
                     },
                     {
-                        "id": "3872",
-                        "title": "彼得兔的故事",
-                        "cover": "http://p.xiaoningmeng.net/album/2015/11/02/d35b05a832e2bb91f110d54e34e2da79.jpg@!460x460",
-                        "listennum": 438,
-                        "recommenddesc": "百年经典温情故事",
+                        "id": "15286",
+                        "title": "窗边的小豆豆",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/10/865e434f7f48e0e93f69cbb938b06809.jpg@!460x460?v=1476087635",
+                        "listennum": 56,
+                        "recommenddesc": "日本有史以来图书销量排行榜首",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "11058",
+                        "title": "乌鸦面包店",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/10/ddd65013f9f3507850f6bd4b5a68f901.jpg@!460x460?v=1476072146",
+                        "listennum": 88,
+                        "recommenddesc": "引导孩子正确认识财富，创造财富",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "9473",
+                        "title": "云朵工厂",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/08/8123b781e08f4d9e89ea88f53e6431a9.jpg@!460x460?v=1475896901",
+                        "listennum": 58,
+                        "recommenddesc": "国际大奖小说",
                         "tag": {
                             "id": "2",
                             "name": "故事"
@@ -734,31 +732,36 @@
                             "age_level_str": "全部",
                             "min_age": 0,
                             "max_age": 14,
-                            "album_num": 409
+                            "album_num": 409,
+                            "selected": 0
                         },
                         {
                             "age_level_str": "0-2岁",
                             "min_age": 0,
                             "max_age": 2,
-                            "album_num": 17
+                            "album_num": 17,
+                            "selected": 1
                         },
                         {
                             "age_level_str": "3-6岁",
                             "min_age": 3,
                             "max_age": 6,
-                            "album_num": 85
+                            "album_num": 85,
+                            "selected": 0
                         },
                         {
                             "age_level_str": "7-10岁",
                             "min_age": 7,
                             "max_age": 10,
-                            "album_num": 7
+                            "album_num": 7,
+                            "selected": 0
                         },
                         {
                             "age_level_str": "11-14岁",
                             "min_age": 11,
                             "max_age": 14,
-                            "album_num": 2
+                            "album_num": 2,
+                            "selected": 0
                         }
                     ]
                 },
@@ -801,7 +804,7 @@
                         "id": "14954",
                         "title": "吹牛大王历险记",
                         "cover": "http://p.xiaoningmeng.net/album/2016/09/24/3fe89c9f9000fc1e58862236bf409d13.jpg@!460x460?v=1474697740",
-                        "listennum": 7,
+                        "listennum": 8,
                         "recommenddesc": "儿童文学的瑰宝和讽刺文学的丰碑",
                         "tag": {
                             "id": "2",
@@ -823,7 +826,121 @@
             }
         }
 
-    5.同龄在听(待补充)
+    5.同龄在听 - 更多[已完成]
+
+        备注:同龄在听会根据当前登录用户年龄自动计算所属年龄段并检索对于的内容
+
+        url:
+            /default/v2.6/online_list.php
+        params:
+            min_age		    //最小年龄
+            max_age		    //最大年龄
+            page	        //页码
+            len		        //长度
+        return：
+        {
+            "code": 10000,
+            "data": {
+                "age_level": {
+                    "total": 5,
+                    "items": [
+                        {
+                            "age_level_str": "全部",
+                            "min_age": 0,
+                            "max_age": 14,
+                            "album_num": 367,
+                            "selected": 1
+                        },
+                        {
+                            "age_level_str": "0-2岁",
+                            "min_age": 0,
+                            "max_age": 2,
+                            "album_num": 19,
+                            "selected": 0
+                        },
+                        {
+                            "age_level_str": "3-6岁",
+                            "min_age": 3,
+                            "max_age": 6,
+                            "album_num": 84,
+                            "selected": 0
+                        },
+                        {
+                            "age_level_str": "7-10岁",
+                            "min_age": 7,
+                            "max_age": 10,
+                            "album_num": 6,
+                            "selected": 0
+                        },
+                        {
+                            "age_level_str": "11-14岁",
+                            "min_age": 11,
+                            "max_age": 14,
+                            "album_num": 3,
+                            "selected": 0
+                        }
+                    ]
+                },
+                "total": 5,
+                "items": [
+                    {
+                        "id": "12922",
+                        "title": "你好，数学",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/12/be590ce170386babcf557b982eee50b4.jpg@!460x460?v=1476259574",
+                        "listennum": 5,
+                        "recommenddesc": "最亲切的数学概念启蒙书",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "5557",
+                        "title": "歪歪兔成长故事",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/11/73f715c6cc2b110fc67503ba813f7f0e.png@!460x460?v=1476179964",
+                        "listennum": 1694,
+                        "recommenddesc": "边听故事边教会孩子独立的意义",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "6937",
+                        "title": "不一样的卡梅拉",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/10/8963920e8b402154316d8175fa189112.jpg@!460x460?v=1476089607",
+                        "listennum": 286,
+                        "recommenddesc": "生活中肯定还有比睡觉更好玩的事情",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "6592",
+                        "title": "白狼荒原上的三天三夜",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/09/71dd9b48ff8928e726d4d21a5af243f3.jpg@!460x460?v=1475994986",
+                        "listennum": 34,
+                        "recommenddesc": "探险家贝尔写给儿子的求生秘籍",
+                        "tag": {
+                            "id": "2",
+                            "name": "故事"
+                        }
+                    },
+                    {
+                        "id": "12959",
+                        "title": "吉美启蒙儿歌精选集",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/08/006bfae3a90bab38e29382170867e962.jpg@!460x460?v=1475921530",
+                        "listennum": 595,
+                        "recommenddesc": "首首经典 句句好听",
+                        "tag": {
+                            "id": "1",
+                            "name": "儿歌"
+                        }
+                    }
+                ]
+            }
+        }
 
     6.我的故事(还需优化)
         uri:/userinfo/mystory.php
