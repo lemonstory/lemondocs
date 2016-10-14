@@ -1508,7 +1508,7 @@
             }
         }
 
-    15.专辑评论 [已完成]
+    16.专辑评论 [已完成]
         uri:    /album/v2.6/comment_list.php
         params:
             album_id            //专辑ID
