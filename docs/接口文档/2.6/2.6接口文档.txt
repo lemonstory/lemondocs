@@ -1370,7 +1370,7 @@
     15.专辑详情 [已完成]
         uri:    /default/v2.6/album/info.php
         params:
-                albumid
+                album_id
         return：
         {
             "code": 10000,
@@ -1507,6 +1507,41 @@
                         "cover": "http://p.xiaoningmeng.net/album/2016/01/10/73dd2e5d59ee0b29b52058d4393b170f.jpg@!460x460?v=1452420171",
                         "listennum": 856,
                         "recommenddesc": ""
+                    }
+                ]
+            }
+        }
+
+    15.专辑评论 [已完成]
+        uri:    /album/v2.6/comment_list.php
+        params:
+            album_id            //专辑ID
+            direction           //获取列表方向"down","up"
+            start_comment_id    //起始评论ID
+            len                 //长度
+        return：
+        {
+            "code": 10000,
+            "data": {
+                "total": "2",
+                "items": [
+                    {
+                        "id": "8686",
+                        "uid": "10032",
+                        "uname": "格格",
+                        "avatar": "http://a.xiaoningmeng.net/avatar/10032/1448438048/120",
+                        "start_level": "4",
+                        "addtime": "2016-10-08 08:48:19",
+                        "comment": "好作品，好有意思."
+                    },
+                    {
+                        "id": "8685",
+                        "uid": "10011",
+                        "uname": "不萌萌哒",
+                        "avatar": "http://a.xiaoningmeng.net/avatar/10011/1448441203/120",
+                        "start_level": "4",
+                        "addtime": "2016-10-07 14:58:26",
+                        "comment": "声音真好听"
                     }
                 ]
             }
