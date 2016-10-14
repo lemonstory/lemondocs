@@ -942,10 +942,9 @@
             }
         }
 
-    6.我的故事(还需优化)
-        uri:/userinfo/mystory.php
+    6.我的故事[已完成]
+        uri:/userinfo/v2.6/mystory.php
         params:
-            is_get_count		是否获取收藏总数：0不获取（用于收听历史分页），1获取（用于第一次进入我的故事）
             direction:		(up  or down)   up代表显示上边分页，down代表显示下边分页，第一页时为空
             start_album_id	从哪个专辑ID开始，第一页时值为0
             len			长度
@@ -953,55 +952,63 @@
         {
             "code": 10000,
             "data": {
-            "fav_count": 0
-                "listen_album_list": [
+                "favcount": "2",
+                "listenalbumlist": [
                     {
-                        "uimid": "1",
-                        "albumid": "3",
-                        "uptime": "1447326529",
-                        "listen_album_uptime": "2015-11-12 19:08:49",
-                        "playtimes": 0,
-                        "play_story_id": 35,
-                        "album_info": {
+                        "listenalbumuptime": "2015-11-12 19:08:49",
+                        "playstoryid": 35,
+                        "playtimes": 263,
+                        "albuminfo": {
                             "id": "3",
                             "title": "西游记",
-                            "category_id": "124",
-                            "star_level": "5",
-                            "view_order": "0",
-                            "story_num": "39",
-                            "author": "",
-                            "intro": "编辑推荐…”,
-                            "cover_time": "0",
                             "cover": "http://p.xiaoningmeng.net/album/2015/10/31/eccbc87e4b5ce2fe28308fd9f2a7baf3.jpg@!100x100",
-                            "age_str": null,
-                            "status": "1",
-                            "add_time": "2015-10-30 15:45:09",
-                            "update_time": "2015-11-18 23:59:21",
-                            "fav": 0,
-                            "storyinfo": {			// 由原先的storylist改为storyinfo
+                            "age_str": "(3-14)岁",
+                            "storyinfo": {
                                 "id": "35",
                                 "album_id": "3",
-                                "listen_count": null,
                                 "title": "西游记-第一回",
-                                "intro": "爱好播讲的80后型男，请叫我布谷，也可关注微信公众号--布谷鸟的时间，那里有更多有趣的内容。",
-                                "content": null,
-                                "times": "775",
-                                "file_size": "6195453",
-                                "mediapath": "http://mf.xiaoningmeng.net/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.mp3",
-                                "source_audio_url": "http://fdfs.xmcdn.com/group15/M09/79/2C/wKgDaFYHq_SBkU6UAF6I_Xq8syc415.mp3",
-                                "cover_time": "0",
-                                "cover": "2015/10/31/1c383cd30b7c298ab50293adfecb7b18.jpg",
-                                "view_order": "0",
-                                "s_cover": "http://fdfs.xmcdn.com/group15/M09/79/2B/wKgDaFYHq9jhm0ZmAAGMLrcbBTA973_mobile_large.jpg",
-                                "status": "1",
-                                "add_time": "2015-10-30 15:45:38",
-                                "upate_time": "2015-10-31 16:25:36",
-                                "playcover": "http://p.xiaoningmeng.net/story/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.jpg@!230x230"
+                                "playcover": "http://p.xiaoningmeng.net/story/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.jpg@!230x230",
+                                "mediapath": "http://mf.xiaoningmeng.net/2015/10/31/1c383cd30b7c298ab50293adfecb7b18.mp3"
+                            }
+                        }
+                    },
+                    {
+                        "listenalbumuptime": "2015-11-12 18:30:43",
+                        "playstoryid": 12223,
+                        "playtimes": 2,
+                        "albuminfo": {
+                            "id": "3329",
+                            "title": "动脑筋爷爷",
+                            "cover": "http://p.xiaoningmeng.net/album/2015/11/02/ac8cd1808dc30460a81cab1b0e6652fa.jpg@!100x100",
+                            "age_str": "(3-10)岁",
+                            "storyinfo": {
+                                "id": "12223",
+                                "album_id": "3329",
+                                "title": "鸡蛋里怎么会孵出小鸡 ",
+                                "playcover": "http://p.xiaoningmeng.net/story/2015/11/04/c1e247e2235eb596c080297d6903cf39.jpg@!230x230",
+                                "mediapath": "http://mf.xiaoningmeng.net/2015/11/06/004881ebe3826cf16cfd124968f2a5bb.audio"
+                            }
+                        }
+                    },
+                    {
+                        "listenalbumuptime": "2015-11-12 18:10:14",
+                        "playstoryid": 2645,
+                        "playtimes": 115,
+                        "albuminfo": {
+                            "id": "1102",
+                            "title": "好孩子最想知道的成语故事",
+                            "cover": "http://p.xiaoningmeng.net/album/2015/11/01/c667d53acd899a97a85de0c201ba99be.jpg@!100x100",
+                            "age_str": "(6-10)岁",
+                            "storyinfo": {
+                                "id": "2645",
+                                "album_id": "1102",
+                                "title": "老马识途 ",
+                                "playcover": "http://p.xiaoningmeng.net/story/2015/11/01/8cff9bf6694dccfc3b6a613d05d51d16.jpg@!230x230",
+                                "mediapath": "http://mf.xiaoningmeng.net/2015/11/02/a7789ef88d599b8df86bbee632b2994d.mp3"
                             }
                         }
                     }
-                ],
-
+                ]
             }
         }
 
