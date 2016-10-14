@@ -1051,42 +1051,38 @@
             max_age		                        //最大年龄 (min_age=0,max_age=0 全部年龄段)
             len		                            //长度(不设置表示全部)
         return：
-            {
-                "code": 10000,                  //状态码
-                "data": {
-                    "age_level": {              //该作者的专辑涉及到的所有年龄分级
-                        "total": 2,             //年龄分级总数量
-                        "items": [
-                            {
-                                "age_level_str": "全部",  //年龄分级名称
-                                "min_age": "0",          //该年龄分级的最小年龄
-                                "max_age": "0",          //该年龄分级的最大年龄
-                                "album_num": 1           //该年龄分级下的专辑数量
-                            },
-                            {
-                                "age_level_str": "11-14岁",  //年龄分级名称
-                                "min_age": 11,               //最小年龄
-                                "max_age": 14,               //最大年龄
-                                "album_num": 1               //专辑数量
-                            }
-                        ]
-                    },
-                    "total": 1,                 //当前query条件下专辑总量
-                    "items": [                  //专辑信息
+        {
+            "code": 10000,
+            "data": {
+                "age_level": {
+                    "total": 1,
+                    "items": [
                         {
-                            "id": "14988",
-                            "title": "爱的教育",
-                            "cover": "2016/09/27/6b339b7d02cfba0555465b5af99b37de.jpg",
-                            "cover_time": "1474954165",
-                            "star_level": "0",
-                            "story_num": "27",
-                            "intro": "成为世界最受欢迎的读物之一。",
-                            "min_age": "6",
-                            "max_age": "14"
+                            "age_level_str": "全部",
+                            "min_age": 0,
+                            "max_age": 14,
+                            "album_num": 1,
+                            "selected": 1
                         }
                     ]
-                }
+                },
+                "pedia": "http://www.xiaoningmeng.net/author/detail.php",   //作者百科地址
+                "total": 1,
+                "items": [
+                    {
+                        "id": "14983",
+                        "title": "蛋壳里出来的奶奶",
+                        "cover": "2016/09/24/ce6f311f2548c0e40fbd9beaaa288d32.png",
+                        "cover_time": "1474682704",
+                        "star_level": "0",
+                        "story_num": "27",
+                        "intro": "　　埃利亚斯的妈妈拥有一头像公主一样的长发，爸爸设计电脑游戏。小朋友们都十分羡慕他。但爸爸妈妈却很少有时间陪伴他。一天，他在泥潭中发现了一只蛋，并开始仔细照料这只蛋，直到一天从蛋中孵出一个会飞的东西，竟然是一位微型奶奶！这位会飞的奶奶和别的奶奶不一样，满脑子都是恶作剧。",
+                        "min_age": "7",
+                        "max_age": "10"
+                    }
+                ]
             }
+        }
 
     10.主播[已完成]
 
