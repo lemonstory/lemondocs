@@ -608,339 +608,23 @@
 
     3.今日精选-更多[已完成]
 
-        url:
-            /default/v2.6/recommend_list.php
-        params:
-            min_age		    //最小年龄
-            max_age		    //最大年龄
-            page	        //页码
-            len		        //长度
-        return：
-        {
-            "code": 10000,
-            "data": {
-                "age_level": {
-                    "total": 4,
-                    "items": [
-                        {
-                            "age_level_str": "全部",
-                            "min_age": 0,
-                            "max_age": 14,
-                            "album_num": 434,
-                            "selected": 0
-                        },
-                        {
-                            "age_level_str": "0-2岁",
-                            "min_age": 0,
-                            "max_age": 2,
-                            "album_num": 33,
-                            "selected": 1
-                        },
-                        {
-                            "age_level_str": "3-6岁",
-                            "min_age": 3,
-                            "max_age": 6,
-                            "album_num": 93,
-                            "selected": 0
-                        },
-                        {
-                            "age_level_str": "7-10岁",
-                            "min_age": 7,
-                            "max_age": 10,
-                            "album_num": 9,
-                            "selected": 0
-                        }
-                    ]
-                },
-                "total": 5,
-                "items": [
-                    {
-                        "id": "4659",
-                        "title": "草房子",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/11/8685549650016d9e1d14bf972262450b.jpg@!460x460?v=1476181887",
-                        "listennum": 51,
-                        "recommenddesc": "一段淳朴至美的童年回忆",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "6927",
-                        "title": "派老头和捣乱猫",
-                        "cover": "http://p.xiaoningmeng.net/album/2015/12/23/0ad5292c158f3924f8b480367fcbeb94.jpg@!460x460?v=1450885518",
-                        "listennum": 778,
-                        "recommenddesc": "瑞典最著名的儿童绘本",
-                        "tag": {
-                            "id": "137",
-                            "name": "绘本"
-                        }
-                    },
-                    {
-                        "id": "15286",
-                        "title": "窗边的小豆豆",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/10/865e434f7f48e0e93f69cbb938b06809.jpg@!460x460?v=1476087635",
-                        "listennum": 56,
-                        "recommenddesc": "日本有史以来图书销量排行榜首",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "11058",
-                        "title": "乌鸦面包店",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/10/ddd65013f9f3507850f6bd4b5a68f901.jpg@!460x460?v=1476072146",
-                        "listennum": 88,
-                        "recommenddesc": "引导孩子正确认识财富，创造财富",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "9473",
-                        "title": "云朵工厂",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/08/8123b781e08f4d9e89ea88f53e6431a9.jpg@!460x460?v=1475896901",
-                        "listennum": 58,
-                        "recommenddesc": "国际大奖小说",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    }
-                ]
-            }
-        }
+        使用下面接口,传入对应的tag_id
+            13.标签-专辑列表(儿歌)
+            url:
+                /default/v2.6/tag_album_list.php
 
     4.最新上架-更多[已完成]
-        url:
-            /default/v2.6/online_list.php
-        params:
-            min_age		    //最小年龄
-            max_age		    //最大年龄
-            page	        //页码
-            len		        //长度
-        return：
-        {
-            "code": 10000,
-            "data": {
-                "age_level": {
-                    "total": 5,
-                    "items": [
-                        {
-                            "age_level_str": "全部",
-                            "min_age": 0,
-                            "max_age": 14,
-                            "album_num": 409,
-                            "selected": 0
-                        },
-                        {
-                            "age_level_str": "0-2岁",
-                            "min_age": 0,
-                            "max_age": 2,
-                            "album_num": 17,
-                            "selected": 1
-                        },
-                        {
-                            "age_level_str": "3-6岁",
-                            "min_age": 3,
-                            "max_age": 6,
-                            "album_num": 85,
-                            "selected": 0
-                        },
-                        {
-                            "age_level_str": "7-10岁",
-                            "min_age": 7,
-                            "max_age": 10,
-                            "album_num": 7,
-                            "selected": 0
-                        },
-                        {
-                            "age_level_str": "11-14岁",
-                            "min_age": 11,
-                            "max_age": 14,
-                            "album_num": 2,
-                            "selected": 0
-                        }
-                    ]
-                },
-                "total": 5,
-                "items": [
-                    {
-                        "id": "14993",
-                        "title": "长腿叔叔",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/09/28/9d83ecaab703bbfd06d5df223179d175.jpg@!460x460?v=1475042161",
-                        "listennum": 14,
-                        "recommenddesc": "它教会我们面对困难如何坚强",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "6504",
-                        "title": "睡梦乡儿童圣经故事 ",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/10/865bf46435bd84fa5d89f64cf3ba7347.jpg@!460x460?v=1476069595",
-                        "listennum": 10,
-                        "recommenddesc": "感人动听的圣经故事",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "6446",
-                        "title": "小田鼠哇克的故事",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/09/4c7958ae576e324677837d348a133102.jpg@!460x460?v=1476000089",
-                        "listennum": 24,
-                        "recommenddesc": "妙趣横生的幽默系列童话",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "14954",
-                        "title": "吹牛大王历险记",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/09/24/3fe89c9f9000fc1e58862236bf409d13.jpg@!460x460?v=1474697740",
-                        "listennum": 8,
-                        "recommenddesc": "儿童文学的瑰宝和讽刺文学的丰碑",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "13234",
-                        "title": "学会爱自己系列故事",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/08/b0e864a6eccfc779c8119f5a4468797f.png@!460x460?v=1475925530",
-                        "listennum": 36,
-                        "recommenddesc": "教会孩子大声说“不”",
-                        "tag": {
-                            "id": "137",
-                            "name": "绘本"
-                        }
-                    }
-                ]
-            }
-        }
+        使用下面接口,传入对应的tag_id
+            13.标签-专辑列表(儿歌)
+            url:
+                /default/v2.6/tag_album_list.php
 
     5.同龄在听 - 更多[已完成]
 
-        备注:同龄在听会根据当前登录用户年龄自动计算所属年龄段并检索对于的内容
-
-        url:
-            /default/v2.6/online_list.php
-        params:
-            min_age		    //最小年龄
-            max_age		    //最大年龄
-            page	        //页码
-            len		        //长度
-        return：
-        {
-            "code": 10000,
-            "data": {
-                "age_level": {
-                    "total": 5,
-                    "items": [
-                        {
-                            "age_level_str": "全部",
-                            "min_age": 0,
-                            "max_age": 14,
-                            "album_num": 367,
-                            "selected": 1
-                        },
-                        {
-                            "age_level_str": "0-2岁",
-                            "min_age": 0,
-                            "max_age": 2,
-                            "album_num": 19,
-                            "selected": 0
-                        },
-                        {
-                            "age_level_str": "3-6岁",
-                            "min_age": 3,
-                            "max_age": 6,
-                            "album_num": 84,
-                            "selected": 0
-                        },
-                        {
-                            "age_level_str": "7-10岁",
-                            "min_age": 7,
-                            "max_age": 10,
-                            "album_num": 6,
-                            "selected": 0
-                        },
-                        {
-                            "age_level_str": "11-14岁",
-                            "min_age": 11,
-                            "max_age": 14,
-                            "album_num": 3,
-                            "selected": 0
-                        }
-                    ]
-                },
-                "total": 5,
-                "items": [
-                    {
-                        "id": "12922",
-                        "title": "你好，数学",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/12/be590ce170386babcf557b982eee50b4.jpg@!460x460?v=1476259574",
-                        "listennum": 5,
-                        "recommenddesc": "最亲切的数学概念启蒙书",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "5557",
-                        "title": "歪歪兔成长故事",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/11/73f715c6cc2b110fc67503ba813f7f0e.png@!460x460?v=1476179964",
-                        "listennum": 1694,
-                        "recommenddesc": "边听故事边教会孩子独立的意义",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "6937",
-                        "title": "不一样的卡梅拉",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/10/8963920e8b402154316d8175fa189112.jpg@!460x460?v=1476089607",
-                        "listennum": 286,
-                        "recommenddesc": "生活中肯定还有比睡觉更好玩的事情",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "6592",
-                        "title": "白狼荒原上的三天三夜",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/09/71dd9b48ff8928e726d4d21a5af243f3.jpg@!460x460?v=1475994986",
-                        "listennum": 34,
-                        "recommenddesc": "探险家贝尔写给儿子的求生秘籍",
-                        "tag": {
-                            "id": "2",
-                            "name": "故事"
-                        }
-                    },
-                    {
-                        "id": "12959",
-                        "title": "吉美启蒙儿歌精选集",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/10/08/006bfae3a90bab38e29382170867e962.jpg@!460x460?v=1475921530",
-                        "listennum": 595,
-                        "recommenddesc": "首首经典 句句好听",
-                        "tag": {
-                            "id": "1",
-                            "name": "儿歌"
-                        }
-                    }
-                ]
-            }
-        }
+        使用下面接口,传入对应的tag_id
+            13.标签-专辑列表(儿歌)
+            url:
+                /default/v2.6/tag_album_list.php
 
     6.我的故事[已完成]
         uri:/userinfo/v2.6/mystory.php
@@ -1331,41 +1015,67 @@
         params:
             tag_id 		//
             min_age		//最小年龄
-            max_age		//最大年龄 (min_age=0,max_age=0 全部年龄段)
-            start_album_id	//从哪个专辑ID开始，第一页时值为0
-            len		//长度 (start_author_id=0,len=0 取全部)
+            max_age		//最大年龄 (min_age=0,max_age=14 全部年龄段)
+            page	    //页码
+            len		    //长度
 
         return：
         {
-                "code": 10000,
-                "data": {
-                "age_level”:{“total”:3,“items”:[{“min_age”:0,“max_age”:0,“checked”:true},{“min_age”:0,“max_age”:2,“checked”:false},]}//min_age=0,max_age=0 全部年龄段
-                “total”:20,
-                “items”:[
-                    {
-                        "id": "10293",
-                            "title": "阿威地球行",
-                    "intro": "阿威地球行的简介”,
-                    "recommend": "全国优秀儿童文学奖",
-                            "category_id": "117",
-                            "star_level": "0",
-                            "view_order": "10000",
-                            "story_num": "5",
-                            "author": "",
-                            "intro": "",
-                            "cover_time": "0",
-                            "cover": "",
-                            "age_str": "5岁+",
-                            "status": "1",
-                            "add_time": "2016-01-07 01:27:13",
-                            "update_time": "2016-01-07 03:10:09",
-                            "fav": 0,
-                            "listen_num": 0
-
+            "code": 10000,
+            "data": {
+                "age_level": {
+                    "total": 4,
+                    "items": [
+                        {
+                            "age_level_str": "全部",
+                            "min_age": 0,
+                            "max_age": 14,
+                            "album_num": 434,
+                            "selected": 1
                         },
-
-                ],
-
+                        {
+                            "age_level_str": "0-2岁",
+                            "min_age": 0,
+                            "max_age": 2,
+                            "album_num": 33,
+                            "selected": 0
+                        },
+                        {
+                            "age_level_str": "3-6岁",
+                            "min_age": 3,
+                            "max_age": 6,
+                            "album_num": 93,
+                            "selected": 0
+                        },
+                        {
+                            "age_level_str": "7-10岁",
+                            "min_age": 7,
+                            "max_age": 10,
+                            "album_num": 9,
+                            "selected": 0
+                        }
+                    ]
+                },
+                "total": 2,
+                "items": [
+                    {
+                        "id": "15286",
+                        "title": "窗边的小豆豆",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/10/10/865e434f7f48e0e93f69cbb938b06809.jpg@!460x460?v=1476087635",
+                        "listennum": 129,
+                        "recommenddesc": "日本有史以来图书销量排行榜首",
+                        "age_str": "(0-14)岁"
+                    },
+                    {
+                        "id": "15149",
+                        "title": "假如给我三天光明",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/09/24/45847868f97554aaf56672aab3f644e9.jpg@!460x460?v=1474688890",
+                        "listennum": 169,
+                        "recommenddesc": "什么样的力量让我们感动",
+                        "age_str": "(0-14)岁"
+                    }
+                ]
+            }
         }
 
     14.专辑详情 [已完成]
