@@ -1013,11 +1013,11 @@
             /default/v2.6/tag_album_list.php
 
         params:
-            tag_id 		//
-            min_age		//最小年龄
-            max_age		//最大年龄 (min_age=0,max_age=14 全部年龄段)
-            page	    //页码
-            len		    //长度
+            tag_id 		    //
+            min_age		    //最小年龄
+            max_age		    //最大年龄 (min_age=0,max_age=14 全部年龄段)
+            start_album_id  //起始专辑ID
+            len		        //长度
 
         return：
         {
