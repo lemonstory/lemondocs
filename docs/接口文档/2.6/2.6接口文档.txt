@@ -1095,34 +1095,41 @@
                     "age_str": "(3-14)岁",
                     "cover": "http://p.xiaoningmeng.net/album/2016/09/27/4e12250d354ea681500f34a5660aa870.jpg@!460x460?v=1474968952",
                     "fav": 0,
-                    "listennum": 2,
+                    "listennum": "9364",
                     "favnum": 0,
-                    "commentnum": 0
+                    "commentnum": 0,
+                    "buy_link": "http://s.click.taobao.com/XHOTOQx"
                 },
-                "storylist": [
-                    {
-                        "id": "451351",
-                        "title": "蓝皮兔的故事（上集）",
-                        "times": "1313",
-                        "mediapath": "http://mf.xiaoningmeng.net/2016/09/15/615bc3d419639c3acf118d672ffde362.mp3",
-                        "view_order": "1"
-                    },
-                    {
-                        "id": "451352",
-                        "title": "蓝皮兔的故事（中集）",
-                        "times": "846",
-                        "mediapath": "http://mf.xiaoningmeng.net/2016/09/15/7fd7e564f6db03b4c2511e24e0204ec5.mp3",
-                        "view_order": "2"
-                    },
-                    {
-                        "id": "451353",
-                        "title": "蓝皮兔的故事（下集）",
-                        "times": "2027",
-                        "mediapath": "http://mf.xiaoningmeng.net/2016/09/14/71a9c4db392777fd0a6a8bd01b96363c.mp3",
-                        "view_order": "3"
-                    }
-                ],
-                "taglist": [
+                "storyList": {
+                    "total": "3",
+                    "items": [
+                        {
+                            "id": "451351",
+                            "title": "蓝皮兔的故事（上集）",
+                            "times": "1313",
+                            "mediapath": "http://mf.xiaoningmeng.net/2016/09/15/615bc3d419639c3acf118d672ffde362.mp3",
+                            "view_order": "1",
+                            "playcover": ""
+                        },
+                        {
+                            "id": "451352",
+                            "title": "蓝皮兔的故事（中集）",
+                            "times": "846",
+                            "mediapath": "http://mf.xiaoningmeng.net/2016/09/15/7fd7e564f6db03b4c2511e24e0204ec5.mp3",
+                            "view_order": "2",
+                            "playcover": ""
+                        },
+                        {
+                            "id": "451353",
+                            "title": "蓝皮兔的故事（下集）",
+                            "times": "2027",
+                            "mediapath": "http://mf.xiaoningmeng.net/2016/09/14/71a9c4db392777fd0a6a8bd01b96363c.mp3",
+                            "view_order": "3",
+                            "playcover": ""
+                        }
+                    ]
+                },
+                "tagList": [
                     {
                         "id": "2",
                         "name": "故事",
@@ -1134,89 +1141,89 @@
                         "cover": ""
                     }
                 ],
-                "recommendalbumlist": [
+                "recommendAlbumList": [
                     {
-                        "id": "4084",
-                        "title": "蜡笔小黑",
-                        "cover": "http://p.xiaoningmeng.net/album/2015/11/02/7ac71d433f282034e088473244df8c02.jpg@!460x460",
-                        "listennum": 1212,
+                        "id": "12594",
+                        "title": "宝贝儿，Good Night",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/03/19/0dce20892f775d8953c42e4a49978e38.jpg@!460x460?v=1458322261",
+                        "listennum": "1865",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "13131",
-                        "title": "睡前好故事",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/04/10/052a1a3c0142ad636571f88ea2506eac.jpg@!460x460?v=1460223006",
-                        "listennum": 13508,
+                        "id": "3652",
+                        "title": "昆塔盒子总动员",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/01/07/e1021d43911ca2c1845910d84f40aeae.jpg@!460x460?v=1452147482",
+                        "listennum": "4172",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "13303",
-                        "title": "月光下的肚肚狼",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/05/04/4d8ab89733dd9a88f1a9d130ca675c2e.jpg@!460x460?v=1462296622",
-                        "listennum": 5054,
+                        "id": "4215",
+                        "title": "小公主苏菲亚",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/12/11/1d54c76f48f146c3b2d66daf9d7f845e.png@!460x460?v=1449781680",
+                        "listennum": "6284",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "1137",
-                        "title": "女巫温妮（二）",
-                        "cover": "http://p.xiaoningmeng.net/album/2015/12/26/801c14f07f9724229175b8ef8b4585a8.jpg@!460x460?v=1451139289",
-                        "listennum": 683,
+                        "id": "10826",
+                        "title": "拇指姑娘",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/01/25/42d7110a5ec9d651adf7642d58579a22.jpg@!460x460?v=1453724557",
+                        "listennum": "3360",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "10745",
-                        "title": "可以不可以",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/01/23/08525774e9cc6cc7577ed9be1f01a185.jpg@!460x460?v=1453556943",
-                        "listennum": 1242,
+                        "id": "15027",
+                        "title": "云公主的波波花",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/09/24/fe5b1e8eb8c83d24175d7d0e6663ebb3.jpg@!460x460?v=1474684258",
+                        "listennum": "90044",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "10773",
-                        "title": "小蜜蜂玛雅",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/01/25/ea89621bee7c88b2c5be6681c8ef4906.jpg@!460x460?v=1453725854",
-                        "listennum": 2760,
+                        "id": "3994",
+                        "title": "海龟妞妞奇遇记",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/12/26/adf8d7f8c53c8688e63a02bfb3055497.jpg@!460x460?v=1451144937",
+                        "listennum": "874",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "1104",
-                        "title": "好孩子最想知道的寓言故事",
-                        "cover": "http://p.xiaoningmeng.net/album/2015/11/01/4da04049a062f5adfe81b67dd755cecc.jpg@!460x460",
-                        "listennum": 751,
+                        "id": "4580",
+                        "title": "小老鼠漂流记",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/12/23/3ac48664b7886cf4e4ab4aba7e6b6bc9.jpg@!460x460?v=1450855750",
+                        "listennum": "1118",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "10370",
-                        "title": "人鱼公主的灵感",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/01/10/ecb565cd82de68494c294dc8d4b419a0.jpg@!460x460?v=1452407125",
-                        "listennum": 2984,
+                        "id": "7639",
+                        "title": "恐龙世界奇遇记",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/11/22/08fb104b0f2f838f3ce2d2b3741a12c2.jpg@!460x460?v=1448126226",
+                        "listennum": "2575",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "10200",
-                        "title": "格兰特船长的儿女（下）",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/02/04/c1c6fff1643a3af5bd167488ff19012d.jpg@!460x460?v=1454518665",
-                        "listennum": 1646,
+                        "id": "12137",
+                        "title": "有魔力的怪草莓",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/03/25/63566593593fddb72f294a2d7e84ae13.jpg@!460x460?v=1458900019",
+                        "listennum": "6806",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "3780",
-                        "title": "大画世界经典系列",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/01/18/3569df159ec477451530c4455b2a9e86.jpg@!460x460?v=1453121784",
-                        "listennum": 741,
+                        "id": "3797",
+                        "title": "巴布工程师",
+                        "cover": "http://p.xiaoningmeng.net/album/2015/11/02/36072923bfc3cf47745d704feb489480.jpg@!460x460",
+                        "listennum": "1652",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "4138",
-                        "title": "玛蒂娜系列故事",
-                        "cover": "http://p.xiaoningmeng.net/album/2015/11/19/88479e328a8633f54e9c667651832fbc.jpg@!460x460?v=1447929340",
-                        "listennum": 3445,
+                        "id": "12323",
+                        "title": "疯狂动物城",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/03/11/ae6e334f62fb5d989398deed87568c94.jpg@!460x460?v=1457634616",
+                        "listennum": "4020",
                         "recommenddesc": ""
                     },
                     {
-                        "id": "10270",
-                        "title": "我自己能睡",
-                        "cover": "http://p.xiaoningmeng.net/album/2016/01/10/73dd2e5d59ee0b29b52058d4393b170f.jpg@!460x460?v=1452420171",
-                        "listennum": 856,
+                        "id": "11925",
+                        "title": "电话里的童话",
+                        "cover": "http://p.xiaoningmeng.net/album/2016/09/21/5f04c04810f633dd0b4ab8e18efb66cc.jpg@!460x460?v=1474439854",
+                        "listennum": "1772",
                         "recommenddesc": ""
                     }
                 ]
@@ -1257,3 +1264,43 @@
                 ]
             }
         }
+
+    16. 专辑故事[已完成]
+    uri:    /album/v2.6/story_list.php
+    params:
+        album_id            //专辑ID
+        page                //页码,默认为1
+        len                 //长度,默认为50
+    return：
+    {
+        "code": 10000,
+        "data": {
+            "total": "3",
+            "items": [
+                {
+                    "id": "451351",
+                    "title": "蓝皮兔的故事（上集）",
+                    "times": "1313",
+                    "mediapath": "http://mf.xiaoningmeng.net/2016/09/15/615bc3d419639c3acf118d672ffde362.mp3",
+                    "view_order": "1",
+                    "playcover": ""
+                },
+                {
+                    "id": "451352",
+                    "title": "蓝皮兔的故事（中集）",
+                    "times": "846",
+                    "mediapath": "http://mf.xiaoningmeng.net/2016/09/15/7fd7e564f6db03b4c2511e24e0204ec5.mp3",
+                    "view_order": "2",
+                    "playcover": ""
+                },
+                {
+                    "id": "451353",
+                    "title": "蓝皮兔的故事（下集）",
+                    "times": "2027",
+                    "mediapath": "http://mf.xiaoningmeng.net/2016/09/14/71a9c4db392777fd0a6a8bd01b96363c.mp3",
+                    "view_order": "3",
+                    "playcover": ""
+                }
+            ]
+        }
+    }
