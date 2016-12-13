@@ -703,27 +703,25 @@
             /default/v2.6/anchors.php
 
         params:
-            start_author_id	                    //起始作者ID
-            len		                            //长度 (start_author_id=0,len=0 取全部)
+            p	                                //页码 (默认第一页)
+            len		                            //长度 (默认 50)
         return：
         {
             "code": 10000,                      //状态吗
             "data": {
-                "total": 2,                     //items的总数量
+                "total": 22,                     //所有已上线作者数量
                 "items": [
                     {
                         "uid": "14850",         //作者UID
                         "album_num": "1",       //作者的专辑数量
-                        "listen_num": "0",      //作者的专辑的收听量
                         "nickname": "董仁威",    //作者的姓名
                         "avatar": "http://a.xiaoningmeng.net/avatar/14850/1475841005/180"       //作者头像
+                        "card": "海师范大学儿童文学教授" //名片
+                        "intro": <div>1949年生，儿童文学作家，上海师范大学教授，中国作家协会会员。</div><div>20世纪70年代末期开始发表文学作品。",  //介绍
+                        "wiki_url": "http://www.xiaoningmeng.net/author/detail.php?uid=18524&author=梅子涵" //作者wiki
                     },
                     {
-                        "uid": "14852",
-                        "album_num": "1",
-                        "listen_num": "0",
-                        "nickname": "费希尔",
-                        "avatar": "http://a.xiaoningmeng.net/avatar/14852/1475841005/180"
+                       ...
                     }
                 ]
             }
