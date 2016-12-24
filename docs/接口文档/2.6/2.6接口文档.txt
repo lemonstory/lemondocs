@@ -1302,3 +1302,90 @@
             ]
         }
     }
+
+    17. 指定标签的专辑列表
+    全部：
+    	/tag/v2.6/gettagalbumlist.php?currenttagid=12&len=12&startrelationid=0&direction=&visituid=&isgettag=1
+    推荐：
+    	/tag/v2.6/gettagalbumlist.php?currenttagid=12&len=12&startrelationid=0&direction=&visituid=&isgettag=0&recommend=1
+    最热门：
+    	/tag/v2.6/gettagalbumlist.php?currenttagid=12&len=12&startrelationid=0&direction=&visituid=&isgettag=0&hot=1
+    好评榜：
+    	/tag/v2.6/gettagalbumlist.php?currenttagid=12&len=12&startrelationid=0&direction=&visituid=&isgettag=0&goodcomment=1
+
+    url:
+    	/tag/v2.6/gettagalbumlist.php
+    params:
+    	currenttagid	必填	指定标签id，可以是一级标签id，也可以是二级标签id
+    	isgettag	选填	是否获取一级和二级标签列表，默认为1获取，分页时不重复获取传0即可
+    	direction	选填	默认为down
+    	startrelationid	选填	默认为0
+    	len		必填
+
+    	recommend	选填	0/1:是否为“推荐”，即specialtaglist返回的paramkey，参数的值取paramvalue
+    	hot		选填	0/1:是否为“最热门”,即specialtaglist返回的paramkey，参数的值取paramvalue
+    	goodcomment	选填	0/1:是否为“好评榜”,即specialtaglist返回的paramkey，参数的值取paramvalue
+    return:
+    {
+        "code": 10000,
+        "data": {
+            "selectfirsttagid": "1",	// 当前选中的一级标签id
+            "selectsecondtagid": 0,		// 当前选中的二级标签id,为0表示全部,hot为"最热门",goodcomment为"好评榜"
+            "firsttaglist": [		// 一级标签列表
+                {
+                    "id": "1",
+                    "pid": "0",
+                    "name": "儿歌",
+                    "md5name": "129061a45be0043eac553947747459c2",
+                    "cover": "",
+                    "ordernum": "100",
+                    "status": "1",
+                    "addtime": "2016-01-04 11:43:42"
+                }
+            ],
+            "secondtaglist": [		// 二级标签列表
+                {
+                    "id": "13",
+                    "pid": "1",
+                    "name": "经典儿歌",
+                    "md5name": "51ec32d39f3dc79121a699ed776bbfa1",
+                    "cover": "",
+                    "ordernum": "100",
+                    "status": "1",
+                    "addtime": "2016-01-04 11:43:42"
+                }
+            ],
+            "tagalbumlist": [		// 标签下的内容列表
+                {
+                    "id": "14232",
+                    "title": "床边动物故事",
+                    "story_num": "24",
+                    "intro": "　　小时候，母亲总在床边轻轻地说故事，然后渐渐进入梦乡，本书特别为3 至8 岁的儿童精心设计，非常适合亲子共同阅读，溫柔可爱的小动物图画，加上富启发性、趣味性和生活化的故事，为了使小读者们更加了解可爱的动物们，每本书后特别收录了一些认识动物们的的小常识，除了让小朋友轻松地吸收知识外，读来轻松的床边故事，更是能让亲子共享温馨、亲密的读书乐趣。",
+                    "age_str": "适合0-14岁",
+                    "cover": "http://p.xiaoningmeng.net/album/2016/12/17/0ee7e71061cf860ccf3b29c6823c7971.jpg@!460x460?v=1481959325",
+                    "listennum": "80",
+                    "recommenddesc": "",
+                    "fav": 0,
+                    "favnum": "0",
+                    "star_level": "0"
+                }
+            ],
+    	 "specialtaglist": [
+                {
+                    "name": "推荐",
+                    "paramkey": "recommend",
+                    "paramvalue": 1
+                },
+                {
+                    "name": "最热门",
+                    "paramkey": "hot",
+                    "paramvalue": 1
+                },
+                {
+                    "name": "好评榜",
+                    "paramkey": "goodcomment",
+                    "paramvalue": 1
+                }
+            ]
+        }
+    }
