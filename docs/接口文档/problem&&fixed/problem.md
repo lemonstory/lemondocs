@@ -42,3 +42,17 @@ cd bin/
 ./pecl install memcached
 
 修改php.ini
+
+## DEBUG
+利用Facebook的php优化工具xhprof，对代码进行优化，只需要在接口URL后面加上参数debug=true就可以参看接口运行情况
+
+## 接口优化
+| 接口说明   | API  | 原来的时间    | 现在的时间    | 是否优化  | 是否上线 |
+| :--------:   | :-----:  | :----:  | :-----:  | :----:  | :----:  |
+| 首页|	/default/v2.6.4/index.php|	177ms|	15ms|	是|	是
+| 专辑详情页 |	/album/v2.6/info.php	|130ms	|56ms	|是	|是|
+| 标签专辑列表 |	/tag/gettagalbumlist.php	|20ms	|20ms	|无	|-|
+| 全部分类 |	/default/v2.6/category.php	|13ms	|6ms	|是	|NO|
+| 最新上架 |	default/v2.6/online_list.php	|31ms	|6ms	|是	|NO|
+| 我的故事 |					
+| 学霸排行榜 |	/userinfo/ranklistenuserlist.php	|26ms	|26ms	|无	|-|
