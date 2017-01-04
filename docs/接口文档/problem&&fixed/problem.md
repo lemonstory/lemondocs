@@ -10,6 +10,7 @@
     2. kill -USR2 PID
 
 ##2. 安装php5.6
+```shell
 wget http://cn2.php.net/get/php-5.6.29.tar.gz/from/this/mirror
 tar zxvf mirror
 cd php-5.6.29/
@@ -40,11 +41,13 @@ make install
 cd /alidata/server/php5.6/
 cd bin/
 ./pecl install memcached
+```
+修改php.ini, 对比旧版本的
 
-修改php.ini
+**2017.01.04已全部升级到PHP5.6**
 
 ## DEBUG
-利用Facebook的php优化工具xhprof，对代码进行优化，只需要在接口URL后面加上参数debug=true就可以参看接口运行情况
+利用Facebook的php优化工具xhprof，对代码进行优化，只需要在接口URL后面加上参数debug=true就可以参看接口运行情况（只可以在dev.xiaoningmeng.net域名下使用）
 
 ## 接口优化
 | 接口说明   | API  | 原来的时间    | 现在的时间    | 是否优化  | 是否上线 |
@@ -52,7 +55,16 @@ cd bin/
 | 首页|	/default/v2.6.4/index.php|	177ms|	15ms|	是|	是
 | 专辑详情页 |	/album/v2.6/info.php	|130ms	|56ms	|是	|是|
 | 标签专辑列表 |	/tag/gettagalbumlist.php	|20ms	|20ms	|无	|-|
-| 全部分类 |	/default/v2.6/category.php	|13ms	|6ms	|是	|NO|
-| 最新上架 |	default/v2.6/online_list.php	|31ms	|6ms	|是	|NO|
+| 全部分类 |	/default/v2.6/category.php	|13ms	|6ms	|是	|是|
+| 最新上架 |	default/v2.6/online_list.php	|31ms	|6ms	|是	|是|
 | 我的故事 |					
 | 学霸排行榜 |	/userinfo/ranklistenuserlist.php	|26ms	|26ms	|无	|-|
+
+## 专题系统
+1. 首页：http://cms.xiaoningmeng.net/
+2. 后台：http://cms.xiaoningmeng.net/backend 
+        
+        账号：admin 
+        密码：admin
+
+3. 域名映射：http://cms.xiaoningmeng.net/*** <=> http://www.xiaoningmeng.net/cms/***
